@@ -1,0 +1,85 @@
+<div id="add-series" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Tambah Episode</h4>
+            </div>
+            <div class="modal-body">
+                <form class="" action="index.html" method="post">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="display:block;height:268px;background:#ddd">
+
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="episode">Episode</label>
+                                <input type="text" class="form-control" id="episode" placeholder="Episode" name="episode">
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="episode">Judul</label>
+                                <input type="text" class="form-control" id="judul" placeholder="Judul episode" name="judul_episode">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="episode">Spoiler</label>
+                                <textarea name="spoiler" id="spoiler" rows="3" class="form-control" placeholder="Spoiler"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- outer repeater -->
+                        <div class="repeater">
+                            <div data-repeater-list="outer-list">
+                                <div data-repeater-item>
+                                    <div class="col-md-2">
+                                        <select class="form-control" name="">
+                              <option value="mp4">Mp4</option>
+                              <option value="mkv">MKV</option>
+                              <option value="flv">FLV</option>
+                              <option value="3gp">3gp</option>
+                            </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select class="form-control" name="">
+                              <option value="1080p">1080p</option>
+                              <option value="720p">720p</option>
+                              <option value="480p">480p</option>
+                              <option value="360p">360p</option>
+                              <option value="144p">144</option>
+                            </select>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" name="url" value="" placeholder="URL video disini">
+                                            <span class="input-group-btn">
+                                  <button type="button" name="button" class="btn btn-danger" data-repeater-delete> - </button>
+                                </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input data-repeater-create type="button" class="btn btn-primary pull-right" value="Add" />
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Tambahkan</button>
+            </div>
+        </div>
+    </div>
+</div>
