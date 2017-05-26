@@ -70,7 +70,7 @@
                           <div class="row">
                             <div class="col-md-12">
                               Sinopsis
-                              <textarea name="sinopsis" class="form-control" name="name" rows="8" cols="80" placeholder="Masukkan sinopsis dari series disini"></textarea>
+                              <textarea name="sinopsis" class="form-control" rows="8" cols="80" placeholder="Masukkan sinopsis dari series disini"></textarea>
                               {{ ($errors->has('sinopsis')) ? $errors->first('sinopsis') : '' }}
                             </div>
                           </div>

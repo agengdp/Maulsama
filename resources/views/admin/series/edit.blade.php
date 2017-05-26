@@ -66,12 +66,6 @@
                             </div>
                           </div>
 
-                          <br/>
-
-                          {{$series->genre}}
-
-
-                          <hr>
 
                           <div class="row">
                             <div class="col-md-12">
@@ -111,7 +105,7 @@ $(function() {
                 });
 
   var control = $select[0].selectize;
-  control.setValue([@foreach ($series->genre as $genre){{$genre->id}},@endforeach])
+  control.setValue([@foreach ($series->genre as $genre){{$genre->id}},@endforeach]);
 });
 </script>
 @endsection
