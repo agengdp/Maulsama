@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('public/index');
 });
 
 Auth::routes();
@@ -42,6 +42,11 @@ Route::group(['middleware' => 'auth'], function () {
       ]
     ]);
 
-    Route::get('/home/genre', 'GenreController@index')->name('genre');
+    Route::resource('/home/genre', 'GenreController', [
+      'except' => [
+        'create', 'store'
+      ]
+
+    ]);
 
 });

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Create New Movie')
 @section('content')
 <div class="row">
   <div class="col-md-12">

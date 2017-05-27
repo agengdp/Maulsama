@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Series')
 
 @section('content')
 <div class="row">
@@ -23,8 +24,8 @@
                   <tr>
                     <th>#</th>
                     <th width="70%">Title</th>
-                    <th>Author</th>
                     <th>Published</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -32,8 +33,12 @@
                       <tr>
                         <th scope="row"><input type="checkbox" name="" value="1"></th>
                         <td width="70%"><a href="{{route('series.show', $seri->id)}}">{{$seri->title}}</a></td>
-                        <td>{{$seri->updated_at}} </td>
-                        <td>{{$seri->created_at}}</td>
+                        <td>{{$seri->created_at}} </td>
+                        <td>
+                          <a class="btn btn-default btn-xs" href="{{ route('series.edit', $seri->id)}}">Edit</a>
+                          
+                          <a class="btn btn-primary btn-xs" href="{{ route('series.show', $seri->id)}}">View</a>
+                        </td>
                       </tr>
                     @endforeach
                 </tbody>
@@ -56,7 +61,6 @@
                   </div>
                  </div>
                </div>
-
 
             </div>
         </div>

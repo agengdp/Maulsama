@@ -5,6 +5,12 @@ body{
   background: #2D354D;
   border: none;
 }
+.navbar-default .navbar-brand{
+  color: #ededed;
+}
+.navbar-default .navbar-nav > li > a{
+  color: #ededed
+}
 .head{
   background: #3B4966;
   font-size: 13px;

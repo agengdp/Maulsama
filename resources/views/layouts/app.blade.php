@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title> @if (Auth::user()){{ $adm_title }}@endif {{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/selectize/css/selectize.css') }}">
@@ -24,43 +24,46 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top" @if (Auth::guest()) style="margin-bottom:20px" @endif>
-            <div class="container">
-                <div class="navbar-header">
+        @if (Auth::user())
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
 
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                        <!-- Collapsed Hamburger -->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                </div>
+                        <!-- Branding Image -->
+                        <a class="navbar-brand" href="{{ url('/') }}">
+                            {{ config('app.name', 'Laravel') }}
+                        </a>
+                    </div>
 
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                      &nbsp;
-                    </ul>
+                    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="nav navbar-nav">
+                          &nbsp;
+                        </ul>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
+                        <!-- Right Side Of Navbar -->
+                        <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    Menu <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="#"><strong>{{Auth::user()->name}}</strong></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Configuration</a>
+                                    </li>
+                                    <li class="divider"></li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -72,42 +75,40 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+
                                 </ul>
                             </li>
-                        @endif
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        @if (Auth::user())
+            <header class="head">
+              <div class="container">
 
-        <header class="head">
-          <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul>
+                      <li><a href="{{ route('home') }}" class="{{ isActiveRoute('home', 'active') }}">Dashboard</a></li>
+                      <li><a href="{{ route('series.index') }}" class="{{ isActiveRoute('series.index', 'active') }}">Series</a></li>
+                      <li><a href="{{ route('movies.index') }}" class="{{ isActiveRoute('movies.index', 'active') }}">Movies</a></li>
+                      <li><a href="{{ route('genre.index') }}" class="{{ isActiveRoute('genre', 'active') }}">Genre</a></li>
+                    </ul>
+                  </div>
+                </div>
 
-            <div class="row">
-              <div class="col-md-12">
-                <ul>
-                  <li><a href="{{ route('home') }}" class="{{ isActiveRoute('home', 'active') }}">Dashboard</a></li>
-                  <li><a href="{{ route('series.index') }}" class="{{ isActiveRoute('series.index', 'active') }}">Series</a></li>
-                  <li><a href="{{ route('movies.index') }}" class="{{ isActiveRoute('movies.index', 'active') }}">Movies</a></li>
-                  <li><a href="{{ route('genre') }}" class="{{ isActiveRoute('genre', 'active') }}">Genre</a></li>
-                </ul>
+              </div>
+            </header>
+
+            <div class="adm-title">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>{{$adm_title}}</h1>
+                  </div>
+                </div>
               </div>
             </div>
-
-          </div>
-        </header>
-
-        <div class="adm-title">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1>{{$adm_title}}</h1>
-              </div>
-            </div>
-          </div>
-        </div>
 
         @endif
 

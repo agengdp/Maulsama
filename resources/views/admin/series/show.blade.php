@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+ Series: {{$series->title}}
+@endsection
 
 @section('content')
 <div class="row">
@@ -67,11 +70,10 @@
                             <td>
                               <ul class="action-menu">
                                 <li>
-                                  <a class="edit-episode" href="#edit-episode" data-toggle="modal" data-target="#edit-episode" data-episode="{{ $episode }}" data-action-link="{{ route('episode.update', [$series->id, $episode->id])}}" data-image-url="<?= asset("storage/$episode->cover"); ?>">Edit</a>
+                                  <a class="btn btn-primary btn-xs btn-edit-episode" href="#edit-episode" data-toggle="modal" data-target="#edit-episode" data-episode="{{ $episode }}" data-action-link="{{ route('episode.update', [$series->id, $episode->id])}}" data-image-url="<?= asset("storage/$episode->cover"); ?>">Edit</a>
                                 </li>
-                                <li> | </li>
                                 <li>
-                                  <a onclick="perform_delete('{{ route('episode.destroy', [$series->id, $episode->id]) }}');" href="{{ route('episode.destroy', [$series->id, $episode->id]) }}" data-toggle="modal" data-target="#delete-episode" data-episode="{{ $episode->episode }}" data-judul="{{ $episode->judul_episode }}">Delete</a>
+                                  <a class="btn btn-danger btn-xs" onclick="perform_delete('{{ route('episode.destroy', [$series->id, $episode->id]) }}');" href="{{ route('episode.destroy', [$series->id, $episode->id]) }}" data-toggle="modal" data-target="#delete-episode" data-episode="{{ $episode->episode }}" data-judul="{{ $episode->judul_episode }}">Delete</a>
                                 </li>
                               </ul>
                             </td>

@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+ Edit: {{$series->title}}
+@endsection
 
 @section('content')
 
