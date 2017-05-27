@@ -15,7 +15,7 @@
                       <div class="row">
                         <div class="col-md-3">
                           <div class="cover">
-                            <img id="uploadedimage" src="/images/{{$series->cover}}" class="cover" />
+                            <img id="uploadedimage" src="{{asset("storage/$series->cover")}}" class="cover" />
                           </div>
 
                                  <input type="hidden" name="MAX_UPLOAD_SIZE" value="250000">

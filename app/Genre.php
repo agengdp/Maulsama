@@ -16,4 +16,8 @@ class Genre extends Model
     {
         return $this->morphedByMany('App\Series', 'genreable');
     }
+
+    public function movies(){
+    	return $this->morphedByMany('App\Movie', 'genreable');
+    }
 }

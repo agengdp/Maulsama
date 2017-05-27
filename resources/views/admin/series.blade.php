@@ -31,7 +31,7 @@
                     @foreach ($series as $seri)
                       <tr>
                         <th scope="row"><input type="checkbox" name="" value="1"></th>
-                        <td width="70%"><a href="{{route('series.index')}}/{{$seri->id}}">{{$seri->title}}</a></td>
+                        <td width="70%"><a href="{{route('series.show', $seri->id)}}">{{$seri->title}}</a></td>
                         <td>{{$seri->updated_at}} </td>
                         <td>{{$seri->created_at}}</td>
                       </tr>

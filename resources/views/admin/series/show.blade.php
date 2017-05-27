@@ -21,16 +21,16 @@
             </div>
 
             <div class="panel-body">
-
+              
               <div class="row">
                 <div class="col-md-3">
                   <div class="cover">
-                    <img class="cover" src="/images/{{$series->cover}}" alt="">
+                    <img class="cover" src="{{asset("storage/$series->cover")}}" alt="">
                   </div>
                 </div>
                 <div class="col-md-9">
                   <h1 class="adm-panel-title">{{ $series->title }}</h1>
-                  ID : {{ $series->id }} | Genre : | Year : {{$series->year}}
+                  ID : {{ $series->id }} | Genre : @foreach ($series->genre as $genre) <span class="label label-default"> {{$genre->name}} </span>  @endforeach | Year : {{$series->year}}
                   <br/>
                    Creator : {{$series->creator}} | Producer : {{$series->producer}}
 
