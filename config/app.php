@@ -181,6 +181,7 @@ return [
         Laracasts\Flash\FlashServiceProvider::class,
         browner12\helpers\HelperServiceProvider::class, 
         Conner\Tagging\Providers\TaggingServiceProvider::class,
+        Laravelista\Ekko\EkkoServiceProvider::class,
 
     ],
 

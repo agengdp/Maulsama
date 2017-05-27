@@ -71,7 +71,6 @@
 
 $(document).ready(function () {
 
-
     $('.repeater').repeater({
         // (Required if there is a nested repeater)
         // Specify the configuration of the nested repeaters.
@@ -107,7 +106,7 @@ $(document).ready(function () {
       modal.find('.modal-body textarea#spoiler').val(telek.spoiler);
       modal.find('.modal-footer input#episode_id').val(telek.id);
       // modal.getElementById('uploadedimage').src = telek.cover;
-      document.getElementById('uploadedimage').src = '/images/' + telek.cover;
+      document.getElementById('uploadedimage').src = '/storage/' + telek.cover;
 
       $("#form-edit-episode").attr('action', actionLink);
 

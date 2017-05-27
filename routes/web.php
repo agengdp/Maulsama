@@ -18,6 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
+
     Route::get('/home', 'HomeController@index')->name('home');
 
     Route::resource('/home/series', 'SeriesController');
@@ -35,8 +36,12 @@ Route::group(['middleware' => 'auth'], function () {
     ]);
 
 
-    Route::get('/home/movies', 'MoviesController@index')->name('movies');
+    Route::resource('/home/movies', 'MovieController', [
+      'except' => [
+        'show'
+      ]
+    ]);
 
-    Route::get('home/genre', 'GenreController@index')->name('genre');
+    Route::get('/home/genre', 'GenreController@index')->name('genre');
 
 });

@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Series;
-use App\Episode;
-use App\Genre;
-use Response;
+use Illuminate\Support\Facades\Storage;
 
-class SeriesController extends Controller
+use App\Genre;
+use App\Movie;
+
+class MovieController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,11 +17,11 @@ class SeriesController extends Controller
      */
     public function index()
     {
-        $series = Series::all();
+        $movies = Movie::all();
 
-        return view('admin/series', [
-          'adm_title' => 'Series',
-          'series'    => $series
+        return view('admin/movies', [
+            'adm_title' => 'Movies',
+            'movies'    => $movies
         ]);
     }
 
@@ -34,8 +34,8 @@ class SeriesController extends Controller
     {
         $genre = Genre::all();
 
-        return view('admin/series/create', [
-        'adm_title' => 'Create new series',
+        return view('admin/movies/create', [
+        'adm_title' => 'Create new movies',
         'genre_data' => $genre
       ]);
     }
@@ -49,13 +49,13 @@ class SeriesController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-          'cover' => 'required',
-          'title' => 'required|unique:series|max:255',
-          'year' => 'required',
-          'creator' => 'required',
-          'producer' => 'required',
-          'genre' => 'required',
-          'sinopsis' => 'required',
+            'cover' => 'required',
+            'title' => 'required|max:255',
+            'year'  => 'required',
+            'creator' => 'required',
+            'producer' => 'required',
+            'genre' => 'required',
+            'sinopsis' => 'required'
         ]);
 
         /*-------------------------------------------------------------------
@@ -72,7 +72,7 @@ class SeriesController extends Controller
 
         $genres = explode(',', $request->genre); //memecah string genre menjadi array
         $genreToInsert = []; // declare untuk tempat penampungan genre
-        $genreForSeries = []; // declare untuk tempat penampungan ID dari genre yang akan dipakai dalam series genres
+        $genreForMovie = []; // declare untuk tempat penampungan ID dari genre yang akan dipakai dalam series genres
 
         foreach ($genres as $genre) {
             $check_genre = Genre::where('id', '=', $genre)->first(); // query ke table genre, apakah id sudah ada atau tidak
@@ -83,7 +83,7 @@ class SeriesController extends Controller
             } else {
                 // Jika ada id di dalam sana maka
               // id nya akan ditaruh di genre post container
-              $genreForSeries [] = $genre;
+              $genreForMovie [] = $genre;
             }
         }
 
@@ -92,7 +92,7 @@ class SeriesController extends Controller
         // Mendapatkan ID dari yang baru saja ditulis di db
         foreach ($genreToInsert as $key => $value) {
             $genreGetIDQuery = Genre::where('name', $value)->first(); //mendapatkan ID dari genre
-            $genreForSeries[] = $genreGetIDQuery->id; // dimasukkan kedalam array
+            $genreForMovie[] = $genreGetIDQuery->id; // dimasukkan kedalam array
         }
 
         /*----------------------------------------------------------------------
@@ -102,48 +102,30 @@ class SeriesController extends Controller
         | Jadi dengan ini penulisan ke db is done
         |
         */
-
-        $series = new Series;
-        $series->title = $request->title;
+       
+        $movie = new Movie;
+        $movie->title = $request->title;
 
         if ($request->hasFile('cover')){
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
-            $series->cover = $image_file_name[1];
+            $movie->cover = $image_file_name[1];
         }
 
-        $series->year     = $request->year;
-        $series->creator  = $request->creator;
-        $series->producer = $request->producer;
-        $series->sinopsis = $request->sinopsis;
+        $movie->year = $request->year;
+        $movie->creator = $request->creator;
+        $movie->producer = $request->producer;
+        $movie->sinopsis = $request->sinopsis;
+        $movie->links = json_encode($request->movie_video_list);
 
-        $series->save();
+        $movie->save();
 
-        $series->genre()->sync($genreForSeries, false);
+        $movie->genre()->sync($genreForMovie, false);
 
-        flash('Series baru telah ditambahkan')->success();
+        flash('Movie baru berhasil ditambahkan')->success();
 
-        return redirect()->route('series.index');
-    }
+        return redirect()->route('movies.index');
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        $series = Series::find($id);
-        $episodes = Episode::where('series_id', $id)
-                            ->orderBy('episode', 'desc')
-                            ->paginate(15);
-
-        return view('admin/series/show', [
-          'adm_title' => 'Show : '. $series->title,
-          'series' => $series,
-          'episodes' => $episodes
-        ]);
     }
 
     /**
@@ -154,15 +136,14 @@ class SeriesController extends Controller
      */
     public function edit($id)
     {
-        $series = Series::find($id);
-
+        $movie = Movie::find($id);
         $genre = Genre::all();
 
-        return view('admin/series/edit', [
-        'adm_title' => 'Edit : '. $series->title,
-        'series' => $series,
-        'genre_data' => $genre
-      ]);
+        return view('admin/movies/edit', [
+            'adm_title' => 'Edit : ' . $movie->title,
+            'movie' => $movie,
+            'genre_data' => $genre,
+        ]);
     }
 
     /**
@@ -174,8 +155,6 @@ class SeriesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $updateSeries = Series::find($id);
-
 
         /*-------------------------------------------------------------------
         | Pembuatan genre dan pengaturan genre_id di table series
@@ -190,22 +169,19 @@ class SeriesController extends Controller
         */
 
         $genres = explode(',', $request->genre); //memecah string genre menjadi array
-
         $genreToInsert = []; // declare untuk tempat penampungan genre
-        $genreForSeries = []; // declare untuk tempat penampungan ID dari genre yang akan dipakai dalam series genres
+        $genreForMovie = []; // declare untuk tempat penampungan ID dari genre yang akan dipakai dalam series genres
 
         foreach ($genres as $genre) {
             $check_genre = Genre::where('id', '=', $genre)->first(); // query ke table genre, apakah id sudah ada atau tidak
-
             if ($check_genre === null) { // jika id belum ada
                 $genreToInsert[] = [ //maka genre ditambahkan ke
                   'name' => $genre
                 ];
             } else {
-
-              // Jika ada id di dalam sana maka
+                // Jika ada id di dalam sana maka
               // id nya akan ditaruh di genre post container
-              $genreForSeries [] = $genre;
+              $genreForMovie [] = $genre;
             }
         }
 
@@ -213,33 +189,41 @@ class SeriesController extends Controller
 
         // Mendapatkan ID dari yang baru saja ditulis di db
         foreach ($genreToInsert as $key => $value) {
-            $genreGetIDQuery = Genre::where('name', $value)->first();
-            $genreForSeries[] = $genreGetIDQuery->id;
+            $genreGetIDQuery = Genre::where('name', $value)->first(); //mendapatkan ID dari genre
+            $genreForMovie[] = $genreGetIDQuery->id; // dimasukkan kedalam array
         }
 
-        $updateSeries->title = $request->title;
+        /*----------------------------------------------------------------------
+        | Init untuk menuliskan semuanya ke db
+        ------------------------------------------------------------------------
+        |
+        | Jadi dengan ini penulisan ke db is done
+        |
+        */
+       
+        $movie = Movie::find($id);
+        $movie->title = $request->title;
 
         if ($request->hasFile('cover')){
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
-            $updateSeries->cover = $image_file_name[1];
+            $movie->cover = $image_file_name[1];
         }
 
-        $updateSeries->year = $request->year;
-        $updateSeries->creator = $request->creator;
-        $updateSeries->producer = $request->producer;
-        $updateSeries->sinopsis = $request->sinopsis;
+        $movie->year = $request->year;
+        $movie->creator = $request->creator;
+        $movie->producer = $request->producer;
+        $movie->sinopsis = $request->sinopsis;
+        $movie->links = json_encode($request->movie_video_list);
 
-        $updateSeries->save();
+        $movie->save();
 
-        $updateSeries->genre()->sync($genreForSeries); // tulisan false dibelakang dihilangkan karena untuk 'detach' genre
+        $movie->genre()->sync($genreForMovie);
 
+        flash('Movie berhasil di update')->success();
 
-        flash('Data berhasil diubah!')->success();
-
-        return redirect()->route('series.edit', $id);
+        return redirect()->route('movies.edit', $id);
     }
-
 
     /**
      * Remove the specified resource from storage.
@@ -249,12 +233,13 @@ class SeriesController extends Controller
      */
     public function destroy($id)
     {
-        $series = Series::find($id);
-        $series->genre()->detach(); // detach / hapus genre dari series yang berkaitan (bukan hapus, tapi melepas relationship)
+        $movie = Movie::find($id);
+        $movie->genre()->detach();
 
-        $series->delete();
+        $movie->delete();
 
-        flash('Data telah berhasil dihapus')->success();
-        return redirect()->route('series.index');
+        flash('Movie berhasil di hapus')->success();
+
+        return redirect()->route('movies.index');
     }
 }

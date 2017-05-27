@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{$adm_title}} | {{ config('app.name', 'Laravel') }}</title>
+    <title> @if (Auth::user()){{ $adm_title }}@endif {{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/selectize/css/selectize.css') }}">
@@ -88,10 +88,10 @@
             <div class="row">
               <div class="col-md-12">
                 <ul>
-                  <li><a href="{{ route('home') }}">Dashboard</a></li>
-                  <li><a href="{{ route('series.index') }}">Series</a></li>
-                  <li><a href="{{ route('movies') }}">Movies</a></li>
-                  <li><a href="{{ route('genre') }}">Genre</a></li>
+                  <li><a href="{{ route('home') }}" class="{{ isActiveRoute('home', 'active') }}">Dashboard</a></li>
+                  <li><a href="{{ route('series.index') }}" class="{{ isActiveRoute('series.index', 'active') }}">Series</a></li>
+                  <li><a href="{{ route('movies.index') }}" class="{{ isActiveRoute('movies.index', 'active') }}">Movies</a></li>
+                  <li><a href="{{ route('genre') }}" class="{{ isActiveRoute('genre', 'active') }}">Genre</a></li>
                 </ul>
               </div>
             </div>

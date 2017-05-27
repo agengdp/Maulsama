@@ -26,6 +26,9 @@ body{
   background: #2D354D;
   text-decoration: none;
 }
+.active{
+    background: #2D354D;
+}
 
 .adm-title{
   background: #66676f;
@@ -100,4 +103,14 @@ body{
 }
 .pagination{
   margin: 0
+}
+
+
+.underliner{
+  background: #eee;
+  margin-top: 20px;
+  padding:20px 0;
+}
+.panel-action{
+  padding:15px;
 }

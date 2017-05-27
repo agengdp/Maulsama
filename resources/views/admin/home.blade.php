@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    {{$jumlah_series}}
                 </div>
             </div>
         </div>
