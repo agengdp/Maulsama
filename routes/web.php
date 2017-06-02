@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('public/index');
-});
 
 Auth::routes();
 
@@ -50,3 +47,28 @@ Route::group(['middleware' => 'auth'], function () {
     ]);
 
 });
+
+/**
+ * Damel front-End
+ */
+
+// Image resizing untuk vertical
+Route::get('/images/vert/{image_name}', function($image_name){
+    $img = Image::make('storage/'.$image_name)->resize(250, 375);
+    return $img->response('jpg');
+});
+
+Route::get('/images/horz/{image_name}', function($image_name){
+    $img = Image::make('storage/'.$image_name)->resize(496, 279);
+    return $img->response('jpg');
+});
+
+
+///////////////////////////////////////////////////////////
+//
+// Ini untuk routing home nya
+//
+Route::get('/', 'FrontHomeController@index')->name('frontHome');
+Route::get('/browse', 'FrontBrowseController@index')->name('frontBrowse');
+
+Route::get('/series/{slug}', 'FrontSeriesController@index')->name('frontSeries');
