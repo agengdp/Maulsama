@@ -3,7 +3,6 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Conner\Tagging\Taggable;
 
 class Genre extends Model
 {
@@ -17,7 +16,8 @@ class Genre extends Model
         return $this->morphedByMany('App\Series', 'genreable');
     }
 
-    public function movies(){
-    	return $this->morphedByMany('App\Movie', 'genreable');
+    public function movies()
+    {
+        return $this->morphedByMany('App\Movie', 'genreable');
     }
 }
