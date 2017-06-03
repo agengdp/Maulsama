@@ -71,8 +71,6 @@ class MovieController extends Controller
         */
 
         $genres = explode(',', $request->genre); //memecah string genre menjadi array
-        $genreToInsert = []; // declare untuk tempat penampungan genre
-        $genreForMovie = []; // declare untuk tempat penampungan ID dari genre yang akan dipakai dalam series genres
 
         foreach ($genres as $genre) {
             $check_genre = Genre::where('id', '=', $genre)->first(); // query ke table genre, apakah id sudah ada atau tidak
@@ -102,11 +100,11 @@ class MovieController extends Controller
         | Jadi dengan ini penulisan ke db is done
         |
         */
-       
+
         $movie = new Movie;
         $movie->title = $request->title;
 
-        if ($request->hasFile('cover')){
+        if ($request->hasFile('cover')) {
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
             $movie->cover = $image_file_name[1];
@@ -125,7 +123,6 @@ class MovieController extends Controller
         flash('Movie baru berhasil ditambahkan')->success();
 
         return redirect()->route('movies.index');
-
     }
 
     /**
@@ -200,11 +197,11 @@ class MovieController extends Controller
         | Jadi dengan ini penulisan ke db is done
         |
         */
-       
+
         $movie = Movie::find($id);
         $movie->title = $request->title;
 
-        if ($request->hasFile('cover')){
+        if ($request->hasFile('cover')) {
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
             $movie->cover = $image_file_name[1];
@@ -235,6 +232,8 @@ class MovieController extends Controller
     {
         $movie = Movie::find($id);
         $movie->genre()->detach();
+
+        Storage::delete('public/'. $movie->cover); // hapus cover
 
         $movie->delete();
 

@@ -14,12 +14,11 @@ class GenreController extends Controller
      */
     public function index()
     {
-        
         $genres = Genre::orderBy('name')->get();
 
         return view('admin/genre', [
-        	'genres' => $genres,
-        	'adm_title' => 'Semua Genre'
+            'genres' => $genres,
+            'adm_title' => 'Semua Genre'
         ]);
     }
 
@@ -35,8 +34,8 @@ class GenreController extends Controller
         $genre = Genre::find($id);
 
         return view('admin/genre/show', [
-        	'adm_title' => 'Genre of : ' . $genre->name,
-        	'genre' => $genre
+            'adm_title' => 'Genre of : ' . $genre->name,
+            'genre' => $genre
         ]);
     }
 
@@ -48,7 +47,12 @@ class GenreController extends Controller
      */
     public function edit($id)
     {
-        //
+        $genre = Genre::find($id);
+
+        return view('admin/genre/edit', [
+          'adm_title' => 'Edit Genre : '. $genre->name,
+          'genre'     => $genre
+        ]);
     }
 
     /**
@@ -60,7 +64,12 @@ class GenreController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $genre = Genre::find($id);
+        $genre->name = $request->genre;
+        $genre->save();
+
+        flash('Genre berhasil di update')->success();
+        return redirect()->route('genre.edit', $id);
     }
 
     /**

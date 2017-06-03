@@ -19,7 +19,7 @@
 			</div> {{-- ./row --}}
 		</div> {{-- /.container --}}
 	</div>{{-- /.front-hero --}}
-	
+
 	<div class="bodgrad">
 		<div class="container">
 			<div class="row">
@@ -39,7 +39,7 @@
 	</div>
 @endforeach
 
-			</div> {{-- /.row --}}			
+			</div> {{-- /.row --}}
 		</div> {{-- /.container --}}
 	</div> {{-- /.bodgrad --}}
 

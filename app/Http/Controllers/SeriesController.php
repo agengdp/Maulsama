@@ -106,7 +106,7 @@ class SeriesController extends Controller
         $series = new Series;
         $series->title = $request->title;
 
-        if ($request->hasFile('cover')){
+        if ($request->hasFile('cover')) {
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
             $series->cover = $image_file_name[1];
@@ -219,7 +219,7 @@ class SeriesController extends Controller
 
         $updateSeries->title = $request->title;
 
-        if ($request->hasFile('cover')){
+        if ($request->hasFile('cover')) {
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
             $updateSeries->cover = $image_file_name[1];

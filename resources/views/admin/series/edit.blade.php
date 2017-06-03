@@ -103,7 +103,7 @@ $(function() {
                   valueField: 'id',
                   labelField: 'name',
                   options: {!! $genre_data !!},
-                  create: true
+                  create: false
 
                 });
 

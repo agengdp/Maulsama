@@ -11,11 +11,34 @@
 |
 */
 
+// Testing route
+
+Route::get('/test', function () {
+    $genres = '1,2,3,4,Anime,Gaplek,Adventure';
+    $genre_arr = collect(explode(',', $genres));
+
+    $genreModel = \App\Genre::all();
+    $asu = $genreModel;
+
+    $kelek = collect($asu);
+
+    // echo $asu->name;
+    echo "<hr/>";
+
+    if ($kelek->contains('Action')) {
+        echo 'cok';
+    } else {
+        echo "gak onok";
+    }
+
+    echo "<hr/>";
+    dd($kelek);
+});
+//-------------
 
 Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
-
     Route::get('/home', 'HomeController@index')->name('home');
 
     Route::resource('/home/series', 'SeriesController');
@@ -39,13 +62,7 @@ Route::group(['middleware' => 'auth'], function () {
       ]
     ]);
 
-    Route::resource('/home/genre', 'GenreController', [
-      'except' => [
-        'create', 'store'
-      ]
-
-    ]);
-
+    Route::resource('/home/genre', 'GenreController');
 });
 
 /**
@@ -53,16 +70,21 @@ Route::group(['middleware' => 'auth'], function () {
  */
 
 // Image resizing untuk vertical
-Route::get('/images/vert/{image_name}', function($image_name){
+Route::get('/images/vert/{image_name}', function ($image_name) {
     $img = Image::make('storage/'.$image_name)->resize(250, 375);
     return $img->response('jpg');
 });
 
-Route::get('/images/horz/{image_name}', function($image_name){
+Route::get('/images/horz/{image_name}', function ($image_name) {
     $img = Image::make('storage/'.$image_name)->resize(496, 279);
     return $img->response('jpg');
 });
 
+Route::get('/images/eps/{image_name}', function ($image_name) {
+    // $img = Image::make('storage/'.$image_name)->resize(80, 45);
+    $img = Image::make('storage/'.$image_name)->resize(160, 90);
+    return $img->response('jpg');
+});
 
 ///////////////////////////////////////////////////////////
 //

@@ -31,7 +31,7 @@
                   {{ ($errors->has('title')) ? $errors->first('title') : '' }}
                 </div> {{-- end of col-md-12 --}}
               </div> {{-- end of row --}}
-  
+
               <div class="row">
                 <div class="col-md-2">
                   Tahun rilis
@@ -71,7 +71,7 @@
             </div> {{-- end of col-md-9 --}}
 
           </div> {{-- end of row --}}
-          
+
           <div class="row underliner">
             <div class="col-md-9">
               <h4>Video list</h4>
@@ -85,7 +85,7 @@
                           <option value="mkv">MKV</option>
                           <option value="flv">FLV</option>
                           <option value="3gp">3gp</option>
-                        </select>                      
+                        </select>
                       </div> {{-- end of col-md-2 --}}
                       <div class="col-md-2" style="margin-bottom:5px">
                         <select class="form-control" name="video_quality">
@@ -94,7 +94,7 @@
                           <option value="480p">480p</option>
                           <option value="360p">360p</option>
                           <option value="144p">144</option>
-                        </select>                      
+                        </select>
                       </div> {{-- end of col-md-2 --}}
                       <div class="col-md-8" style="margin-bottom:5px">
                         <div class="input-group">
@@ -103,14 +103,14 @@
                               <button type="button" name="button" class="btn btn-danger" data-repeater-delete> - </button>
                             </span>
                         </div>
-                      </div> {{-- end of col-md-8 --}}                      
+                      </div> {{-- end of col-md-8 --}}
                     </div> {{-- end of row --}}
                   </div> {{-- end of data-repeater-item --}}
                 </div> {{-- end of data-repeater-list --}}
                 <div class="row">
                   <div class="col-md-12">
                     <input data-repeater-create type="button" class="btn btn-primary pull-right" value="add" />
-                  </div> {{-- end of col-md-12 --}}                  
+                  </div> {{-- end of col-md-12 --}}
                 </div> {{-- end of row --}}
               </div> {{-- end of repeater --}}
             </div> {{-- end of col-md-9 --}}
@@ -138,7 +138,7 @@ $(function() {
     valueField: 'id',
     labelField: 'name',
     options: {!! $genre_data !!},
-    create: true
+    create: false
 
   });
 });
