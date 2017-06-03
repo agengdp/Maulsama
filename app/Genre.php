@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Genre extends Model
 {
@@ -10,6 +11,17 @@ class Genre extends Model
     protected $fillable = ['name'];
 
     public $timestamps = false;
+
+    use Sluggable;
+
+    public function sluggable()
+    {
+        return [
+        'slug' => [
+          'source' => 'name'
+        ]
+      ];
+    }
 
     public function series()
     {

@@ -183,7 +183,8 @@ return [
 //        Conner\Tagging\Providers\TaggingServiceProvider::class,
         Laravelista\Ekko\EkkoServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class
+        Collective\Html\HtmlServiceProvider::class,
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
 
     ],
 

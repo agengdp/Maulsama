@@ -427,6 +427,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/config\/sluggable.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/config\/sluggable.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/config\/tagging.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -3568,6 +3577,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/storage\/app\/public\/dTyOaWY5ImApxSK42XFUENQtrRbGlTYcifrVr5uP.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 133130,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/dTyOaWY5ImApxSK42XFUENQtrRbGlTYcifrVr5uP.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/dTyOaWY5ImApxSK42XFUENQtrRbGlTYcifrVr5uP.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/storage\/app\/public\/h0ukvJReloPoin8UMFHogMrn3JcVKhCFnZweNiNe.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3597,6 +3617,17 @@
 		"initialSize": 377290,
 		"inputAbbreviatedPath": "\/storage\/app\/public\/itfepRdw12lRE2eHELoKuiciAghonV6ZGhkwVczM.jpeg",
 		"outputAbbreviatedPath": "\/storage\/app\/public\/itfepRdw12lRE2eHELoKuiciAghonV6ZGhkwVczM.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/MSywiy7x0FjlZ2NtvHFfHs7nw8Q0ghhSxqd0zif5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71399,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/MSywiy7x0FjlZ2NtvHFfHs7nw8Q0ghhSxqd0zif5.png",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/MSywiy7x0FjlZ2NtvHFfHs7nw8Q0ghhSxqd0zif5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
