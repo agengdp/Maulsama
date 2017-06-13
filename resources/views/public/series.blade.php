@@ -54,15 +54,13 @@
 		</div> {{-- ./row --}}
 
 		<div id="episode-container" class="row">
-			<div class="col-md-3">
-				Season 1
-			</div>
-			<div class="col-md-9">
+			<div class="col-md-12">
+			<h2>Episode</h2>
 				<div class="episode">
 					<ul class="list-episode">
 						@foreach($series->episode->sortByDesc('episode') as $episode)
-							<li class='epiclick' data-key="{{$episode->id}}">
-								<div class="media">
+							<li>
+								<div class="media epiclick" data-key="{{$episode->id}}">
 								  <div class="media-left">
 								    <div class="label-episode">
 								      {{$episode->episode}}
@@ -70,28 +68,27 @@
 								  </div>
 								  <div class="media-body">
 								    <h4 class="judul">{{$episode->judul_episode}}</h4>
-										<div class="spoiler spoil-{{$episode->id}} hidden">
-
-											<div class="row">
-												<div class="col-xs-12 col-sm-2 col-md-2">
-													<div class="thumbnail spoiler-img">
-														<img src="{{ asset("images/eps/$episode->cover") }}" alt="{{ $episode->judul_episode }}" />
-													</div>
-												</div>
-												<div class="col-xs-12 col-sm-8 col-md-8">
-													<p class="spoiler-desc">{{ $episode->spoiler }}</p>
-												</div>
-												<div class="col-xs-12 col-sm-2 col-md-2">
-													<div class="play-button-container">
-														<a href="#" class="btn btn-play-episode"><i class="glyphicon glyphicon-play"></i></a>
-													</div>
-												</div>
-											</div>
-
-										</div>
 								  </div>
 								</div>
+								<div class="spoiler spoil-{{$episode->id}} hidden">
 
+									<div class="row">
+										<div class="col-xs-12 col-sm-2 col-md-2">
+											<div class="thumbnail spoiler-img">
+												<img src="{{ asset("images/eps/$episode->cover") }}" alt="{{ $episode->judul_episode }}" />
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-8 col-md-8">
+											<p class="spoiler-desc">{{ $episode->spoiler }}</p>
+										</div>
+										<div class="col-xs-12 col-sm-2 col-md-2">
+											<div class="play-button-container">
+												<a href="{{ route('frontPlayEps', [$series->slug, $episode->slug]) }}" class="btn btn-play-episode"><i class="glyphicon glyphicon-play"></i></a>
+											</div>
+										</div>
+									</div>
+
+								</div>
 							</li>
 						@endforeach
 					</ul>
@@ -118,14 +115,10 @@ jQuery(document).ready(function($) {
 
 			btn.addClass('expanded');
 			$('.spoil-' + key).removeClass('hidden');
-
 		}else{
-
 			$('.spoiler').addClass('hidden');
 			$('.epiclick').removeClass('expanded');
-
 		}
-
 	});
 
 });

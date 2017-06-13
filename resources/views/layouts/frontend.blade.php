@@ -3,13 +3,14 @@
 <head>
 	<title>@yield('title')</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('storage/assets/bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('storage/assets/css/yamm.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('storage/assets/css/style.css')}}">
 </head>
 <body>
 
-	<header class="navbar navbar-inverse navbar-static-top">
+	<nav class="navbar yamm navbar-inverse navbar-static-top">
 		@include('public.includes.navigation')
-	</header>
+	</nav>
 
 	<section id="content">
 		@yield('content')

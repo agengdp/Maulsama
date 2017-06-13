@@ -10,9 +10,12 @@
 					<p>Tempat nonton anime terlengkap subtitle Indonesia!</p>
 				</div>
 @foreach($series as $seri)
-	<div class="col-xs-6 col-md-4 col-lg-2">
-		<a href="{{ route('frontSeries', $seri->id) }}" class="thumbnail">
-		  <img src="{{ asset("images/vert/$seri->cover") }}" alt="{{$seri->title}}">
+	<div class="col-xs-6 col-md-4 col-lg-2 image-container">
+		<a href="{{ route('frontSeries', $seri->slug) }}" class="thumbnail">
+		  <img src="{{ asset("images/vert/$seri->cover") }}" alt="{{$seri->title}}" class="gambar">
+		  <div class="caption">
+		  	<span class="caption-text">{{ $seri->title }}</span>
+		  </div> {{-- /.caption --}}
 		</a>
 	</div>
 @endforeach
@@ -22,22 +25,22 @@
 
 	<div class="bodgrad">
 		<div class="container">
-			<div class="row">
+			<div class="row" style="display:table;">
 				<div class="col-md-12">
 					<h2 class="headlist">On-going anime</h2>
 				</div>
 
-@foreach ($episodes as $episode)
-	<div class="col-xs-6 col-md-3">
-	    <a href="#" class="thumbnail">
-	      <img src="{{ asset("images/horz/$episode->cover") }}" alt="{{$episode->judul_episode}}">
+				@foreach ($episodes as $episode)
+					<div class="col-xs-6 col-md-3" style="display: table-cell;">
+					    <a href="{{ route('frontPlayEps', [$episode->series->slug, $episode->slug]) }}" class="thumbnail">
+					      <img src="{{ asset("images/horz/$episode->cover") }}" alt="{{$episode->judul_episode}}">
 
-		<div class="caption">
-			{{$episode->judul_episode}}
-		</div>
-	    </a>
-	</div>
-@endforeach
+						<div class="caption">
+							{{$episode->judul_episode}}
+						</div>
+					    </a>
+					</div>
+				@endforeach
 
 			</div> {{-- /.row --}}
 		</div> {{-- /.container --}}

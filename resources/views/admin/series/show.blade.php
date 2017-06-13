@@ -160,8 +160,6 @@
                                 <select class="form-control" name="video_type">
                                   <option value="mp4">Mp4</option>
                                   <option value="mkv">MKV</option>
-                                  <option value="flv">FLV</option>
-                                  <option value="3gp">3gp</option>
                                 </select>
                             </div>
                             <div class="col-md-2" style="margin-bottom:5px">
@@ -266,8 +264,6 @@
                                 <select class="form-control" name="video_type">
                                   <option value="mp4">Mp4</option>
                                   <option value="mkv">MKV</option>
-                                  <option value="flv">FLV</option>
-                                  <option value="3gp">3gp</option>
                                 </select>
                             </div>
                             <div class="col-md-2" style="margin-bottom:5px">

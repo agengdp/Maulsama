@@ -11,9 +11,9 @@
     <title>@yield('title')</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/selectize/css/selectize.css') }}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+    <link href="{{ asset('storage/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('storage/assets/selectize/css/selectize.css') }}">
+    <link href="{{ asset('storage/assets/css/admin.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -58,17 +58,17 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a href="#"><strong>{{Auth::user()->name}}</strong></a>
+                                        <a href="#"><i class="glyphicon glyphicon-user"></i> <strong>{{Auth::user()->name}}</strong></a>
                                     </li>
                                     <li>
-                                        <a href="">Configuration</a>
+                                        <a href=""><i class="glyphicon glyphicon-cog"></i> Configuration</a>
                                     </li>
                                     <li class="divider"></li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                            <i class="glyphicon glyphicon-off"></i> Logout
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -89,10 +89,10 @@
                 <div class="row">
                   <div class="col-md-12">
                     <ul>
-                      <li><a href="{{ route('home') }}" class="{{ isActiveRoute('home', 'active') }}">Dashboard</a></li>
-                      <li><a href="{{ route('series.index') }}" class="{{ isActiveRoute('series.index', 'active') }}">Series</a></li>
-                      <li><a href="{{ route('movies.index') }}" class="{{ isActiveRoute('movies.index', 'active') }}">Movies</a></li>
-                      <li><a href="{{ route('genre.index') }}" class="{{ isActiveRoute('genre', 'active') }}">Genre</a></li>
+                      <li><a href="{{ route('home') }}" class="{{ isActiveRoute('home', 'active') }}"><i class="glyphicon glyphicon-th-list"></i> Dashboard</a></li>
+                      <li><a href="{{ route('series.index') }}" class="{{ isActiveRoute('series.index', 'active') }}"><i class="glyphicon glyphicon-play-circle"></i> Series</a></li>
+                      <li><a href="{{ route('movies.index') }}" class="{{ isActiveRoute('movies.index', 'active') }}"><i class="glyphicon glyphicon-film"></i> Movies</a></li>
+                      <li><a href="{{ route('genre.index') }}" class="{{ isActiveRoute('genre', 'active') }}"><i class="glyphicon glyphicon-list"></i> Genre</a></li>
                     </ul>
                   </div>
                 </div>
@@ -120,11 +120,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('bower_components/jquery.repeater/jquery.repeater.js') }}"></script>
-    <script src="{{ asset('assets/selectize/js/standalone/selectize.js') }}"></script>
+    <script src="{{ asset('storage/assets/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('storage/assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('storage/assets/js/jquery.repeater.min.js') }}"></script>
+    <script src="{{ asset('storage/assets/js/selectize.min.js') }}"></script>
 
-    <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('storage/assets/js/custom.js') }}"></script>
 
     @yield('lastfooter')
 

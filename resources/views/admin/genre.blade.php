@@ -7,6 +7,7 @@
         <div class="panel panel-default">
             <div class="panel-heading clearfix">
               All Genre
+              <a class="btn btn-primary btn-xs pull-right" href="#" data-toggle="modal" data-target="#new-genre">New Genre</a>
             </div>
 
             <div class="panel-body">
@@ -56,4 +57,30 @@
         </div>
     </div>
 </div>
+
+
+<!-- modal untuk new genre -->
+<div class="modal fade" id="new-genre" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      {{ Form::open(array('route' => 'genre.store')) }}    
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">Masukkan nama genre baru..</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+              <label for="episode" class="control-label">Genre</label>
+              <input type="text" class="form-control" id="genre" name="name">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+          <input type="submit" class="btn btn-primary" value="Tambah Genre Baru">
+        </div>
+      {{ Form::close() }}
+    </div>
+  </div>
+</div>
+<!-- end of modal untuk new genre -->
 @endsection
