@@ -53,9 +53,11 @@ class EpisodeController extends Controller
         $the_episode = Episode::find($episode_id);
 
         $series = Series::find($series_id);
+
         $the_episode->series()->associate($series);
 
         if ($request->hasFile('edit-episode-cover')) {
+            Storage::delete('public/'.$the_episode->cover); // hapus covernya yang lama
             $image = $request->file('edit-episode-cover')->store('public');
             $image_file_name = explode('/', $image);
             $the_episode->cover = $image_file_name[1];

@@ -220,6 +220,7 @@ class SeriesController extends Controller
         $updateSeries->title = $request->title;
 
         if ($request->hasFile('cover')) {
+            \Storage::delete('public/'. $updateSeries->cover); // hapus cover yang sebelumnya
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
             $updateSeries->cover = $image_file_name[1];
