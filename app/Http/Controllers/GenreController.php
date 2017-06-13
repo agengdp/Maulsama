@@ -22,6 +22,32 @@ class GenreController extends Controller
         ]);
     }
 
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required|unique:genres'
+        ]);
+
+        $genre = new Genre();
+        $genre->name = $request->name;
+
+        $genre->save();
+        flash('Genre <strong>'. $request->name . '</strong> berhasil ditambahkan...')->success();
+
+        $genres = $genre->orderBy('name')->get();
+
+
+        return view('admin/genre', [
+            'adm_title' => 'Semua Genre',
+            'genres'     => $genres
+        ]);
+    }
 
     /**
      * Display the specified resource.

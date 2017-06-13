@@ -92,5 +92,13 @@ Route::get('/images/eps/{image_name}', function ($image_name) {
 //
 Route::get('/', 'FrontHomeController@index')->name('frontHome');
 Route::get('/browse', 'FrontBrowseController@index')->name('frontBrowse');
+Route::get('/browse/{genre}', 'FrontBrowseController@browse')->name('frontBrowseGenre');
 
+// mendapatkan series
 Route::get('/series/{slug}', 'FrontSeriesController@index')->name('frontSeries');
+
+// play episode
+Route::get('/play/{series_slug}/eps/{eps_slug}', 'FrontSeriesController@play')->name('frontPlayEps');
+
+// mendapatkan movie
+Route::get('/movie/{slug}', 'FrontMovieController@index')->name('frontMovie');

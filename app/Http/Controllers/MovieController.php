@@ -73,24 +73,7 @@ class MovieController extends Controller
         $genres = explode(',', $request->genre); //memecah string genre menjadi array
 
         foreach ($genres as $genre) {
-            $check_genre = Genre::where('id', '=', $genre)->first(); // query ke table genre, apakah id sudah ada atau tidak
-            if ($check_genre === null) { // jika id belum ada
-                $genreToInsert[] = [ //maka genre ditambahkan ke
-                  'name' => $genre
-                ];
-            } else {
-                // Jika ada id di dalam sana maka
-              // id nya akan ditaruh di genre post container
-              $genreForMovie [] = $genre;
-            }
-        }
-
-        $genre = Genre::insert($genreToInsert); //tulis genre ke db
-
-        // Mendapatkan ID dari yang baru saja ditulis di db
-        foreach ($genreToInsert as $key => $value) {
-            $genreGetIDQuery = Genre::where('name', $value)->first(); //mendapatkan ID dari genre
-            $genreForMovie[] = $genreGetIDQuery->id; // dimasukkan kedalam array
+            $genreForMovie [] = $genre;
         }
 
         /*----------------------------------------------------------------------
@@ -166,28 +149,9 @@ class MovieController extends Controller
         */
 
         $genres = explode(',', $request->genre); //memecah string genre menjadi array
-        $genreToInsert = []; // declare untuk tempat penampungan genre
-        $genreForMovie = []; // declare untuk tempat penampungan ID dari genre yang akan dipakai dalam series genres
 
         foreach ($genres as $genre) {
-            $check_genre = Genre::where('id', '=', $genre)->first(); // query ke table genre, apakah id sudah ada atau tidak
-            if ($check_genre === null) { // jika id belum ada
-                $genreToInsert[] = [ //maka genre ditambahkan ke
-                  'name' => $genre
-                ];
-            } else {
-                // Jika ada id di dalam sana maka
-              // id nya akan ditaruh di genre post container
-              $genreForMovie [] = $genre;
-            }
-        }
-
-        $genre = Genre::insert($genreToInsert); //tulis genre ke db
-
-        // Mendapatkan ID dari yang baru saja ditulis di db
-        foreach ($genreToInsert as $key => $value) {
-            $genreGetIDQuery = Genre::where('name', $value)->first(); //mendapatkan ID dari genre
-            $genreForMovie[] = $genreGetIDQuery->id; // dimasukkan kedalam array
+            $genreForMovie [] = $genre;
         }
 
         /*----------------------------------------------------------------------
@@ -202,6 +166,7 @@ class MovieController extends Controller
         $movie->title = $request->title;
 
         if ($request->hasFile('cover')) {
+            Storage::delete('public/'. $movie->cover); // hapus cover yang sebelumnya
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
             $movie->cover = $image_file_name[1];
