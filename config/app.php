@@ -180,11 +180,18 @@ return [
 
         Laracasts\Flash\FlashServiceProvider::class,
         browner12\helpers\HelperServiceProvider::class,
-//        Conner\Tagging\Providers\TaggingServiceProvider::class,
         Laravelista\Ekko\EkkoServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Cviebrock\EloquentSluggable\ServiceProvider::class,
+
+        /**
+         * Custom by adp
+         */
+        App\Providers\GenreServiceProvider::class,
+        App\Providers\NavSeriesServiceProvider::class,
+        App\Providers\NavOngoingServiceProvider::class,
+        App\Providers\NavMovieServiceProvider::class,
 
     ],
 

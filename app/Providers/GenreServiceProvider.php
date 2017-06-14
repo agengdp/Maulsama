@@ -3,26 +3,28 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Genre;
 
-class AppServiceProvider extends ServiceProvider
+class GenreServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap any application services.
+     * Bootstrap the application services.
      *
      * @return void
      */
     public function boot()
     {
-        
+
+        \View::share('genres', Genre::all());
     }
 
     /**
-     * Register any application services.
+     * Register the application services.
      *
      * @return void
      */
     public function register()
     {
-
+        //
     }
 }

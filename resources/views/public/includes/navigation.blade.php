@@ -17,23 +17,21 @@
 		      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-th-list"></i> Series <span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li>
-						<div class="yamm-content">
+						<div class="yamm-content nav-krieg">
 							<ul class="media-list">
-		                        <li class="media"><a href="#" class="pull-right"><img src="//via.placeholder.com/64x64" alt="64x64" class="media-object"></a>
-		                          <div class="media-body">
-		                            <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
-		                          </div>
-		                        </li>
-		                        <li class="media"><a href="#" class="pull-right"><img src="//via.placeholder.com/64x64" alt="64x64" class="media-object"></a>
-		                          <div class="media-body">
-		                            <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-		                          </div>
-		                        </li>
-		                        <li class="media"><a href="#" class="pull-right"><img src="//via.placeholder.com/64x64" alt="64x64" class="media-object"></a>
-		                          <div class="media-body">
-		                            <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-		                          </div>
-		                        </li>
+								@foreach($navSeries as $navSeri)
+			                        <li class="media">
+			                        	<a href="{{ route('frontSeries', $navSeri->slug) }}" alt="{{ $navSeri->title }}">
+				                        	<div class="media-body">
+				                            	<h4 class="media-heading">{{ $navSeri->title }}</h4>
+				                            	{{ str_limit($navSeri->sinopsis, 300) }}
+				                        	</div>
+				                        	<div class="media-right">
+				                        		<img src="{{ asset('images/nav/'.$navSeri->cover) }}" alt="{{ $navSeri->title }}" class="media-object">
+				                        	</div>
+				                        </a>
+			                        </li>
+								@endforeach
 		                      </ul>
 						</div>
 						<!-- /.yamm-content -->
@@ -44,23 +42,21 @@
 		      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-film"></i> Movies <span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li>
-						<div class="yamm-content">
+						<div class="yamm-content nav-krieg">
 							<ul class="media-list">
-		                        <li class="media"><a href="#" class="pull-right"><img src="//via.placeholder.com/64x64" alt="64x64" class="media-object"></a>
-		                          <div class="media-body">
-		                            <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
-		                          </div>
-		                        </li>
-		                        <li class="media"><a href="#" class="pull-right"><img src="//via.placeholder.com/64x64" alt="64x64" class="media-object"></a>
-		                          <div class="media-body">
-		                            <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-		                          </div>
-		                        </li>
-		                        <li class="media"><a href="#" class="pull-right"><img src="//via.placeholder.com/64x64" alt="64x64" class="media-object"></a>
-		                          <div class="media-body">
-		                            <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-		                          </div>
-		                        </li>
+								@foreach($navMovies as $navMovie)
+			                        <li class="media">
+			                        	<a href="{{ route('frontMovie', $navMovie->slug) }}">
+				                          	<div class="media-body">
+				                            	<h4 class="media-heading">{{ $navMovie->title }}</h4>
+				                            	{{ str_limit($navMovie->sinopsis, 200) }}
+				                          	</div>
+				                        	<div class="media-right">
+				                        		<img src="{{ asset('images/nav/'.$navMovie->cover) }}" alt="{{ $navMovie->title }}" class="media-object">
+				                        	</div>
+				                        </a>
+			                        </li>
+								@endforeach
 		                      </ul>
 						</div>
 						<!-- /.yamm-content -->
@@ -73,23 +69,21 @@
 		      <a href="#" class="dropdown-toggle hoxx" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-fire"></i> ON-GOING</a>
 				<ul class="dropdown-menu">
 					<li>
-						<div class="yamm-content">
+						<div class="yamm-content nav-krieg">
 							<ul class="media-list">
-		                        <li class="media"><a href="#" class="pull-right"><img src="//via.placeholder.com/64x64" alt="64x64" class="media-object"></a>
-		                          <div class="media-body">
-		                            <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
-		                          </div>
-		                        </li>
-		                        <li class="media"><a href="#" class="pull-right"><img src="//via.placeholder.com/64x64" alt="64x64" class="media-object"></a>
-		                          <div class="media-body">
-		                            <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-		                          </div>
-		                        </li>
-		                        <li class="media"><a href="#" class="pull-right"><img src="//via.placeholder.com/64x64" alt="64x64" class="media-object"></a>
-		                          <div class="media-body">
-		                            <h4 class="media-heading">Media heading</h4>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-		                          </div>
-		                        </li>
+								@foreach($navOngoing as $ongoing)
+			                        <li class="media">
+			                        	<a href="{{ route('frontPlayEps', [$ongoing->series->slug, $ongoing->slug]) }}">
+				                          	<div class="media-body">
+				                            	<h4 class="media-heading">Episode {{ $ongoing->episode }} : {{ $ongoing->judul_episode }}</h4>
+				                            	{{ $ongoing->series->title }}
+				                          	</div>
+				                        	<div class="media-right media-middle">
+				                        		<img src="{{ asset('images/ongoing/'.$ongoing->cover) }}" alt="{{ $ongoing->judul_episode }}" class="media-object">
+				                        	</div>
+				                        </a>
+			                        </li>
+								@endforeach
 		                      </ul>
 						</div>
 						<!-- /.yamm-content -->
@@ -97,7 +91,7 @@
 				</ul>
 			</li>
 			<li class="dropdown menu-genre">
-		  		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-th"></i> Genre</a>
+		  		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" alt="Tampilkan Genre !"><i class="glyphicon glyphicon-th"></i></a>
 				<ul class="dropdown-menu">
 						<li><a href="/browse" alt="Tampilkan semuanya">Tampilkan Semuanya</a></li>
 					@foreach($genres->sortBy('name') as $genre)
