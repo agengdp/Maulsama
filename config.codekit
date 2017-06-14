@@ -272,6 +272,42 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/app\/Providers\/GenreServiceProvider.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/Providers\/GenreServiceProvider.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/Providers\/NavMovieServiceProvider.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/Providers\/NavMovieServiceProvider.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/Providers\/NavOngoingServiceProvider.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/Providers\/NavOngoingServiceProvider.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/Providers\/NavSeriesServiceProvider.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/Providers\/NavSeriesServiceProvider.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/app\/Providers\/RouteServiceProvider.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -3648,6 +3684,17 @@
 		"initialSize": 389684,
 		"inputAbbreviatedPath": "\/storage\/app\/public\/FUrE3dAzmUHDbuXANiOe88EF8Ws9dhtQ83KImehv.jpeg",
 		"outputAbbreviatedPath": "\/storage\/app\/public\/FUrE3dAzmUHDbuXANiOe88EF8Ws9dhtQ83KImehv.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/g22i3SUofKUEzLYNs80qkG9ooF1Pu3tt0Iudd7F0.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9989,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/g22i3SUofKUEzLYNs80qkG9ooF1Pu3tt0Iudd7F0.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/g22i3SUofKUEzLYNs80qkG9ooF1Pu3tt0Iudd7F0.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
