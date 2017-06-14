@@ -12,7 +12,7 @@
 		</div> {{-- ./row --}}
 	</div>{{-- ./container --}}
 </div>
-<div class="bodgrad">
+<div id="browser" class="bodgrad">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
