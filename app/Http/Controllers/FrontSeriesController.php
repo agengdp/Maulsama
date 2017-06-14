@@ -11,18 +11,15 @@ class FrontSeriesController extends Controller
 {
     public function index($slug)
     {
-        $genres = Genre::all();
         $series = Series::where('slug', $slug)->first();
 
         return view('public.series', [
-            'genres'    => $genres,
             'series'    => $series
         ]);
     }
 
     public function play($series_slug, $eps_slug)
     {
-        $genres   = Genre::all();
         $series   = Series::where('slug', $series_slug)->first();
 
         $episode  = Episode::where('series_id', $series->id)
@@ -40,7 +37,6 @@ class FrontSeriesController extends Controller
         $mkv_links = $videos->where('video_type', 'mkv');
 
         return view('public.playEpisode', [
-          'genres'    => $genres,
           'series'    => $series,
           'episode'   => $episode,
           'mp4_links' => $mp4_links->sortBy('video_quality'),
