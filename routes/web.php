@@ -81,11 +81,22 @@ Route::get('/images/horz/{image_name}', function ($image_name) {
 });
 
 Route::get('/images/eps/{image_name}', function ($image_name) {
-    // $img = Image::make('storage/'.$image_name)->resize(80, 45);
     $img = Image::make('storage/'.$image_name)->resize(160, 90);
     return $img->response('jpg');
 });
 
+Route::get('/images/nav/{image_name}', function ($image_name) {
+    $img = Image::make('storage/'.$image_name)->resize(64, null, function($constraint){
+        $constraint->aspectRatio();
+    });
+    return $img->response('jpg');
+});
+Route::get('/images/ongoing/{image_name}', function ($image_name) {
+    $img = Image::make('storage/'.$image_name)->resize(120, null, function($constraint){
+        $constraint->aspectRatio();
+    });
+    return $img->response('jpg');
+});
 ///////////////////////////////////////////////////////////
 //
 // Ini untuk routing home nya
