@@ -103,14 +103,14 @@
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-search"></i></a>
 				<ul class="dropdown-menu">
 					<li class="yamm-content">
-
-						<form class="form-inline" action="{{ route('frontBrowse') }}">
-							<div class="form-group">
+						<form action="{{ route('frontBrowse') }}">
+							<div class="input-group">
 						    	<input type="text" class="form-control" id="search-query" name="s" placeholder="Masukkan keyword atau judul anime disini" value="{{ isset($s) ? $s : '' }}">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-primary">Search</button>
+							</span>
 						  	</div>
-						  <button type="submit" class="btn btn-default">Search</button>
 						</form>
-
 					</li>
 				</ul>
 			</li>
