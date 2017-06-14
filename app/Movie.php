@@ -19,7 +19,12 @@ class Movie extends Model
         ]
       ];
     }
-    
+
+    public function scopeSearch($query, $s){
+        return $query->where('title', 'like', '%' .$s. '%')
+            ->orWhere('creator', 'like', '%'. $s .'%');
+    }
+        
     public function genre()
     {
         return $this->morphToMany('App\Genre', 'genreable');

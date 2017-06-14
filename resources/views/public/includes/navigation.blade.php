@@ -104,7 +104,12 @@
 				<ul class="dropdown-menu">
 					<li class="yamm-content">
 
-						<input type="text" value="" name="q" placeholder="Masukkan judul film disini..."><input type="submit" class="btn btn-default" value="Search">
+						<form class="form-inline" action="{{ route('frontBrowse') }}">
+							<div class="form-group">
+						    	<input type="text" class="form-control" id="search-query" name="s" placeholder="Masukkan keyword atau judul anime disini" value="{{ isset($s) ? $s : '' }}">
+						  	</div>
+						  <button type="submit" class="btn btn-default">Search</button>
+						</form>
 
 					</li>
 				</ul>

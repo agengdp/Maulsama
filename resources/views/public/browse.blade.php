@@ -16,9 +16,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
+				@if(Request::has('query'))
+					dancok
+				@endif
+
+			</div>
+			<!-- /.col-md-12 -->
+			<div class="col-md-12">
 				<h3 class="browse-genre-chooser">Pilih Genre :</h3>
 				<div class="pull-right">
-					{{ $series->links() }}
+					@if(isset($s))
+						{{ $series->appends(['s' => $s])->links() }}
+					@else
+						{{ $series->links() }}
+					@endif
 				</div>
 			</div>
 			<!-- /.col-md-12 -->
@@ -49,7 +60,7 @@
 						</div> 
 					@empty
 						<div class="col-md-12">
-							<p>Tidak ada series di kategori ini...</p>
+							<p>Tidak ada series...</p>
 						</div>
 					@endforelse
 					<div class="col-md-12">
@@ -66,7 +77,7 @@
 						</div>	
 					@empty
 						<div class="col-md-12">
-							<p>Tidak ada movie di kategori ini...</p>
+							<p>Tidak ada movie...</p>
 						</div>
 					@endforelse
 				</div>

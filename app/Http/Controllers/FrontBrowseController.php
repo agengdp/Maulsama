@@ -19,13 +19,16 @@ class FrontBrowseController extends Controller
      * Digunakan untuk browse yang semua genre
      * @return view laravel
      */
-    public function index(){
-    	$series = Series::paginate($this->taken);
-    	$movies = Movie::paginate($this->taken);
+    public function index(Request $request){
+
+        $search = $request->input('s');
+        $series = Series::search($search)->paginate($this->taken);
+        $movies = Movie::search($search)->paginate($this->taken);
 
     	return view('public/browse', [
     		'series' => $series,
-    		'movies' => $movies
+    		'movies' => $movies,
+            's' => $search
     	]);
     }
 
