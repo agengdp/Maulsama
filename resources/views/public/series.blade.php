@@ -43,7 +43,7 @@
 					Genre :
 					@foreach($series->genre as $genre)
 						{{ $loop->first ? '' : ', ' }}
-						{{ $genre->name }}
+						<a style="color: #fff" href="{{ route('frontBrowseGenre', $genre->slug) }}">{{ $genre->name }}</a>
 					@endforeach
 				</div>
 
