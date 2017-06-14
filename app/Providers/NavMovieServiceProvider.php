@@ -14,9 +14,9 @@ class NavMovieServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $movies = Movie::orderBy('created_at', 'desc')
-                            ->take(5)
-                            ->get();
+        $movies = Movie::latest()
+                        ->take(5)
+                        ->get();
 
         \View::share('navMovies', $movies);        
     }

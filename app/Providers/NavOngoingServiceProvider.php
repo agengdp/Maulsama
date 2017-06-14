@@ -14,7 +14,7 @@ class NavOngoingServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $episodes = Episode::orderBy('created_at', 'desc')
+        $episodes = Episode::latest()
                             ->take(5)
                             ->get();
 
