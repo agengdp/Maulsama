@@ -16,10 +16,12 @@
               <table class="table table-hover">
                 <caption>This is all the movies list</caption>
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Cari</button>
-                  </span>
+                  {{ Form::open(array('route' => 'movies.index', 'method' => 'get')) }}
+                    {{ Form::text('s', '', array('class' => 'form-control', 'placeholder' => 'Masukkan judul film / creatornya ...')) }}
+                    <span class="input-group-btn">
+                      {{ Form::submit('Cari', array('class' => 'btn btn-default')) }}
+                    </span>
+                  {{ Form::close() }}
                 </div><!-- /input-group -->
                 <thead>
                   <tr>
@@ -45,7 +47,7 @@
                </table>
 
                <div class="row">
-                 <div class="col-md-12">
+                 <div class="col-md-6">
                    <div class="dropup">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Bulk Action
@@ -58,6 +60,15 @@
                       <li role="separator" class="divider"></li>
                       <li><a href="#">Separated link</a></li>
                     </ul>
+                  </div>
+                 </div>
+                 <div class="col-md-6">
+                  <div class="pull-right">
+                     @if(isset($s))
+                      {{ $movies->appends(['s' => $s])->links() }}
+                     @else
+                      {{ $movies->links() }}
+                     @endif                    
                   </div>
                  </div>
                </div>

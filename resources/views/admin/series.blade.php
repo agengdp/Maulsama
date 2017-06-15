@@ -14,12 +14,14 @@
 
               <table class="table table-hover">
                 <caption>This is all the series lists</caption>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Cari</button>
-                  </span>
-                </div><!-- /input-group -->
+                  <div class="input-group">
+                  {{ Form::open(array('route'=> 'series.index', 'method' => 'get')) }}
+                    {{ Form::text('s', '', array('class' => 'form-control', 'placeholder' => 'Masukkan nama judul / creator disini...')) }}
+                    <span class="input-group-btn">
+                      {{ Form::submit('Cari', array('class' => 'btn btn-default')) }}
+                    </span>
+                  {{ Form::close() }}
+                  </div><!-- /input-group -->
                 <thead>
                   <tr>
                     <th>#</th>
@@ -45,7 +47,7 @@
                </table>
 
                <div class="row">
-                 <div class="col-md-12">
+                 <div class="col-md-6">
                    <div class="dropup">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Bulk Action
@@ -58,6 +60,15 @@
                       <li role="separator" class="divider"></li>
                       <li><a href="#">Separated link</a></li>
                     </ul>
+                  </div>
+                 </div>
+                 <div class="col-md-6">
+                  <div class="pull-right">
+                  @if(isset($s))
+                    {{ $series->appends(['s' => $s])->links() }}
+                  @else
+                    {{ $series->links() }}
+                  @endif
                   </div>
                  </div>
                </div>

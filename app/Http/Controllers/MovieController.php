@@ -15,13 +15,16 @@ class MovieController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $movies = Movie::all();
+        $search = $request->input('s');
+
+        $movies = Movie::search($search)->paginate(20);
 
         return view('admin/movies', [
             'adm_title' => 'Movies',
-            'movies'    => $movies
+            'movies'    => $movies,
+            's' => $search
         ]);
     }
 
