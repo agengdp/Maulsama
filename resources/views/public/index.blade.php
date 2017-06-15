@@ -9,16 +9,16 @@
 					<h1>Animestream</h1>
 					<p>Tempat nonton anime terlengkap subtitle Indonesia!</p>
 				</div>
-@foreach($series as $seri)
-	<div class="col-xs-6 col-md-4 col-lg-2 image-container">
-		<a href="{{ route('frontSeries', $seri->slug) }}" class="thumbnail">
-		  <img src="{{ asset("images/vert/$seri->cover") }}" alt="{{$seri->title}}" class="gambar">
-		  <div class="caption">
-		  	<span class="caption-text">{{ $seri->title }}</span>
-		  </div> {{-- /.caption --}}
-		</a>
-	</div>
-@endforeach
+				@foreach($series as $seri)
+					<div class="col-xs-6 col-md-4 col-lg-2 image-container">
+						<a href="{{ route('frontSeries', $seri->slug) }}" class="thumbnail">
+						  <img src="{{ asset("images/vert/$seri->cover") }}" alt="{{$seri->title}}" class="gambar">
+						  <div class="caption">
+						  	<span class="caption-text">{{ $seri->title }}</span>
+						  </div> {{-- /.caption --}}
+						</a>
+					</div>
+				@endforeach
 			</div> {{-- ./row --}}
 		</div> {{-- /.container --}}
 	</div>{{-- /.front-hero --}}
@@ -27,16 +27,16 @@
 		<div class="container">
 			<div class="row" style="display:table;">
 				<div class="col-md-12">
-					<h2 class="headlist">On-going anime</h2>
+					<h2 class="headlist">Episode Terbaru</h2>
 				</div>
 
 				@foreach ($episodes as $episode)
-					<div class="col-xs-6 col-md-3" style="display: table-cell;">
+					<div class="col-xs-6 col-md-3 image-container" style="display: table-cell;">
 					    <a href="{{ route('frontPlayEps', [$episode->series->slug, $episode->slug]) }}" class="thumbnail">
-					      <img src="{{ asset("images/horz/$episode->cover") }}" alt="{{$episode->judul_episode}}">
+					      <img src="{{ asset("images/horz/$episode->cover") }}" alt="{{$episode->judul_episode}}" class="gambar">
 
 						<div class="caption">
-							{{$episode->judul_episode}}
+							<span class="caption-text"><i class="glyphicon glyphicon-play-circle"></i></span>
 						</div>
 					    </a>
 					</div>

@@ -65,6 +65,30 @@
 			</li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown menu-genre">
+		  		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" alt="Tampilkan Genre !"><i class="glyphicon glyphicon-th"></i></a>
+				<ul class="dropdown-menu">
+						<li><a href="/browse" alt="Tampilkan semuanya">Tampilkan Semuanya</a></li>
+					@foreach($genres->sortBy('name') as $genre)
+						<li><a href="{{ route('frontBrowseGenre', $genre->slug) }}" alt="Tampilkan anime dengan genre {{ $genre->name }}">{{$genre->name}}</a></li>
+					@endforeach
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-search"></i></a>
+				<ul class="dropdown-menu">
+					<li class="yamm-content">
+						<form action="{{ route('frontBrowse') }}">
+							<div class="input-group">
+						    	<input type="text" class="form-control" id="search-query" name="s" placeholder="Masukkan keyword atau judul anime disini" value="{{ isset($s) ? $s : '' }}">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-primary">Search</button>
+							</span>
+						  	</div>
+						</form>
+					</li>
+				</ul>
+			</li>
 			<li class="dropdown">
 		      <a href="#" class="dropdown-toggle hoxx" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-fire"></i> ON-GOING</a>
 				<ul class="dropdown-menu">
@@ -87,30 +111,6 @@
 		                      </ul>
 						</div>
 						<!-- /.yamm-content -->
-					</li>
-				</ul>
-			</li>
-			<li class="dropdown menu-genre">
-		  		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" alt="Tampilkan Genre !"><i class="glyphicon glyphicon-th"></i></a>
-				<ul class="dropdown-menu">
-						<li><a href="/browse" alt="Tampilkan semuanya">Tampilkan Semuanya</a></li>
-					@foreach($genres->sortBy('name') as $genre)
-						<li><a href="{{ route('frontBrowseGenre', $genre->slug) }}" alt="Tampilkan anime dengan genre {{ $genre->name }}">{{$genre->name}}</a></li>
-					@endforeach
-				</ul>
-			</li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-search"></i></a>
-				<ul class="dropdown-menu">
-					<li class="yamm-content">
-						<form action="{{ route('frontBrowse') }}">
-							<div class="input-group">
-						    	<input type="text" class="form-control" id="search-query" name="s" placeholder="Masukkan keyword atau judul anime disini" value="{{ isset($s) ? $s : '' }}">
-							<span class="input-group-btn">
-								<button type="submit" class="btn btn-primary">Search</button>
-							</span>
-						  	</div>
-						</form>
 					</li>
 				</ul>
 			</li>
