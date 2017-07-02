@@ -2,7 +2,7 @@
 @section('title', 'Jelajahi Koleksi Anime Subtitle Indonesia')
 
 @section('content')
-<div class="headnod">
+<div class="hero hero--browse">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -12,24 +12,25 @@
 		</div> {{-- ./row --}}
 	</div>{{-- ./container --}}
 </div>
-<div id="browser" class="bodgrad">
+<div class="main-content main-content--browse">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-md-8 col-md-offset-2">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
 				<div class="in-panel">
 					{{ Form::open(array('route' => 'frontBrowse', 'method' => 'get')) }}
-						<div class="input-group">
-							{{ Form::text('s','', array('class' => 'form-control browse-cari', 'placeholder' => 'Masukkan judul anime atau keyword disini')) }}
+						<div class="input-group in-form">
+							{{ Form::text('s','', array('class' => 'form-control in-form__input in-form__input--browse', 'placeholder' => 'Masukkan judul anime atau keyword disini')) }}
 							<span class="input-group-btn">
-								{{ Form::submit('Cari', array('class' => 'btn btn-cari')) }}
+								{{ Form::submit('Cari', array('class' => 'btn btn--cari')) }}
 							</span>
 
 						</div>
 					{{ Form::close() }}
 				</div> {{-- /.in-panel --}}
 			</div> {{-- /.col-sm-12 .col-md-8 .col-md-offset-2 --}}
-			<div class="col-md-12">
-				<h3 class="browse-genre-chooser">Pilih Genre :</h3>
+
+			<div class="col-md-12 genre-chooser">
+				<h3 class="header--browse">Pilih Genre :</h3>
 				<div class="pull-right">
 					@if(isset($s))
 						{{ $series->appends(['s' => $s])->links() }}
@@ -40,18 +41,21 @@
 			</div>{{-- /.col-md-12 --}}
 
 			<div class="col-md-3">
-				<div id="filter">
-					<ul class="nav nav-pills nav-stacked">
-						<li><a href="/browse" class="{{ isActiveRoute('frontBrowse', 'active') }}">Semuanya</a></li>
+				<div class="filter">
+					<ul class="nav nav-pills nav-stacked list__filter">
+						<li class="list__item list__item--filter">
+							<a href="/browse" class="list__link list__link--filter {{ isActiveRoute('frontBrowse', 'list__link--active') }}">Semuanya</a>
+						</li>
 						@foreach($genres->sortBy('name') as $genre)
-							<li><a class="{{ isActiveURL("/browse/$genre->slug") }}" href="{{ route('frontBrowseGenre', $genre->slug) }}">{{ $genre->name }}</a></li>
+							<li class="list__item list__item--filter">
+								<a class="list__link list__link--filter {{ isActiveURL("/browse/$genre->slug", 'list__link--active') }}" href="{{ route('frontBrowseGenre', $genre->slug) }}">{{ $genre->name }}</a>
+							</li>
 						@endforeach
 					</ul>
 				</div>{{-- /#filter --}}
 			</div>{{-- /.col-md-3 --}}
 
 			<div class="col-md-9">
-
 				<div class="row">
 					@if(count($series) > 0)
 						<div class="col-md-12">
@@ -60,11 +64,11 @@
 					@endif
 					<div class="clearfix">
 						@forelse ($series as $seri)
-							<div class="col-xs-6 col-md-4 col-lg-3 image-container">
-								<a href="{{ route('frontSeries', $seri->slug) }}" class="thumbnail">
-								  <img src="{{ asset("images/vert/$seri->cover" ) }}" alt="{{ $seri->title }}" class="gambar">
-								  <div class="caption">
-								  	<span class="caption-text">{{ $seri->title }}</span>
+							<div class="col-xs-6 col-md-4 col-lg-3 episode episode--browse">
+								<a href="{{ route('frontSeries', $seri->slug) }}" class="thumbnail episode__link episode--browse__link">
+								  <img src="{{ asset("images/vert/$seri->cover" ) }}" alt="{{ $seri->title }}" class="episode__image episode--browse__image">
+								  <div class="caption episode__caption episode--browse__caption">
+								  	<span class="caption-text episode__judul episode--browse__judul">{{ $seri->title }}</span>
 								  </div> {{-- /.caption --}}
 								</a>
 							</div>  {{-- .col-xs-6 .col-md-4 .col-lg-3 .image-container --}}
@@ -83,11 +87,11 @@
 
 					<div class="clearfix">
 						@forelse ($movies as $movie)
-							<div class="col-xs-6 col-md-4 col-lg-3 image-container">
-								<a href="{{ route('frontMovie', $movie->slug) }}" class="thumbnail">
-								  	<img src="{{ asset("images/vert/$movie->cover") }}" alt="{{ $movie->title }}" class="gambar">
-									<div class="caption">
-								  		<span class="caption-text">{{ $movie->title }}</span>
+							<div class="col-xs-6 col-md-4 col-lg-3 episode episode--browse">
+								<a href="{{ route('frontMovie', $movie->slug) }}" class="thumbnail episode__link episode--browse__link">
+								  	<img src="{{ asset("images/vert/$movie->cover") }}" alt="{{ $movie->title }}" class="episode__image episode--browse__image">
+									<div class="caption episode__caption episode--browse__caption">
+								  		<span class="caption-text episode_judul episode--browse__judul">{{ $movie->title }}</span>
 								  	</div> {{-- /.caption --}}
 								</a>
 							</div> {{-- .col-xs-6 .col-md-4 .col-lg-3 .image-container --}}	
@@ -100,6 +104,7 @@
 
 				</div> {{-- /.row --}}
 			</div> {{-- /.col-md-9 --}}
+
 		</div> {{-- /.row --}}
 	</div>{{-- ./container --}}
 </div> {{-- ./bodgrad --}}

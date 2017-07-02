@@ -21,145 +21,119 @@
 }
 </style>
 
-<div id="play-episode">
+<div class="hero hero--play">
     <div class="container">
-        <div id="series" class="row">
-            <div class="col-xs-12 col-md-10 col-md-offset-1">
-                <div class="in-panel">
-                    <h1 class="play-title">Eps {{ $episode->episode }} : {{ $episode->judul_episode }}</h1>
-                </div>
-                <div id="player">
-                    <!-- /.in-panel -->
-
-                    <div class="embed-responsive embed-responsive-16by9">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="player">
+                    <div class="embed-responsive embed-responsive-16by9 player__embed">
+                        <div class="player__title">
+                            <span class="player__title--episode">
+                                Episode {{ $episode->episode }}
+                            </span>
+                            <span class="player__title--judul">
+                                {{ $episode->judul_episode }}
+                            </span>
+                        </div>
                         @foreach ($mp4_links as $stream)
                             @if($loop->first)
-                                {{-- <iframe src="https://hotload.net/embed/{{ $stream->video_stream_id }}&thumb={{ base64_encode(asset("images/horz/$episode->cover")) }}" frameborder="0" scrolling="no" webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullScreen="true"></iframe> --}}
+                                <iframe id="play-frame" src="https://hotload.net/embed/{{ $stream->video_stream_id }}&thumb={{ base64_encode(asset("images/horz/$episode->cover")) }}" frameborder="0" scrolling="no" webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullScreen="true"></iframe>
                             @endif
                         @endforeach
                     </div> {{-- /.embed-responsive --}}
 
-                    <div id="video-quality-container" class="clearfix">
-                        <ul id="video-quality">    
+                    <div class="in-panel player__quality">
+                        <ul class="quality">
                             @foreach ($mp4_links as $stream)
                                 @if ($loop->first)
 
-                                    <li class="active" data-stream="{{ $stream->video_stream_id }}">{{ $stream->video_quality }}p</li>
-                                
+                                    <li class="quality__list quality__list--active" data-stream="{{ $stream->video_stream_id }}">{{ $stream->video_quality }}p</li>
+
                                 @continue {{-- dengan ini yang aktif tidak akan dobel --}}
-                                
+
                                 @endif
-                                
-                                <li data-stream="{{ $stream->video_stream_id }}">{{ $stream->video_quality }}p</li>
+
+                                <li class="quality__list" data-stream="{{ $stream->video_stream_id }}">{{ $stream->video_quality }}p</li>
                             @endforeach
 
-                            <li id="btn-download" class="pull-right"><i class="glyphicon glyphicon-download"></i> Download</li>
+                            <li id="btn-download" class="btn btn--download pull-right"><i class="glyphicon glyphicon-download"></i> Download</li>
                         </ul> {{-- /ul#video-quality --}}
-                    </div> {{-- /#video-quality-container --}} 
-                </div> {{-- /#player --}}
-            </div>
-            <!-- /.col-md-10 col-xs-12 -->
-        </div>
-        <!-- /#series.row -->
+                    </div> {{-- /.player__quality --}}
 
-        <div id="download-container" class="hidden">
-            <div id="download" class="row">
-                <div class="col-xs-12 col-md-10 col-md-offset-1">
-                    <div class="in-panel">
-                        <span class="download-header">Download {{ $episode->judul_episode }}</span>
-                        <p>Untuk mendownload silahkan pilih sesuai format dan klik quality di bawah ini.</p>
+                    <div id="download-container" class="hidden">
+                        <div class="download">
+                            <div class="in-panel in-panel--download">
+                                <span class="download__header">Download {{ $episode->judul_episode }}</span>
+                                <p>Untuk mendownload silahkan pilih sesuai format dan klik quality di bawah ini.</p>
 
-                        <div class="download-links">
-                            @foreach($mp4_links as $video)
-                                @if($loop->first)
-                                    <span class="format">MP4</span>
-                                    <ul>
-                                @endif
-                                    <li><a href="{{ $video->video_url }}" target="_blank">{{ $video->video_quality }}p</a></li>
-                                @if($loop->last)
-                                    </ul>
-                                @endif
-                            @endforeach
+                                <div class="download__links">
+                                    @foreach($mp4_links as $video)
+                                        @if($loop->first)
+                                            <span class="download__links--format">MP4</span>
+                                            <ul class="list list--download">
+                                        @endif
+                                            <li class="list__item list--download__item"><a class="list__link list--download__link" href="{{ $video->video_url }}" target="_blank">{{ $video->video_quality }}p</a></li>
+                                        @if($loop->last)
+                                            </ul>
+                                        @endif
+                                    @endforeach
 
 
-                            @foreach($mkv_links as $video)
-                                @if($loop->first)
-                                    <span class="format">MKV</span>
-                                    <ul>
-                                @endif
-                                    <li><a href="{{ $video->video_url }}" target="_blank">{{ $video->video_quality }}p</a></li>
-                                @if($loop->last)
-                                    </ul>
-                                @endif
-                            @endforeach
+                                    @foreach($mkv_links as $video)
+                                        @if($loop->first)
+                                            <span class="download__links--format">MKV</span>
+                                            <ul class="list list--download">
+                                        @endif
+                                            <li class="list__item list--download__item"><a class="list__link list--download__link" href="{{ $video->video_url }}" target="_blank">{{ $video->video_quality }}p</a></li>
+                                        @if($loop->last)
+                                            </ul>
+                                        @endif
+                                    @endforeach
+                                </div>
+                                <!-- /.download-links -->
+                            </div>
+                        <!-- /#in-panel -->
                         </div>
-                        <!-- /.download-links -->
+                        <!-- /#download.row -->
                     </div>
-                <!-- /#in-panel -->
-                </div>
-                <!-- /.col-xs-12 col-md-12 col-md-offset-1 -->
-            </div>
-            <!-- /#download.row -->
-        </div>
-        <!-- /#download-container -->
-        <div id="info-container">
-            <div id="info" class="row">
-                <div class="col-xs-12 col-md-3 col-md-offset-1">
-                    <div class="in-panel">
-                        <div class="thumbnail">
-                        <a href="{{ route('frontSeries', $episode->series->slug) }}">
-                            <img src="{{ asset('images/vert/'.$episode->series->cover) }}" alt="{{ $episode->series->title }}">
-                        </a>
-                        </div>
-                        <ul class="play-eps-info">
-                            <li><a href="{{ route('frontSeries', $episode->series->slug) }}"><strong>{{ $episode->series->title }}</strong></a></li>
-                            <li>Released : {{ $episode->series->year }}</li>
-                            <li>by : {{ $episode->series->creator }}</li>
-                        </ul>
-                    </div>
-                    <!-- /.in-panel -->
-                </div>
-                <!-- /.col-xs-12 col-md-10 -->
-                <div class="col-md-7">
-                    <div id="episode-lainnya" class="in-panel">
-                        <h3><i class="glyphicon glyphicon-play-circle"></i> Episode lainnya</h3>
-                        <ul class="list-episode-lainnya">
-                            @foreach($episode->series->episode as $episode)
-                                <li><a href="{{ route('frontPlayEps', [$series->slug, $episode->slug]) }}"><span class="label label-episode-lainnya">Eps. {{ $episode->episode }}</span>{{ $episode->judul_episode }}</a></li>
-                            @endforeach
-                        </ul>                    
-                    </div>
-                    <!-- /.in-panel -->
-                </div>
+                    <!-- /#download-container -->
 
+                </div> {{-- /.player --}}
+            </div> {{-- ./col-md-10 --}}
+        </div> {{-- ./row --}}
+    </div>{{-- ./container --}}
+</div>
+<div class="main-content main-content--play">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="{{ route('frontSeries', $episode->series->slug) }}" class="play-info__link">
+                    <img class="thumbnail play-info__image" src="{{ asset('images/vert/'.$episode->series->cover) }}" alt="{{ $episode->series->title }}">
+                </a>
             </div>
-            <!-- /#info.row -->
+            <div class="col-md-9">
+                <h1 class="header header--play">{{ $episode->judul_episode }}</h1>
+                <span class="play-info play-info--series">
+                    <a href="{{ route('frontSeries', $episode->series->slug) }}">{{ $episode->series->title }}</a>
+                </span>
+                <span class="play-info play-info--episode">Episode : {{ $episode->episode }}</span>
+                <span class="play-info play-info--episode-lainnya">Episode Lainnya:</span>
+                <ul class="in-panel list list--episode-lain">
+                    @foreach($episode->series->episode as $episode)
+                        <li class="list__item list--episode-lain__item">
+                            <a href="{{ route('frontPlayEps', [$episode->series->slug, $episode->slug]) }}" class="list__link list--episode-lain__link"><span class="list--episode-lain__episode">Episode {{ $episode->episode }}</span> {{ $episode->judul_episode }}</a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
-        <!-- /#info-container -->
+        <!-- /.row -->
     </div>
     <!-- /.container -->
-</div> {{-- #/play-episode --}}        
+</div>
+@include('public.includes.relatedEpisode');
 @endsection
 
 @section('jscontainer')
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-
-    $('#btn-download').click(function(){
-
-        if (!$(this).hasClass('showing')){
-
-            $('#btn-download').addClass('showing');
-            $('#download-container').removeClass('hidden');
-
-        }else{
-
-            $('#btn-download').removeClass('showing');
-            $('#download-container').addClass('hidden');
-
-        }
-    });
-
-});
-</script>
+<script type="text/javascript" src="http://localhost:5757/storage/assets/js/min/main-min.js"></script>
 @endsection
