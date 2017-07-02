@@ -1,0 +1,28 @@
+.btn {
+
+	@include e('sechead'){
+		padding:7px 70px 7px 7px;
+		border-color: #fff;
+		color: $warna-font-putih;
+		font-size: 20px;
+	}
+
+	@include m('cari'){
+		background: $warna-primer;
+		border:1px solid #42809a;
+		color:$warna-font-putih;
+		font-size:19px;
+		padding:7px 30px;
+	}
+
+	@include m('spoiler'){
+		background:$warna-primer;
+		color:$warna-font-putih;
+		padding:7px 30px;
+	}
+
+	@include m('download'){
+		color:$warna-font-putih;
+		background: #e85050;
+	}
+}

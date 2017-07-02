@@ -1,0 +1,10 @@
+.in-form{
+
+	@include e('input'){
+		height: 100%;
+		font-weight:200;
+		@include m('browse'){
+			font-size: 20px;
+		}
+	}
+}

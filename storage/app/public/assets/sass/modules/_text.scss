@@ -1,0 +1,35 @@
+body{
+	font-size: $base-font-size;
+	background: #191919;
+}
+
+h1{
+	font-size: 24px;
+}
+
+h2{
+	font-size:20px;
+}
+
+.header{
+	@include m('front'){
+		color:$warna-font-putih;
+		margin-bottom:20px;
+	}
+	@include m('browse'){
+		font-size:19px;
+	}
+	@include m('episode'){
+		text-align:center;
+		font-size:22px;
+		margin-bottom:20px;
+	}
+	@include m('play'){
+		background:none;
+		font-size:20px;
+	}
+	@include m('related'){
+		background: none;
+		padding: 10px;
+	}
+}

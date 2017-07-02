@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+  .logo{
+    @include e('name'){
+      font-size: 20px;
+    }
+  }
+  .nav-genre{
+
+    @include e('item'){
+      float: none;
+    }
+  }
+  .series{
+    @include e('header'){
+      text-align: center;
+    }
+  }
+
+  .main-content{
+    @include m('series'){
+      padding: 40px 0;
+    }
+  }
+  .spoiler{
+    text-align: center;
+
+    @include e('image-container'){
+      background: none;
+      border:none;
+    }
+    @include e('image'){
+      border-radius: 2px;
+    }
+  }
+}

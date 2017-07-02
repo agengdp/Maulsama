@@ -1,0 +1,26 @@
+// Create new element and modifier
+// With BEM methodology
+
+@mixin e($element){
+	&__#{$element}{
+		@content;
+	}
+}
+
+@mixin m($modifier){
+	&--#{$modifier}{
+		@content;
+	}
+}
+
+
+// Gradient
+@mixin gradient($first-color, $second-color){
+	background: -moz-linear-gradient(-45deg,$first-color 0,$second-color 100%);
+    background: -webkit-gradient(linear,left top,right bottom,color-stop(0,$first-color),color-stop(100%,$second-color));
+    background: -webkit-linear-gradient(-45deg,$first-color 0,$second-color 100%);
+    background: -o-linear-gradient(-45deg,$first-color 0,$second-color 100%);
+    background: -ms-linear-gradient(-45deg,$first-color 0,$second-color 100%);
+    background: linear-gradient(135deg,$first-color 0,$second-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$first-color',endColorstr='$second-color',GradientType=1);
+}

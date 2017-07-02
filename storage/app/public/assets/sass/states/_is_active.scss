@@ -1,0 +1,17 @@
+.is_active{
+
+		&:after  {
+		content: " ";
+	    display: block;
+		width: 0;
+		height: 0;
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-left: 9px solid #428bca;
+		position: absolute;
+		top: 50%;
+		margin-top: -20px;
+		left: 100%;
+		z-index: 2;
+	}
+}

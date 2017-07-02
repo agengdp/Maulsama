@@ -1,0 +1,34 @@
+.related{
+
+  @include e('container'){
+    margin: 0;
+    padding: 5px;
+  }
+
+  @include e('link'){
+    padding: 0;
+    border: 0;
+    background: none;
+    position: relative;
+  }
+
+  @include e('image'){
+    border-radius: 3px;
+    width: 100%;
+
+  }
+
+  @include e('caption'){
+    position: absolute;
+    bottom: 0;
+    background-image: -webkit-linear-gradient(transparent, #222);
+    background-image: -o-linear-gradient(transparent, #222);
+    background-image: linear-gradient(transparent, #222);
+    width: 100%;
+  }
+
+  @include e('judul'){
+    color: $warna-font-putih;
+  }
+
+}

@@ -1,0 +1,323 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document ========================================================================== */
+/** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html { line-height: 1.15; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/* Sections ========================================================================== */
+/** Remove the margin in all browsers (opinionated). */
+body { margin: 0; }
+
+/** Add the correct display in IE 9-. */
+article, aside, footer, header, nav, section { display: block; }
+
+/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/* Grouping content ========================================================================== */
+/** Add the correct display in IE 9-. 1. Add the correct display in IE. */
+figcaption, figure, main { /* 1 */ display: block; }
+
+/** Add the correct margin in IE 8. */
+figure { margin: 1em 40px; }
+
+/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Text-level semantics ========================================================================== */
+/** 1. Remove the gray background on active links in IE 10. 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
+a { background-color: transparent; /* 1 */ -webkit-text-decoration-skip: objects; /* 2 */ }
+
+/** 1. Remove the bottom border in Chrome 57- and Firefox 39-. 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
+
+/** Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+b, strong { font-weight: inherit; }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong { font-weight: bolder; }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/** Add the correct font style in Android 4.3-. */
+dfn { font-style: italic; }
+
+/** Add the correct background and color in IE 9-. */
+mark { background-color: #ff0; color: #000; }
+
+/** Add the correct font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+/* Embedded content ========================================================================== */
+/** Add the correct display in IE 9-. */
+audio, video { display: inline-block; }
+
+/** Add the correct display in iOS 4-7. */
+audio:not([controls]) { display: none; height: 0; }
+
+/** Remove the border on images inside links in IE 10-. */
+img { border-style: none; }
+
+/** Hide the overflow in IE. */
+svg:not(:root) { overflow: hidden; }
+
+/* Forms ========================================================================== */
+/** 1. Change the font styles in all browsers (opinionated). 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea { font-family: sans-serif; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+
+/** Show the overflow in IE. 1. Show the overflow in Edge. */
+button, input { /* 1 */ overflow: visible; }
+
+/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+button, select { /* 1 */ text-transform: none; }
+
+/** 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4. 2. Correct the inability to style clickable types in iOS and Safari. */
+button, html [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; /* 2 */ }
+
+/** Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/** Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/** Correct the padding in Firefox. */
+fieldset { padding: 0.35em 0.75em 0.625em; }
+
+/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/** 1. Add the correct display in IE 9-. 2. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ }
+
+/** Remove the default vertical scrollbar in IE. */
+textarea { overflow: auto; }
+
+/** 1. Add the correct box sizing in IE 10-. 2. Remove the padding in IE 10-. */
+[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/** Remove the inner padding and cancel buttons in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+/* Interactive ========================================================================== */
+/* Add the correct display in IE 9-. 1. Add the correct display in Edge, IE, and Firefox. */
+details, menu { display: block; }
+
+/* Add the correct display in all browsers. */
+summary { display: list-item; }
+
+/* Scripting ========================================================================== */
+/** Add the correct display in IE 9-. */
+canvas { display: inline-block; }
+
+/** Add the correct display in IE. */
+template { display: none; }
+
+/* Hidden ========================================================================== */
+/** Add the correct display in IE 10-. */
+[hidden] { display: none; }
+
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ * 
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown { position: static; }
+
+.yamm .container { position: relative; }
+
+.yamm .dropdown-menu { left: auto; }
+
+.yamm .yamm-content { padding: 0; }
+
+.yamm .dropdown.yamm-fw .dropdown-menu { left: 0; right: 0; }
+
+.container { max-width: 1300px; }
+
+.btn__sechead { padding: 7px 70px 7px 7px; border-color: #fff; color: #fff; font-size: 20px; }
+.btn--cari { background: #2C82C9; border: 1px solid #42809a; color: #fff; font-size: 19px; padding: 7px 30px; }
+.btn--spoiler { background: #2C82C9; color: #fff; padding: 7px 30px; }
+.btn--download { color: #fff; background: #e85050; }
+
+.download { margin-top: 10px; }
+.download__header { font-size: 20px; display: block; font-weight: 200; }
+.download__links--format { font-size: 20px; font-weight: 200; display: block; }
+.download__links--format:first-child { border-top: 1px solid rgba(0, 0, 0, 0.1); padding-top: 10px; }
+.download__links--format:before { content: 'Format : '; }
+
+.episode { padding: 10px; position: relative; }
+.episode__link { padding: 0; border: none; background: none; }
+.episode__container:hover { opacity: 0.3; }
+.episode__image { width: 100%; border-radius: 3px; }
+.episode__series { display: block; font-size: 13px; color: #666; }
+.episode__caption { padding: 9px 0 !important; }
+.episode__judul { font-size: 16px; white-space: nowrap; overflow: hidden; display: block; color: #fff; }
+.episode__episode-ke { background: #2C82C9; color: #fff; padding: 5px; position: absolute; top: 10px; left: 10px; border-radius: 2px; }
+.episode__play { transition: .5s ease; opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+.episode:hover .episode__play { opacity: 1; }
+.episode--browse__link { position: relative; box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1); border-radius: 3px; }
+.episode--browse__link:hover { opacity: 0.8; }
+.episode--browse__image { border-radius: 3px; }
+.episode--browse__caption { position: absolute; bottom: 0; border-radius: 3px; width: 100%; background: linear-gradient(transparent, #000); }
+.episode--browse__judul { border-radius: 3px; box-shadow: none; white-space: normal; color: #fff; font-size: 16px; font-weight: 200; }
+
+footer { background: -moz-linear-gradient(-45deg, #232526 0, #232526 100%); background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #232526), color-stop(100%, #232526)); background: -webkit-linear-gradient(-45deg, #232526 0, #232526 100%); background: -o-linear-gradient(-45deg, #232526 0, #232526 100%); background: -ms-linear-gradient(-45deg, #232526 0, #232526 100%); background: linear-gradient(135deg, #232526 0, #232526 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$first-color',endColorstr='$second-color',GradientType=1); color: #fff; padding: 20px 0; }
+
+.in-form__input { height: 100%; font-weight: 200; }
+.in-form__input--browse { font-size: 20px; }
+
+.header { background: -moz-linear-gradient(-45deg, #232526 0, #232526 100%); background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #232526), color-stop(100%, #232526)); background: -webkit-linear-gradient(-45deg, #232526 0, #232526 100%); background: -o-linear-gradient(-45deg, #232526 0, #232526 100%); background: -ms-linear-gradient(-45deg, #232526 0, #232526 100%); background: linear-gradient(135deg, #232526 0, #232526 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$first-color',endColorstr='$second-color',GradientType=1); border: 0; color: #fff; margin-bottom: 0; }
+
+.logo__name { color: #fff !important; font-size: 25px; }
+
+.navkiri__item { color: #fff !important; }
+.navkiri__link { color: #fff !important; }
+.navkiri__link:hover { background: #000 !important; color: #fff; border: none; }
+.navkiri__link:focus { background: #000 !important; color: #fff; border: none; }
+
+.navkanan__item { color: #fff; }
+.navkanan__link { color: #fff !important; }
+.navkanan__link:hover { background: #000 !important; color: #fff; }
+.navkanan__link--ongoing { background: #2C82C9; }
+
+.nav-menu { padding: 0; }
+.nav-menu__item--search { background: #ddd; padding: 20px !important; }
+
+.nav-genre { padding: 5px; margin: 0; width: 450px; background: #428bca; }
+.nav-genre__item { width: 215px; float: left; display: block; }
+.nav-genre__link { padding: 5px 10px !important; display: block; cursor: pointer; color: #fff !important; }
+.nav-genre__link:hover { background: #2C82C9 !important; }
+
+.navbar-media__item { background: #428bca; margin: 0; }
+.navbar-media__link { color: #fff; padding: 15px; display: table-cell; box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); }
+.navbar-media__link:hover { background: #2C82C9; color: #fff; text-decoration: none; }
+
+.hero { background: #222; color: #fff; padding: 30px 0; background: -moz-linear-gradient(-45deg, #0f1932 0, #45acbf 100%); background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #0f1932), color-stop(100%, #45acbf)); background: -webkit-linear-gradient(-45deg, #0f1932 0, #45acbf 100%); background: -o-linear-gradient(-45deg, #0f1932 0, #45acbf 100%); background: -ms-linear-gradient(-45deg, #0f1932 0, #45acbf 100%); background: linear-gradient(135deg, #0f1932 0, #45acbf 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$first-color',endColorstr='$second-color',GradientType=1); }
+.hero__image-container { padding: 0; position: relative; }
+.hero__link { padding: 0; border: none; border-radius: 0; background: none; }
+.hero__image { opacity: 1; display: block; height: auto; transition: .5s ease; backface-visibility: hidden; box-shadow: 0 0 5px #333; width: 100%; }
+.hero__image:hover { opacity: 0.3; }
+.hero__caption { position: absolute; bottom: 20px; background: -webkit-linear-gradient(transparent, #222); background: -o-linear-gradient(transparent, #222); background: linear-gradient(transparent, #222); width: 100%; height: 15%; }
+.hero__image-container:hover .hero__caption { opacity: 1; }
+.hero__caption-text { color: #fff; font-size: 16px; }
+.hero--browse { padding: 50px 0; }
+.hero--play { padding: 50px 0; background: transparent; }
+
+.in-panel { background: rgba(185, 185, 185, 0.4); padding: 20px; border-radius: 3px; color: #333; }
+.in-panel--download { color: #fff; }
+
+.list__item--filter { box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); }
+.list__link--filter { color: #fff; border-radius: 0 !important; }
+.list__link--filter:hover { background: #2C82C9 !important; color: #fff; }
+.list__link--active { background: #2C82C9 !important; color: #fff; }
+.list__link--active:after { content: " "; display: block; width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 9px solid #2C82C9; position: absolute; top: 50%; margin-top: -20px; left: 100%; z-index: 2; }
+.list--download { list-style: none; padding: 10px 0; margin-bottom: 20px; box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); }
+.list--download:before { content: 'Pilih Quality : '; margin-right: 10px; }
+.list--download__item { display: inline-block; margin: 5px; }
+.list--download__link { background: #555; padding: 7px 25px; color: #fff; border-radius: 2px; }
+.list--episode-lain { list-style: none; margin: 0; padding: 0; max-height: 300px; overflow-x: hidden; }
+.list--episode-lain__item { box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); }
+.list--episode-lain__link { cursor: pointer; display: block; padding: 10px; color: #fff; font-weight: 500; }
+.list--episode-lain__link:hover { text-decoration: none; background: #2C82C9; font-weight: 200; color: #fff; }
+.list--episode-lain__episode { background: #333; padding: 5px; border-radius: 2px; color: #fff; font-weight: 200; }
+
+.main-content--browse { padding: 20px 0; color: #fff; }
+.main-content--series { background: none; padding: 70px 0; color: #fff; }
+.main-content--play { background: #333; padding: 30px 0; color: #fff; }
+
+.play__text { text-align: center; font-size: 50px; color: #2C82C9; }
+
+.genre-chooser { margin-top: 30px; }
+
+.filter { background: rgba(185, 185, 185, 0.4); }
+
+.player__embed { background: #333; position: relative; }
+.player__quality { border-radius: 0; padding: 10px; }
+.player__title { background: linear-gradient(#777, transparent); padding: 15px; position: absolute; top: 0; width: 100%; z-index: 1; }
+.player__title--episode { font-size: 20px; }
+.player__title--judul { font-size: 15px; display: block; }
+
+.quality { list-style: none; margin: 0; padding: 0; }
+.quality__list { color: #fefefe; background: rgba(66, 66, 66, 0.45); cursor: pointer; display: inline-block; padding: 5px 20px; border-radius: 2px; font-weight: 200; }
+.quality__list--active { background: #2C82C9; }
+.quality__list--active:hover { background: #428bca; }
+
+.play-info { font-weight: 200; }
+.play-info--episode { display: block; }
+.play-info--episode-lainnya { display: block; margin-top: 20px; font-size: 17px; }
+.play-info--series { display: block; font-size: 18px; }
+.play-info__image { background: none; border: none; border-radius: 2px; padding: 0; box-shadow: 0px 0px 15px #111; }
+
+.related__container { margin: 0; padding: 5px; }
+.related__link { padding: 0; border: 0; background: none; position: relative; }
+.related__image { border-radius: 3px; width: 100%; }
+.related__caption { position: absolute; bottom: 0; background-image: -webkit-linear-gradient(transparent, #222); background-image: -o-linear-gradient(transparent, #222); background-image: linear-gradient(transparent, #222); width: 100%; }
+.related__judul { color: #fff; }
+
+@media (max-width: 768px) { .logo__name { font-size: 20px; }
+  .nav-genre__item { float: none; }
+  .series__header { text-align: center; }
+  .main-content--series { padding: 40px 0; }
+  .spoiler { text-align: center; }
+  .spoiler__image-container { background: none; border: none; }
+  .spoiler__image { border-radius: 2px; } }
+.sechead { padding: 30px 0; background-color: #2e82a7; background-color: rgba(46, 130, 167, 0.5); color: #ededed; font-size: 20px; }
+
+.series__cover { text-align: center; }
+.series__thumbnail { background: none; padding: 0; border: 0; max-width: 300px; margin: auto; }
+.series__image { border-radius: 3px; box-shadow: 0px 0px 15px #111; }
+
+.series-info { margin: 0; padding: 0; list-style: none; }
+.series-info__item { display: inline-block; font-size: 15px; font-weight: 100; border-right: 1px solid #ddd; padding: 5px 20px; }
+.series-info__item:first-child { background: #1d1d21; border: none; }
+.series-info__item:last-child { border: none; }
+
+.series-genre { margin: 20px 0; font-weight: 200; }
+.series-genre__genres { color: #fff; }
+
+.sinopsis { line-height: 1.7em; font-size: 15px; font-weight: 200; }
+
+.list-episode { color: #fff; margin: 0; padding: 0; list-style: none; background: rgba(185, 185, 185, 0.4); border-radius: 3px; }
+.list-episode__item { box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); cursor: pointer; }
+.list-episode__item--epiclick { padding: 10px; }
+.list-episode__item:hover { background: #2C82C9; }
+.list-episode__episode { background: rgba(66, 66, 66, 0.45); display: inline-block; padding: 10px 20px; vertical-align: middle; margin-right: 10px; border-radius: 4px; }
+.list-episode__judul { font-size: 17px; font-weight: 200; }
+
+.spoiler { font-size: 14px; font-weight: 300; padding: 20px; cursor: auto; background: #ccc; color: #333; }
+.spoiler__image-container { padding: 0; margin: 0; font-weight: 600; }
+.spoiler__eps { display: block; font-size: 17px; }
+.spoiler__image { box-shadow: 0 0 5px 0px #333; }
+
+body { font-size: 15px; background: #191919; }
+
+h1 { font-size: 24px; }
+
+h2 { font-size: 20px; }
+
+.header--front { color: #fff; margin-bottom: 20px; }
+.header--browse { font-size: 19px; }
+.header--episode { text-align: center; font-size: 22px; margin-bottom: 20px; }
+.header--play { background: none; font-size: 20px; }
+.header--related { background: none; padding: 10px; }
+
+.is_active:after { content: " "; display: block; width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 9px solid #428bca; position: absolute; top: 50%; margin-top: -20px; left: 100%; z-index: 2; }
