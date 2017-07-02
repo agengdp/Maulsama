@@ -10,9 +10,14 @@ class FrontMovieController extends Controller
     public function index($slug){
 
     	$movie = Movie::where('slug', $slug)->first();
-        
+            	
+        // error 404 handle
+        if(is_null($movie)){
+          abort(404);
+        }
+
         $videos = collect(json_decode($movie->links));
-    	
+
     	foreach($videos as $stream){
           $stream->video_stream_id = substr($stream->video_url, strrpos($stream->video_url, '/') + 1); // Assign video id
           $stream->video_quality = rtrim($stream->video_quality, 'p');

@@ -13,6 +13,11 @@ class FrontSeriesController extends Controller
     {
         $series = Series::where('slug', $slug)->first();
 
+        // error 404 handle
+        if(is_null($series)){
+          abort(404);
+        }
+
         return view('public.series', [
             'series'    => $series
         ]);
@@ -22,9 +27,19 @@ class FrontSeriesController extends Controller
     {
         $series   = Series::where('slug', $series_slug)->first();
 
+        // error 404 handle
+        if(is_null($series)){
+          abort(404);
+        }
+
         $episode  = Episode::where('series_id', $series->id)
                           ->where('slug', $eps_slug)
                           ->first();
+
+        // error 404 handle
+        if(is_null($episode)){
+          abort(404);
+        }
 
         $videos = collect(json_decode($episode->links));
 
