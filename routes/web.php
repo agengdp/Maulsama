@@ -11,30 +11,6 @@
 |
 */
 
-// Testing route
-
-Route::get('/test', function () {
-    $genres = '1,2,3,4,Anime,Gaplek,Adventure';
-    $genre_arr = collect(explode(',', $genres));
-
-    $genreModel = \App\Genre::all();
-    $asu = $genreModel;
-
-    $kelek = collect($asu);
-
-    // echo $asu->name;
-    echo "<hr/>";
-
-    if ($kelek->contains('Action')) {
-        echo 'cok';
-    } else {
-        echo "gak onok";
-    }
-
-    echo "<hr/>";
-    dd($kelek);
-});
-//-------------
 
 Auth::routes();
 
@@ -86,13 +62,13 @@ Route::get('/images/eps/{image_name}', function ($image_name) {
 });
 
 Route::get('/images/nav/{image_name}', function ($image_name) {
-    $img = Image::make('storage/'.$image_name)->resize(64, null, function($constraint){
+    $img = Image::make('storage/'.$image_name)->resize(64, null, function ($constraint) {
         $constraint->aspectRatio();
     });
     return $img->response('jpg');
 });
 Route::get('/images/ongoing/{image_name}', function ($image_name) {
-    $img = Image::make('storage/'.$image_name)->resize(120, null, function($constraint){
+    $img = Image::make('storage/'.$image_name)->resize(120, null, function ($constraint) {
         $constraint->aspectRatio();
     });
     return $img->response('jpg');
@@ -109,7 +85,7 @@ Route::get('/browse/{genre}', 'FrontBrowseController@browse')->name('frontBrowse
 Route::get('/series/{slug}', 'FrontSeriesController@index')->name('frontSeries');
 
 // play episode
-Route::get('/play/{series_slug}/eps/{eps_slug}', 'FrontSeriesController@play')->name('frontPlayEps');
+Route::get('/play/{series_slug}/{eps_slug}', 'FrontSeriesController@play')->name('frontPlayEps');
 
 // mendapatkan movie
 Route::get('/movie/{slug}', 'FrontMovieController@index')->name('frontMovie');
