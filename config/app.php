@@ -179,9 +179,19 @@ return [
 
 
         Laracasts\Flash\FlashServiceProvider::class,
-        browner12\helpers\HelperServiceProvider::class, 
-        Conner\Tagging\Providers\TaggingServiceProvider::class,
+        browner12\helpers\HelperServiceProvider::class,
         Laravelista\Ekko\EkkoServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
+
+        /**
+         * Custom by adp
+         */
+        App\Providers\GenreServiceProvider::class,
+        App\Providers\NavSeriesServiceProvider::class,
+        App\Providers\NavOngoingServiceProvider::class,
+        App\Providers\NavMovieServiceProvider::class,
 
     ],
 
@@ -231,7 +241,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('title')
+ Edit: {{$series->title}}
+@endsection
 
 @section('content')
 
@@ -100,7 +103,7 @@ $(function() {
                   valueField: 'id',
                   labelField: 'name',
                   options: {!! $genre_data !!},
-                  create: true
+                  create: false
 
                 });
 

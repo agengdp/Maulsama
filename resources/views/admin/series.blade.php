@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Series')
 
 @section('content')
 <div class="row">
@@ -13,18 +14,20 @@
 
               <table class="table table-hover">
                 <caption>This is all the series lists</caption>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Cari</button>
-                  </span>
-                </div><!-- /input-group -->
+                  <div class="input-group">
+                  {{ Form::open(array('route'=> 'series.index', 'method' => 'get')) }}
+                    {{ Form::text('s', '', array('class' => 'form-control', 'placeholder' => 'Masukkan nama judul / creator disini...')) }}
+                    <span class="input-group-btn">
+                      {{ Form::submit('Cari', array('class' => 'btn btn-default')) }}
+                    </span>
+                  {{ Form::close() }}
+                  </div><!-- /input-group -->
                 <thead>
                   <tr>
                     <th>#</th>
                     <th width="70%">Title</th>
-                    <th>Author</th>
                     <th>Published</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -32,15 +35,19 @@
                       <tr>
                         <th scope="row"><input type="checkbox" name="" value="1"></th>
                         <td width="70%"><a href="{{route('series.show', $seri->id)}}">{{$seri->title}}</a></td>
-                        <td>{{$seri->updated_at}} </td>
-                        <td>{{$seri->created_at}}</td>
+                        <td>{{$seri->created_at}} </td>
+                        <td>
+                          <a class="btn btn-default btn-xs" href="{{ route('series.edit', $seri->id)}}">Edit</a>
+                          
+                          <a class="btn btn-primary btn-xs" href="{{ route('series.show', $seri->id)}}">View</a>
+                        </td>
                       </tr>
                     @endforeach
                 </tbody>
                </table>
 
                <div class="row">
-                 <div class="col-md-12">
+                 <div class="col-md-6">
                    <div class="dropup">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Bulk Action
@@ -55,8 +62,16 @@
                     </ul>
                   </div>
                  </div>
+                 <div class="col-md-6">
+                  <div class="pull-right">
+                  @if(isset($s))
+                    {{ $series->appends(['s' => $s])->links() }}
+                  @else
+                    {{ $series->links() }}
+                  @endif
+                  </div>
+                 </div>
                </div>
-
 
             </div>
         </div>

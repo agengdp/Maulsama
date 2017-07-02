@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Episode;
+use App\Series;
 
 class EpisodeController extends Controller
 {
@@ -17,14 +18,17 @@ class EpisodeController extends Controller
      */
     public function store(Request $request, $id)
     {
-        $the_episode = new Episode();
-        if ($request->hasFile('cover-episode')){
+        $the_episode = new Episode;
+
+        $series = Series::find($id);
+        $the_episode->series()->associate($series); //ini sama halnya memasukkan series_id dengan series yang ditambahkan
+
+        if ($request->hasFile('cover-episode')) {
             $image = $request->file('cover-episode')->store('public');
             $image_file_name = explode('/', $image);
             $the_episode->cover = $image_file_name[1];
         }
 
-        $the_episode->series_id = $id;
         $the_episode->episode = $request->episode;
         $the_episode->judul_episode = $request->judul_episode;
         $the_episode->spoiler = $request->spoiler;
@@ -48,13 +52,17 @@ class EpisodeController extends Controller
     {
         $the_episode = Episode::find($episode_id);
 
-        if ($request->hasFile('edit-episode-cover')){
+        $series = Series::find($series_id);
+
+        $the_episode->series()->associate($series);
+
+        if ($request->hasFile('edit-episode-cover')) {
+            Storage::delete('public/'.$the_episode->cover); // hapus covernya yang lama
             $image = $request->file('edit-episode-cover')->store('public');
             $image_file_name = explode('/', $image);
             $the_episode->cover = $image_file_name[1];
         }
 
-        $the_episode->series_id = $series_id;
         $the_episode->episode = $request->episode;
         $the_episode->judul_episode = $request->judul_episode;
         $the_episode->spoiler = $request->spoiler;
@@ -78,6 +86,8 @@ class EpisodeController extends Controller
     {
         $the_episode = Episode::find($episode_id);
         $episode_ke = $the_episode->episode;
+
+        Storage::delete('public/'.$the_episode->cover); // hapus covernya
 
         $the_episode->delete();
 

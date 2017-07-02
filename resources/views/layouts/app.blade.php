@@ -8,12 +8,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title> @if (Auth::user()){{ $adm_title }}@endif {{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/selectize/css/selectize.css') }}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+    <link href="{{ asset('storage/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('storage/assets/selectize/css/selectize.css') }}">
+    <link href="{{ asset('storage/assets/css/admin.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -24,90 +24,91 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top" @if (Auth::guest()) style="margin-bottom:20px" @endif>
-            <div class="container">
-                <div class="navbar-header">
+        @if (Auth::user())
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
 
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                        <!-- Collapsed Hamburger -->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
-                    </a>
-                </div>
+                        <!-- Branding Image -->
+                        <a class="navbar-brand" href="{{ url('/') }}">
+                            {{ config('app.name', 'Laravel') }}
+                        </a>
+                    </div>
 
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                      &nbsp;
-                    </ul>
+                    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="nav navbar-nav">
+                          &nbsp;
+                        </ul>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
+                        <!-- Right Side Of Navbar -->
+                        <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    Menu <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                        <a href="#"><i class="glyphicon glyphicon-user"></i> <strong>{{Auth::user()->name}}</strong></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="glyphicon glyphicon-cog"></i> Configuration</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                            <i class="glyphicon glyphicon-off"></i> Logout
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+
                                 </ul>
                             </li>
-                        @endif
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        @if (Auth::user())
+            <header class="head">
+              <div class="container">
 
-        <header class="head">
-          <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul>
+                      <li><a href="{{ route('home') }}" class="{{ isActiveRoute('home', 'active') }}"><i class="glyphicon glyphicon-th-list"></i> Dashboard</a></li>
+                      <li><a href="{{ route('series.index') }}" class="{{ isActiveRoute('series.index', 'active') }}"><i class="glyphicon glyphicon-play-circle"></i> Series</a></li>
+                      <li><a href="{{ route('movies.index') }}" class="{{ isActiveRoute('movies.index', 'active') }}"><i class="glyphicon glyphicon-film"></i> Movies</a></li>
+                      <li><a href="{{ route('genre.index') }}" class="{{ isActiveRoute('genre', 'active') }}"><i class="glyphicon glyphicon-list"></i> Genre</a></li>
+                    </ul>
+                  </div>
+                </div>
 
-            <div class="row">
-              <div class="col-md-12">
-                <ul>
-                  <li><a href="{{ route('home') }}" class="{{ isActiveRoute('home', 'active') }}">Dashboard</a></li>
-                  <li><a href="{{ route('series.index') }}" class="{{ isActiveRoute('series.index', 'active') }}">Series</a></li>
-                  <li><a href="{{ route('movies.index') }}" class="{{ isActiveRoute('movies.index', 'active') }}">Movies</a></li>
-                  <li><a href="{{ route('genre') }}" class="{{ isActiveRoute('genre', 'active') }}">Genre</a></li>
-                </ul>
+              </div>
+            </header>
+
+            <div class="adm-title">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1>{{$adm_title}}</h1>
+                  </div>
+                </div>
               </div>
             </div>
-
-          </div>
-        </header>
-
-        <div class="adm-title">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1>{{$adm_title}}</h1>
-              </div>
-            </div>
-          </div>
-        </div>
 
         @endif
 
@@ -119,11 +120,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('bower_components/jquery.repeater/jquery.repeater.js') }}"></script>
-    <script src="{{ asset('assets/selectize/js/standalone/selectize.js') }}"></script>
+    <script src="{{ asset('storage/assets/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('storage/assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('storage/assets/js/jquery.repeater.min.js') }}"></script>
+    <script src="{{ asset('storage/assets/js/selectize.min.js') }}"></script>
 
-    <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('storage/assets/js/custom.js') }}"></script>
 
     @yield('lastfooter')
 

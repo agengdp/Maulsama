@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Create New Series')
 
 @section('content')
     <div class="row">
@@ -99,7 +100,7 @@ $(function() {
     valueField: 'id',
     labelField: 'name',
     options: {!! $genre_data !!},
-    create: true
+    create: false
 
   });
 });
