@@ -12,7 +12,7 @@
                 </div>
 
                 <div class="panel-body">
-                    {{$jumlah_series}}
+                    {{ count($data->media['series']) }}
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    {{ count($data->media['movies']) }}
                 </div>
             </div>
         </div>
@@ -38,7 +38,11 @@
                 </div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    @forelse($data->media['last'] as $last)
+                        {{ $last }}
+                    @empty
+                        Empty
+                    @endforelse
                 </div>
             </div>
         </div>

@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 use Storage;
 use Cviebrock\EloquentSluggable\Sluggable;
 
-class Series extends Model
+class Media extends Model
 {
-    protected $table = 'series';
+    protected $table = 'media';
 
     use Sluggable;
 
@@ -36,13 +36,19 @@ class Series extends Model
         return $this->hasMany('App\Episode');
     }
 
+    // hanya untuk movies
+    public function download_links()
+    {
+        return $this->hasMany('App\DownloadLink');
+    }
+
+    // hanya untuk episode
     public static function boot()
     {
         parent::boot();
 
         static::deleting(function ($episode) {
-            // Storage::delete('public/'.$episode->episode()->cover);
-
+            
             Storage::delete('public/'.$episode->cover); // hapus cover sendiri
 
             if (count($episode->episode)) { // cek jika ada episode nya

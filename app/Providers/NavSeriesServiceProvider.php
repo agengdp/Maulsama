@@ -14,11 +14,11 @@ class NavSeriesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $series = Series::latest()
-                        ->take(5)
-                        ->get();
+        // $series = Series::latest()
+        //                 ->take(5)
+        //                 ->get();
 
-        \View::share('navSeries', $series);
+        // \View::share('navSeries', $series);
     }
 
     /**

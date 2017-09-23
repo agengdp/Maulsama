@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableTaxonomies extends Migration
+class CreateTablePasswordResets extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateTableTaxonomies extends Migration
      */
     public function up()
     {
-        Schema::create('taxonomies', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('post_id')->unsigned();
-            $table->integer('genre_id')->unsigned();
+        Schema::create('password_resets', function (Blueprint $table) {
+            $table->string('email')->index();
+            $table->string('token');
+            $table->timestamp('created_at')->nullable();
         });
     }
 
@@ -27,6 +27,6 @@ class CreateTableTaxonomies extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('taxonomies');
+        Schema::dropIfExists('password_resets');
     }
 }

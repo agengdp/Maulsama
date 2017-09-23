@@ -15,9 +15,9 @@
 Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/home', 'Admin\HomeController@index')->name('home');
 
-    Route::resource('/home/series', 'SeriesController');
+    Route::resource('/home/series', 'Admin\SeriesController');
 
     Route::resource('/home/series.episode', 'EpisodeController', [
       'names' => [

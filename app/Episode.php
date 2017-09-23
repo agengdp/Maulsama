@@ -24,4 +24,9 @@ class Episode extends Model
     {
         return $this->belongsTo('App\Series');
     }
+
+    public function download_links()
+    {
+        return $this->hasMany('App\DownloadLink');
+    }
 }

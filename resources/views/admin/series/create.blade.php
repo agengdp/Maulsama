@@ -18,7 +18,7 @@
                             <img id="uploadedimage" class="cover" />
                           </div>
 
-                                 <input type="hidden" name="MAX_UPLOAD_SIZE" value="250000">
+                                 <input type="hidden" name="MAX_UPLOAD_SIZE" value="2500000">
                                  <input class="inputfile" type="file" name="cover" id="jimage" accept="image/*" required>
                                  <label for="jimage">Choose a file</label>
                              <p>

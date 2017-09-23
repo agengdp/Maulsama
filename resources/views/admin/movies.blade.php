@@ -39,7 +39,7 @@
                         <td>{{$movie->created_at}} </td>
                         <td>
                           <a class="btn btn-default btn-xs" href="{{ route('movies.edit', $movie->id)}}">Edit</a>
-                          <a class="btn btn-danger btn-xs" href="{{route('movies.destroy', $movie->id)}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Yakin ingin menghapus seri ini ?">Delete</a>
+                          <a class="btn btn-danger btn-xs" href="{{route('movies.destroy', $movie->id)}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Yakin ingin menghapus movie ini ?">Delete</a>
                         </td>
                       </tr>
                     @endforeach
@@ -68,7 +68,7 @@
                       {{ $movies->appends(['s' => $s])->links() }}
                      @else
                       {{ $movies->links() }}
-                     @endif                    
+                     @endif
                   </div>
                  </div>
                </div>

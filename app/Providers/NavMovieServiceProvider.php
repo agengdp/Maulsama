@@ -14,11 +14,11 @@ class NavMovieServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $movies = Movie::latest()
-                        ->take(5)
-                        ->get();
+        // $movies = Movie::latest()
+        //                 ->take(5)
+        //                 ->get();
 
-        \View::share('navMovies', $movies);        
+        // \View::share('navMovies', $movies);        
     }
 
     /**

@@ -124,13 +124,13 @@ $(document).ready(function () {
       modal.find('.modal-body input#judul').val(judul);
     });
 
-
+ 
     // Upload image with preview
     document.getElementById('jimage').onchange = function () {
           var reader = new FileReader();
 
           reader.onload = function (e) {
-              if (e.total > 2500000) {
+              if (e.total > 25000000) {
                   $('#imageerror').text('Image too large');
                   $jimage = $("#jimage");
                   $jimage.val("");
@@ -149,7 +149,7 @@ $(document).ready(function () {
           var reader = new FileReader();
 
           reader.onload = function (e) {
-              if (e.total > 2500000) {
+              if (e.total > 25000000) {
                   $('#imageerror').text('Image too large');
                   $coverEpisode = $("#coverEpisode");
                   $coverEpisode.val("");

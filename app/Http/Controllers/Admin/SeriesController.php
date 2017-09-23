@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
-use App\Series;
+use App\Media;
 use App\Episode;
 use App\Genre;
 use Response;
+use Image;
 
-class SeriesController extends Controller
+class SeriesController extends \App\Http\Controllers\Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,12 +19,18 @@ class SeriesController extends Controller
     public function index(Request $request)
     {
         $search = $request->input('s');
-        $series = Series::search($search)->paginate(20);
+        $media = Media::search($search)->paginate(20);
 
+        $data = (object)[
+            'title'     => 'Series',
+            'media'     => [
+                'series'    => $media
+            ],
+        ];
+        
         return view('admin/series', [
-          'adm_title' => 'Series',
-          'series'    => $series,
-          's' => $search
+            'data'  => $data,
+            's' => $search
         ]);
     }
 
@@ -75,7 +82,7 @@ class SeriesController extends Controller
         $genres = explode(',', $request->genre); //memecah string genre menjadi array
 
         foreach ($genres as $genre) {
-          $genreForSeries [] = $genre;
+            $genreForSeries [] = $genre;
         }
 
         /*----------------------------------------------------------------------
@@ -175,14 +182,14 @@ class SeriesController extends Controller
         $genres = explode(',', $request->genre); //memecah string genre menjadi array
 
         foreach ($genres as $genre) {
-          $genreForSeries [] = $genre;
+            $genreForSeries [] = $genre;
         }
 
         $updateSeries->title = $request->title;
 
         if ($request->hasFile('cover')) {
             \Storage::delete('public/'. $updateSeries->cover); // hapus cover yang sebelumnya
-            $image = $request->file('cover')->store('public');
+          $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
             $updateSeries->cover = $image_file_name[1];
         }

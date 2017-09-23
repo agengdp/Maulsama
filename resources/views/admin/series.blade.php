@@ -31,7 +31,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                    @foreach ($series as $seri)
+                    @forelse ($data->media['series'] as $seri)
                       <tr>
                         <th scope="row"><input type="checkbox" name="" value="1"></th>
                         <td width="70%"><a href="{{route('series.show', $seri->id)}}">{{$seri->title}}</a></td>
@@ -42,7 +42,14 @@
                           <a class="btn btn-primary btn-xs" href="{{ route('series.show', $seri->id)}}">View</a>
                         </td>
                       </tr>
-                    @endforeach
+                    @empty
+                      <tr>
+                        <td class="text-center" rowspan="4">
+                          Belum ada seri...
+                        </td>
+                      </tr>
+
+                    @endforelse
                 </tbody>
                </table>
 
@@ -65,9 +72,9 @@
                  <div class="col-md-6">
                   <div class="pull-right">
                   @if(isset($s))
-                    {{ $series->appends(['s' => $s])->links() }}
+                    {{ $data->media['series']->appends(['s' => $s])->links() }}
                   @else
-                    {{ $series->links() }}
+                    {{ $data->media['series']->links() }}
                   @endif
                   </div>
                  </div>
