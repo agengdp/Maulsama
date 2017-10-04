@@ -44,15 +44,15 @@
                       </tr>
                     @empty
                       <tr>
-                        <td class="text-center" rowspan="4">
-                          Belum ada seri...
+                        <td class="text-center" colspan="4">
+                          Belum ada series sama sekali...
                         </td>
                       </tr>
 
                     @endforelse
                 </tbody>
                </table>
-  
+
 
                <div class="row">
                  <div class="col-md-6">
