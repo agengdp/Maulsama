@@ -2,6 +2,7 @@
 @section('title')
  Edit: {{$movie->title}}
 @endsection
+
 @section('content')
 <div class="row">
   <div class="col-md-12">
@@ -64,7 +65,11 @@
               <div class="row">
                 <div class="col-md-12">
                   Genre
-                  <input id="genre" name="genre"></input>
+                  <select id="genre" class="form-control" name="genre[]" multiple="multiple">
+                    @foreach ($genres as $value)
+                      <option value="{{ $value['name'] }}" @if($value['selected']) selected @endif>{{ $value['name'] }}</option>
+                    @endforeach
+                  </select>
                   {{ ($errors->has('genre')) ? $errors->first('genre') : '' }}
                 </div> {{-- end of col-md-12 --}}
               </div> {{-- end of row --}}
@@ -84,7 +89,7 @@
           <div class="row underliner">
             <div class="col-md-9">
               <h4>Video list</h4>
-              <div class="repeater">
+              <div class="repeaterMovie">
                 <div data-repeater-list="movie_video_list">
                   <div data-repeater-item>
                     <div class="row">
@@ -100,7 +105,7 @@
                           <option value="720p">720p</option>
                           <option value="480p">480p</option>
                           <option value="360p">360p</option>
-                          <option value="144p">144</option>
+                          <option value="144p">144p</option>
                         </select>
                       </div> {{-- end of col-md-2 --}}
                       <div class="col-md-8" style="margin-bottom:5px">
@@ -140,23 +145,41 @@
 
 @section('lastfooter')
 <script type="text/javascript">
+$(document).ready(function(){
+  var obj = JSON.parse('{!! $movie->download_links !!}');
+  var $repeater = $('.repeaterMovie').repeater({
+    initEmpty: false,
 
-var obj = JSON.parse('{!! $movie->links !!}');
-var $repeater = $('.repeater').repeater();
+    defaultValues:{
+      video_type: 'mp4',
+      video_quality: '1080p',
+    }
+  });
 
-$repeater.setList(obj);
+  $repeater.setList(obj);
+  $('#genre').select2({
+    placeholder: 'Pilih Genre',
+    multiple: true,
+    tags: true,
 
-$(function() {
-  var $select = $('#genre').selectize({
-                  maxItems: null,
-                  valueField: 'id',
-                  labelField: 'name',
-                  options: {!! $genre_data !!},
-                  create: false
+    createTag: function(params){
+      return {
+        id: params.term,
+        text: params.term,
+        newOption:true,
+      }
+    },
 
-                });
-  var control = $select[0].selectize;
-  control.setValue([@foreach ($movie->genre as $genre){{$genre->id}},@endforeach]);
+    templateResult: function(data){
+      var $result = $('<span></span>');
+      $result.text(data.text);
+      if(data.newOption){
+        $result.append("<em> (new)</em>")
+      }
+      return $result;
+    },
+
+  });
 });
 </script>
 @endsection

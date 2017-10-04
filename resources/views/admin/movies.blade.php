@@ -32,7 +32,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                    @foreach ($movies as $movie)
+                    @forelse ($movies as $movie)
                       <tr>
                         <th scope="row"><input type="checkbox" name="" value="1"></th>
                         <td width="70%"><a href="{{route('movies.edit', $movie->id)}}">{{$movie->title}}</a></td>
@@ -42,14 +42,20 @@
                           <a class="btn btn-danger btn-xs" href="{{route('movies.destroy', $movie->id)}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Yakin ingin menghapus movie ini ?">Delete</a>
                         </td>
                       </tr>
-                    @endforeach
+                    @empty
+                      <tr>
+                        <td class="text-center" colspan="4">
+                          Tidak ada movies sama sekali...
+                        </td>
+                      </tr>
+                    @endforelse
                 </tbody>
                </table>
 
                <div class="row">
                  <div class="col-md-6">
                    <div class="dropup">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{-- <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Bulk Action
                       <span class="caret"></span>
                     </button>
@@ -59,7 +65,7 @@
                       <li><a href="#">Something else here</a></li>
                       <li role="separator" class="divider"></li>
                       <li><a href="#">Separated link</a></li>
-                    </ul>
+                    </ul> --}}
                   </div>
                  </div>
                  <div class="col-md-6">
@@ -77,16 +83,4 @@
         </div>
     </div>
 </div>
-
-@endsection
-
-
-@section('lastfooter')
-
-
-
-
-
-
-
 @endsection

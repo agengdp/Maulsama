@@ -55,7 +55,11 @@
               <div class="row">
                 <div class="col-md-12">
                   Genre
-                  <input id="genre" name="genre"></input>
+                  <select id="genre" class="form-control" name="genre[]" multiple="multiple">
+                    @foreach ($genre_data as $key => $value)
+                      <option value="{{ $value->name }}">{{ $value->name }}</option>
+                    @endforeach
+                  </select>
                   {{ ($errors->has('genre')) ? $errors->first('genre') : '' }}
                 </div> {{-- end of col-md-12 --}}
               </div> {{-- end of row --}}
@@ -129,16 +133,32 @@
 @endsection
 
 @section('lastfooter')
-<script type="text/javascript">
-$(function() {
-  $('#genre').selectize({
-    maxItems: null,
-    valueField: 'id',
-    labelField: 'name',
-    options: {!! $genre_data !!},
-    create: false
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#genre').select2({
+      placeholder: 'Pilih Genre',
+      multiple: true,
+      tags: true,
 
+      createTag: function(params){
+        return {
+          id: params.term,
+          text: params.term,
+          newOption:true,
+        }
+      },
+
+      templateResult: function(data){
+        var $result = $('<span></span>');
+        $result.text(data.text);
+        if(data.newOption){
+          $result.append("<em> (new)</em>")
+        }
+        return $result;
+      },
+
+    });
   });
-});
-</script>
+
+  </script>
 @endsection
