@@ -123,8 +123,6 @@ $(document).ready(function(){
 
   });
 
-  // Predefined selected genre
-  // $('#genre').select2().val([@foreach ($series->genre as $value){{ $loop->first ? '' : ', ' }} '{{ $value->name }}' @endforeach]);
 });
 
 </script>

@@ -167,7 +167,7 @@
                                   <option value="720p">720p</option>
                                   <option value="480p">480p</option>
                                   <option value="360p">360p</option>
-                                  <option value="144p">144</option>
+                                  <option value="144p">144p</option>
                                 </select>
                             </div>
                             <div class="col-md-8" style="margin-bottom:5px">

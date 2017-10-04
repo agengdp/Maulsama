@@ -31,7 +31,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                    @forelse ($data['media']['series'] as $seri)
+                    @forelse ($series as $seri)
                       <tr>
                         <th scope="row"><input type="checkbox" name="" value="1"></th>
                         <td width="70%"><a href="{{route('series.show', $seri->id)}}">{{$seri->title}}</a></td>
@@ -45,7 +45,7 @@
                     @empty
                       <tr>
                         <td class="text-center" colspan="4">
-                          Belum ada series sama sekali...
+                          Tidak ada series sama sekali...
                         </td>
                       </tr>
 
@@ -61,21 +61,21 @@
                       Bulk Action
                       <span class="caret"></span>
                     </button> --}}
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    {{-- <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                       <li><a href="#">Action</a></li>
                       <li><a href="#">Another action</a></li>
                       <li><a href="#">Something else here</a></li>
                       <li role="separator" class="divider"></li>
                       <li><a href="#">Separated link</a></li>
-                    </ul>
+                    </ul> --}}
                   </div>
                  </div>
                  <div class="col-md-6">
                   <div class="pull-right">
                   @if(isset($s))
-                    {{ $data['media']['series']->appends(['s' => $s])->links() }}
+                    {{ $series->appends(['s' => $s])->links() }}
                   @else
-                    {{ $data['media']['series']->links() }}
+                    {{ $series->links() }}
                   @endif
                   </div>
                  </div>
