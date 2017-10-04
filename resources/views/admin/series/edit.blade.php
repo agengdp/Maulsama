@@ -64,11 +64,14 @@
                           <div class="row">
                             <div class="col-md-12">
                               Genre
-                              <input id="genre" name="genre">
+                              <select id="genre" class="form-control" name="genre[]" multiple="multiple">
+                                @foreach ($genres as $value)
+                                  <option value="{{ $value['name'] }}" @if($value['selected']) selected @endif>{{ $value['name'] }}</option>
+                                @endforeach
+                              </select>
                               {{ ($errors->has('genre')) ? $errors->first('genre') : '' }}
                             </div>
                           </div>
-
 
                           <div class="row">
                             <div class="col-md-12">
@@ -83,8 +86,6 @@
                           <input type="hidden" name="_token" value="{{csrf_token()}}">
                           <input type="hidden" name="_method" value="PUT">
                           <input class="btn btn-primary pull-right" type="submit" name="publish" value="Update">
-
-
                         </div>
                       </div>
                     </form>
@@ -97,18 +98,34 @@
 
 @section('lastfooter')
 <script type="text/javascript">
-$(function() {
-  var $select = $('#genre').selectize({
-                  maxItems: null,
-                  valueField: 'id',
-                  labelField: 'name',
-                  options: {!! $genre_data !!},
-                  create: false
+$(document).ready(function(){
+  $('#genre').select2({
+    placeholder: 'Pilih Genre',
+    multiple: true,
+    tags: true,
 
-                });
+    createTag: function(params){
+      return {
+        id: params.term,
+        text: params.term,
+        newOption:true,
+      }
+    },
 
-  var control = $select[0].selectize;
-  control.setValue([@foreach ($series->genre as $genre){{$genre->id}},@endforeach]);
+    templateResult: function(data){
+      var $result = $('<span></span>');
+      $result.text(data.text);
+      if(data.newOption){
+        $result.append("<em> (new)</em>")
+      }
+      return $result;
+    },
+
+  });
+
+  // Predefined selected genre
+  // $('#genre').select2().val([@foreach ($series->genre as $value){{ $loop->first ? '' : ', ' }} '{{ $value->name }}' @endforeach]);
 });
+
 </script>
 @endsection

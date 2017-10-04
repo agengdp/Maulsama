@@ -19,7 +19,7 @@
                           </div>
 
                                  <input type="hidden" name="MAX_UPLOAD_SIZE" value="2500000">
-                                 <input class="inputfile" type="file" name="cover" id="jimage" accept="image/*" required>
+                                 <input class="inputfile" type="file" name="cover" id="jimage" accept="image/*">
                                  <label for="jimage">Choose a file</label>
                              <p>
                                  <span id="imageerror" style="font-weight: bold; color: red"></span>
@@ -61,7 +61,11 @@
                           <div class="row">
                             <div class="col-md-12">
                               Genre
-                              <input id="genre" name="genre"></input>
+                              <select id="genre" class="form-control" name="genre[]" multiple="multiple">
+                                @foreach ($genre_data as $key => $value)
+                                  <option value="{{ $value->name }}">{{ $value->name }}</option>
+                                @endforeach
+                              </select>
                               {{ ($errors->has('genre')) ? $errors->first('genre') : '' }}
                             </div>
                           </div>
@@ -81,7 +85,6 @@
                           <input type="hidden" name="_token" value="{{csrf_token()}}">
                           <input class="btn btn-primary pull-right" type="submit" name="publish" value="Publish">
 
-
                         </div>
                       </div>
                     </div>
@@ -94,15 +97,31 @@
 
 @section('lastfooter')
 <script type="text/javascript">
-$(function() {
-  $('#genre').selectize({
-    maxItems: null,
-    valueField: 'id',
-    labelField: 'name',
-    options: {!! $genre_data !!},
-    create: false
+$(document).ready(function(){
+  $('#genre').select2({
+    placeholder: 'Pilih Genre',
+    multiple: true,
+    tags: true,
+
+    createTag: function(params){
+      return {
+        id: params.term,
+        text: params.term,
+        newOption:true,
+      }
+    },
+
+    templateResult: function(data){
+      var $result = $('<span></span>');
+      $result.text(data.text);
+      if(data.newOption){
+        $result.append("<em> (new)</em>")
+      }
+      return $result;
+    },
 
   });
 });
+
 </script>
 @endsection

@@ -21,14 +21,14 @@ class SeriesController extends \App\Http\Controllers\Controller
         $search = $request->input('s');
         $media = Media::search($search)->paginate(20);
 
-        $data = (object)[
-            'title'     => 'Series',
+        $data = [
             'media'     => [
                 'series'    => $media
             ],
         ];
-        
+
         return view('admin/series', [
+            'heading' => 'Series',
             'data'  => $data,
             's' => $search
         ]);
@@ -45,7 +45,8 @@ class SeriesController extends \App\Http\Controllers\Controller
 
         return view('admin/series/create', [
         'adm_title' => 'Create new series',
-        'genre_data' => $genre
+        'genre_data' => $genre,
+        'heading'   => 'Create New Series'
       ]);
     }
 
@@ -59,7 +60,7 @@ class SeriesController extends \App\Http\Controllers\Controller
     {
         $this->validate($request, [
           'cover' => 'required',
-          'title' => 'required|unique:series|max:255',
+          'title' => 'required|unique:media|max:255',
           'year' => 'required',
           'creator' => 'required',
           'producer' => 'required',
@@ -67,52 +68,45 @@ class SeriesController extends \App\Http\Controllers\Controller
           'sinopsis' => 'required',
         ]);
 
+        $media = new Media;
+
         /*-------------------------------------------------------------------
-        | Pembuatan genre dan pengaturan genre_id di table series
+        | Pembuatan genre
         ---------------------------------------------------------------------
         |
-        | Jadi prosesnya adalah dengan cara mengecek terlebih dahulu
-        | apakah yang ada di Request match apa tidak dengan id genre.
-        | Jika tidak ada maka akan di buat baru genre nya
-        | Kemudian di dapatkan id dari kedua genre baru tersebut
-        | Selanjutnya di gabungkan dengan id sebelumnya (yang mungkin sudah ada)
+        | Jika genre tidak ada (dengan cara mengecek terlebih dahulu),
+        | maka genre baru akan dibuat, kemudian semua ID nya dikumpulkan
+        | kedalam array $genrex dan kemudian di sync
         |
         */
-
-        $genres = explode(',', $request->genre); //memecah string genre menjadi array
-
-        foreach ($genres as $genre) {
-            $genreForSeries [] = $genre;
+        $genrex = [];
+        foreach ($request->genre as $value) {
+            if ($genre = Genre::where('name', $value)->first()) {
+                array_push($genrex, $genre->id);
+            } else {
+                $newGenre = new Genre;
+                $newGenre->name = $value;
+                $newGenre->save();
+                array_push($genrex, $newGenre->id);
+            }
         }
-
-        /*----------------------------------------------------------------------
-        | Init untuk menuliskan semuanya ke db
-        ------------------------------------------------------------------------
-        |
-        | Jadi dengan ini penulisan ke db is done
-        |
-        */
-
-        $series = new Series;
-        $series->title = $request->title;
 
         if ($request->hasFile('cover')) {
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
-            $series->cover = $image_file_name[1];
+            $media->cover = $image_file_name[1];
         }
 
-        $series->year     = $request->year;
-        $series->creator  = $request->creator;
-        $series->producer = $request->producer;
-        $series->sinopsis = $request->sinopsis;
-
-        $series->save();
-
-        $series->genre()->sync($genreForSeries, false);
+        $media->title     = $request->title;
+        $media->year      = $request->year;
+        $media->creator   = $request->creator;
+        $media->producer  = $request->producer;
+        $media->sinopsis  = $request->sinopsis;
+        $media->type      = 'series';
+        $media->save();
+        $media->genre()->sync($genrex, false);
 
         flash('Series baru telah ditambahkan')->success();
-
         return redirect()->route('series.index');
     }
 
@@ -124,12 +118,13 @@ class SeriesController extends \App\Http\Controllers\Controller
      */
     public function show($id)
     {
-        $series = Series::find($id);
+        $series = Media::find($id);
         $episodes = Episode::where('series_id', $id)
                             ->orderBy('episode', 'desc')
                             ->paginate(15);
 
         return view('admin/series/show', [
+          'heading'   => 'Show : '.$series->title,
           'adm_title' => 'Show : '. $series->title,
           'series' => $series,
           'episodes' => $episodes
@@ -144,15 +139,39 @@ class SeriesController extends \App\Http\Controllers\Controller
      */
     public function edit($id)
     {
-        $series = Series::find($id);
+        $series = Media::find($id);
+        $genres = Genre::all();
 
-        $genre = Genre::all();
+        /*-------------------------------------------------------------------
+        | Manipulasi genre untuk penambahan attribute selected
+        ---------------------------------------------------------------------
+        |
+        | Jadi loop dulu genre kesemuanya, dan kemudian loop lagi genre
+        | yang dimiliki oleh series tersebut, kemudian override $genre
+        | dan menambahkan attribute true pada genre yang ter select
+        |
+        */
+        foreach ($genres as $value) {
+            $genre[$value->id] = [
+              'id'        => $value->id,
+              'name'      => $value->name,
+              'selected'  => false,
+            ];
+        }
+
+        foreach ($series->genre as $value) {
+            $genre[$value->id] = [
+              'id'        => $value->id,
+              'name'      => $value->name,
+              'selected'  => true,
+            ];
+        }
 
         return view('admin/series/edit', [
-        'adm_title' => 'Edit : '. $series->title,
-        'series' => $series,
-        'genre_data' => $genre
-      ]);
+          'heading'     => 'Edit : '. $series->title,
+          'series'      => $series,
+          'genres'      => $genre
+        ]);
     }
 
     /**
@@ -164,32 +183,34 @@ class SeriesController extends \App\Http\Controllers\Controller
      */
     public function update(Request $request, $id)
     {
-        $updateSeries = Series::find($id);
-
+        $updateSeries = Media::find($id);
 
         /*-------------------------------------------------------------------
-        | Pembuatan genre dan pengaturan genre_id di table series
+        | Pembuatan genre
         ---------------------------------------------------------------------
         |
-        | Jadi prosesnya adalah dengan cara mengecek terlebih dahulu
-        | apakah yang ada di Request match apa tidak dengan id genre.
-        | Jika tidak ada maka akan di buat baru genre nya
-        | Kemudian di dapatkan id dari kedua genre baru tersebut
-        | Selanjutnya di gabungkan dengan id sebelumnya (yang mungkin sudah ada)
+        | Jika genre tidak ada (dengan cara mengecek terlebih dahulu),
+        | maka genre baru akan dibuat, kemudian semua ID nya dikumpulkan
+        | kedalam array $genrex dan kemudian di sync
         |
         */
-
-        $genres = explode(',', $request->genre); //memecah string genre menjadi array
-
-        foreach ($genres as $genre) {
-            $genreForSeries [] = $genre;
+        $genrex = [];
+        foreach ($request->genre as $value) {
+            if ($genre = Genre::where('name', $value)->first()) {
+                array_push($genrex, $genre->id);
+            } else {
+                $newGenre = new Genre;
+                $newGenre->name = $value;
+                $newGenre->save();
+                array_push($genrex, $newGenre->id);
+            }
         }
 
         $updateSeries->title = $request->title;
 
         if ($request->hasFile('cover')) {
             \Storage::delete('public/'. $updateSeries->cover); // hapus cover yang sebelumnya
-          $image = $request->file('cover')->store('public');
+            $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
             $updateSeries->cover = $image_file_name[1];
         }
@@ -198,11 +219,8 @@ class SeriesController extends \App\Http\Controllers\Controller
         $updateSeries->creator = $request->creator;
         $updateSeries->producer = $request->producer;
         $updateSeries->sinopsis = $request->sinopsis;
-
         $updateSeries->save();
-
-        $updateSeries->genre()->sync($genreForSeries); // tulisan false dibelakang dihilangkan karena untuk 'detach' genre
-
+        $updateSeries->genre()->sync($genrex); // tulisan false dibelakang dihilangkan karena untuk 'detach' genre
 
         flash('Data berhasil diubah!')->success();
 
@@ -218,7 +236,7 @@ class SeriesController extends \App\Http\Controllers\Controller
      */
     public function destroy($id)
     {
-        $series = Series::find($id);
+        $series = Media::find($id);
         $series->genre()->detach(); // detach / hapus genre dari series yang berkaitan (bukan hapus, tapi melepas relationship)
 
         $series->delete();

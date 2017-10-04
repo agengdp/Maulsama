@@ -31,14 +31,14 @@
                   </tr>
                 </thead>
                 <tbody>
-                    @forelse ($data->media['series'] as $seri)
+                    @forelse ($data['media']['series'] as $seri)
                       <tr>
                         <th scope="row"><input type="checkbox" name="" value="1"></th>
                         <td width="70%"><a href="{{route('series.show', $seri->id)}}">{{$seri->title}}</a></td>
                         <td>{{$seri->created_at}} </td>
                         <td>
                           <a class="btn btn-default btn-xs" href="{{ route('series.edit', $seri->id)}}">Edit</a>
-                          
+
                           <a class="btn btn-primary btn-xs" href="{{ route('series.show', $seri->id)}}">View</a>
                         </td>
                       </tr>
@@ -52,14 +52,15 @@
                     @endforelse
                 </tbody>
                </table>
+  
 
                <div class="row">
                  <div class="col-md-6">
                    <div class="dropup">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{-- <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Bulk Action
                       <span class="caret"></span>
-                    </button>
+                    </button> --}}
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                       <li><a href="#">Action</a></li>
                       <li><a href="#">Another action</a></li>
@@ -72,9 +73,9 @@
                  <div class="col-md-6">
                   <div class="pull-right">
                   @if(isset($s))
-                    {{ $data->media['series']->appends(['s' => $s])->links() }}
+                    {{ $data['media']['series']->appends(['s' => $s])->links() }}
                   @else
-                    {{ $data->media['series']->links() }}
+                    {{ $data['media']['series']->links() }}
                   @endif
                   </div>
                  </div>
