@@ -3,6 +3,7 @@
 namespace App;
 
 use Cviebrock\EloquentSluggable\Sluggable;
+use Storage;
 use Illuminate\Database\Eloquent\Model;
 
 class Episode extends Model
@@ -27,6 +28,23 @@ class Episode extends Model
 
     public function download_links()
     {
-        return $this->hasMany('App\DownloadLink');
+        return $this->hasMany('App\DownloadLink', 'rel_id');
+    }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        // hapus download link
+        // karena ada dalam model yang berbeda
+        // untuk penghapusan covernya, sudah di handle di dalam model Media.
+        //
+        static::deleting(function ($download_link) {
+            // cek jika punya cover
+            if (Storage::disk(env('FILE_SYSTEM'))->has('public/'. $download_link->cover)) {
+                Storage::delete('public/'.$download_link->cover); // hapus covernya sendiri
+            }
+            $download_link->download_links()->delete();
+        });
     }
 }
