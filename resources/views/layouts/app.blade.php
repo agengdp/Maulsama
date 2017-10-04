@@ -11,8 +11,8 @@
     <title>@yield('title')</title>
 
     <!-- Styles -->
-    <link href="{{ asset('storage/assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('storage/assets/selectize/css/selectize.css') }}">
+    <link href="{{ asset('storage/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('storage/assets/vendor/select2/css/select2.min.css') }}">
     <link href="{{ asset('storage/assets/css/admin.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
@@ -104,7 +104,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
-                    <h1>{{$data->title}}</h1>
+                    <h1>{{  $heading }}</h1>
                   </div>
                 </div>
               </div>
@@ -121,9 +121,9 @@
 
     <!-- Scripts -->
     <script src="{{ asset('storage/assets/js/jquery-3.2.1.min.js') }}"></script>
-    <script src="{{ asset('storage/assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('storage/assets/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('storage/assets/js/jquery.repeater.min.js') }}"></script>
-    <script src="{{ asset('storage/assets/js/selectize.min.js') }}"></script>
+    <script src="{{ asset('storage/assets/vendor/select2/js/select2.min.js') }}"></script>
 
     <script src="{{ asset('storage/assets/js/custom.js') }}"></script>
 
