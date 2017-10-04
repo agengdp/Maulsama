@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-
 use App\Genre;
-use App\Movie;
+use App\Media;
+use App\DownloadLink;
 
 class MovieController extends Controller
 {
@@ -19,12 +19,12 @@ class MovieController extends Controller
     {
         $search = $request->input('s');
 
-        $movies = Movie::search($search)->paginate(20);
+        $movies = Media::search($search)->where('type', 'movie')->paginate(20);
 
         return view('admin/movies', [
-            'adm_title' => 'Movies',
+            'heading'   => 'Movies',
             'movies'    => $movies,
-            's' => $search
+            's'         => $search
         ]);
     }
 
@@ -38,8 +38,8 @@ class MovieController extends Controller
         $genre = Genre::all();
 
         return view('admin/movies/create', [
-        'adm_title' => 'Create new movies',
-        'genre_data' => $genre
+        'heading'     => 'Create new movies',
+        'genre_data'  => $genre
       ]);
     }
 
@@ -52,62 +52,68 @@ class MovieController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'cover' => 'required',
-            'title' => 'required|max:255',
-            'year'  => 'required',
-            'creator' => 'required',
-            'producer' => 'required',
-            'genre' => 'required',
-            'sinopsis' => 'required'
+            'cover'     => 'required',
+            'title'     => 'required|max:255',
+            'year'      => 'required',
+            'creator'   => 'required',
+            'producer'  => 'required',
+            'genre'     => 'required',
+            'sinopsis'  => 'required'
         ]);
 
         /*-------------------------------------------------------------------
-        | Pembuatan genre dan pengaturan genre_id di table series
+        | Pembuatan genre
         ---------------------------------------------------------------------
         |
-        | Jadi prosesnya adalah dengan cara mengecek terlebih dahulu
-        | apakah yang ada di Request match apa tidak dengan id genre.
-        | Jika tidak ada maka akan di buat baru genre nya
-        | Kemudian di dapatkan id dari kedua genre baru tersebut
-        | Selanjutnya di gabungkan dengan id sebelumnya (yang mungkin sudah ada)
+        | Jika genre tidak ada (dengan cara mengecek terlebih dahulu),
+        | maka genre baru akan dibuat, kemudian semua ID nya dikumpulkan
+        | kedalam array $genrex dan kemudian di sync
         |
         */
-
-        $genres = explode(',', $request->genre); //memecah string genre menjadi array
-
-        foreach ($genres as $genre) {
-            $genreForMovie [] = $genre;
+        $genrex = [];
+        foreach ($request->genre as $value) {
+            if ($genre = Genre::where('name', $value)->first()) {
+                array_push($genrex, $genre->id);
+            } else {
+                $newGenre = new Genre;
+                $newGenre->name = $value;
+                $newGenre->save();
+                array_push($genrex, $newGenre->id);
+            }
         }
 
-        /*----------------------------------------------------------------------
-        | Init untuk menuliskan semuanya ke db
-        ------------------------------------------------------------------------
-        |
-        | Jadi dengan ini penulisan ke db is done
-        |
-        */
-
-        $movie = new Movie;
-        $movie->title = $request->title;
+        $media = new Media;
+        $media->title = $request->title;
 
         if ($request->hasFile('cover')) {
-            $image = $request->file('cover')->store('public');
-            $image_file_name = explode('/', $image);
-            $movie->cover = $image_file_name[1];
+            $image            = $request->file('cover')->store('public');
+            $image_file_name  = explode('/', $image);
+            $media->cover     = $image_file_name[1];
         }
 
-        $movie->year = $request->year;
-        $movie->creator = $request->creator;
-        $movie->producer = $request->producer;
-        $movie->sinopsis = $request->sinopsis;
-        $movie->links = json_encode($request->movie_video_list);
+        $media->year          = $request->year;
+        $media->creator       = $request->creator;
+        $media->producer      = $request->producer;
+        $media->sinopsis      = $request->sinopsis;
+        $media->type          = 'movie';
 
-        $movie->save();
+        $media->save();
+        $media->genre()->sync($genrex, false);
 
-        $movie->genre()->sync($genreForMovie, false);
+        // build download link yang akan di attach dengan movie
+        // di loop karena menggunakan save Many, biar nggak simpen satu2
+        foreach ($request->movie_video_list as $value) {
+            $download_link[] = new DownloadLink([
+              'type'            => 'movie',
+              'video_type'      => $value['video_type'],
+              'video_quality'   => $value['video_quality'],
+              'video_url'       => $value['video_url'],
+            ]);
+        }
+
+        $media->download_links()->saveMany($download_link);
 
         flash('Movie baru berhasil ditambahkan')->success();
-
         return redirect()->route('movies.index');
     }
 
@@ -119,13 +125,38 @@ class MovieController extends Controller
      */
     public function edit($id)
     {
-        $movie = Movie::find($id);
-        $genre = Genre::all();
+        $movie  = Media::find($id);
+        $genres = Genre::all();
+
+        /*-------------------------------------------------------------------
+        | Manipulasi genre untuk penambahan attribute selected
+        ---------------------------------------------------------------------
+        |
+        | Jadi loop dulu genre kesemuanya, dan kemudian loop lagi genre
+        | yang dimiliki oleh series tersebut, kemudian override $genre
+        | dan menambahkan attribute true pada genre yang ter select
+        |
+        */
+        foreach ($genres as $value) {
+            $genre[$value->id] = [
+              'id'        => $value->id,
+              'name'      => $value->name,
+              'selected'  => false,
+            ];
+        }
+
+        foreach ($movie->genre as $value) {
+            $genre[$value->id] = [
+              'id'        => $value->id,
+              'name'      => $value->name,
+              'selected'  => true,
+            ];
+        }
 
         return view('admin/movies/edit', [
-            'adm_title' => 'Edit : ' . $movie->title,
-            'movie' => $movie,
-            'genre_data' => $genre,
+            'heading'     => 'Edit : ' . $movie->title,
+            'movie'       => $movie,
+            'genres'      => $genre,
         ]);
     }
 
@@ -138,55 +169,60 @@ class MovieController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $media = Media::find($id);
 
         /*-------------------------------------------------------------------
-        | Pembuatan genre dan pengaturan genre_id di table series
+        | Pembuatan genre
         ---------------------------------------------------------------------
         |
-        | Jadi prosesnya adalah dengan cara mengecek terlebih dahulu
-        | apakah yang ada di Request match apa tidak dengan id genre.
-        | Jika tidak ada maka akan di buat baru genre nya
-        | Kemudian di dapatkan id dari kedua genre baru tersebut
-        | Selanjutnya di gabungkan dengan id sebelumnya (yang mungkin sudah ada)
+        | Jika genre tidak ada (dengan cara mengecek terlebih dahulu),
+        | maka genre baru akan dibuat, kemudian semua ID nya dikumpulkan
+        | kedalam array $genrex dan kemudian di sync
         |
         */
-
-        $genres = explode(',', $request->genre); //memecah string genre menjadi array
-
-        foreach ($genres as $genre) {
-            $genreForMovie [] = $genre;
+        $genrex = [];
+        foreach ($request->genre as $value) {
+            if ($genre = Genre::where('name', $value)->first()) {
+                array_push($genrex, $genre->id);
+            } else {
+                $newGenre       = new Genre;
+                $newGenre->name = $value;
+                $newGenre->save();
+                array_push($genrex, $newGenre->id);
+            }
         }
 
-        /*----------------------------------------------------------------------
-        | Init untuk menuliskan semuanya ke db
-        ------------------------------------------------------------------------
-        |
-        | Jadi dengan ini penulisan ke db is done
-        |
-        */
-
-        $movie = Movie::find($id);
-        $movie->title = $request->title;
+        $media->title = $request->title;
 
         if ($request->hasFile('cover')) {
-            Storage::delete('public/'. $movie->cover); // hapus cover yang sebelumnya
+            Storage::delete('public/'. $media->cover); // hapus cover yang sebelumnya
             $image = $request->file('cover')->store('public');
             $image_file_name = explode('/', $image);
-            $movie->cover = $image_file_name[1];
+            $media->cover = $image_file_name[1];
         }
 
-        $movie->year = $request->year;
-        $movie->creator = $request->creator;
-        $movie->producer = $request->producer;
-        $movie->sinopsis = $request->sinopsis;
-        $movie->links = json_encode($request->movie_video_list);
+        $media->year      = $request->year;
+        $media->creator   = $request->creator;
+        $media->producer  = $request->producer;
+        $media->sinopsis  = $request->sinopsis;
 
-        $movie->save();
+        $media->save();
+        $media->genre()->sync($genrex);
+        $media->download_links()->delete();
 
-        $movie->genre()->sync($genreForMovie);
+        // build download link yang akan di attach dengan movie
+        // di loop karena menggunakan save Many, biar nggak simpen satu2
+        foreach ($request->movie_video_list as $value) {
+            $download_link[] = new DownloadLink([
+              'type'            => 'movie',
+              'video_type'      => $value['video_type'],
+              'video_quality'   => $value['video_quality'],
+              'video_url'       => $value['video_url'],
+            ]);
+        }
 
+        $media->download_links()->saveMany($download_link);
         flash('Movie berhasil di update')->success();
-
         return redirect()->route('movies.edit', $id);
     }
 
