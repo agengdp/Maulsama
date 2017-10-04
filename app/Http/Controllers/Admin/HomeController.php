@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
+
 use App\Media;
 
 use Illuminate\Http\Request;
@@ -21,8 +22,7 @@ class HomeController extends \App\Http\Controllers\Controller
         $movies = $query->where('type', 'movies')->get();
         $last = $query->take(5)->latest()->get();
 
-        $data = (object) [
-            'title' => 'Dashboard',
+        $data = [
             'media' => [
                 'series'    => $series,
                 'movies'    => $movies,
@@ -31,6 +31,7 @@ class HomeController extends \App\Http\Controllers\Controller
         ];
 
         return view('admin/home', [
+          'heading' => 'Dashboard',
           'data' => $data
         ]);
     }
