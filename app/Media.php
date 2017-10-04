@@ -49,10 +49,15 @@ class Media extends Model
         parent::boot();
 
         static::deleting(function ($episode) {
-            Storage::delete('public/'.$episode->cover); // hapus cover sendiri
+
+            // hapus cover dari series
+            if (Storage::disk(env('FILE_SYSTEM'))->has('public/'. $episode->cover)) {
+                Storage::delete('public/'.$episode->cover); // hapus covernya sendiri
+            }
 
             if (count($episode->episode)) { // cek jika ada episode nya
                 foreach ($episode->episode as $kampret) {
+                    $kampret->download_links()->delete(); // hapus download link yang tersisa
                     $arr[] = 'public/'.$kampret->cover;
                 }
                 Storage::delete($arr); // hapus cover yang ada di episode juga
