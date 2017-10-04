@@ -1,0 +1,39 @@
+.head{
+  background: #3B4966;
+  font-size: 13px;
+  border-top: 1px solid #555;
+
+  ul{
+    margin:0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 10px;
+        color: #fff;
+
+        &:hover{
+          background: #2D354D;
+          text-decoration: none;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.adm-title{
+  background: #66676f;
+  margin-bottom:20px;
+  color: #fefefe
+}
+
+.adm-panel-title{
+  margin:0;
+}

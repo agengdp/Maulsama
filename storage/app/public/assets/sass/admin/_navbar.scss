@@ -1,0 +1,19 @@
+.navbar{
+  margin:0;
+  background: #2D3540;
+  border:none;
+}
+
+.navbar-default{
+  @include c('navbar-brand'){
+    color: #ededed;
+  }
+
+  @include c('navbar-nav'){
+    > li {
+      > a {
+        color:#ededed;
+      }
+    }
+  }
+}
