@@ -23,14 +23,13 @@ class Genre extends Model
       ];
     }
 
-    public function series()
+    public function media()
     {
-        return $this->morphedByMany('App\Series', 'genreable');
+        return $this->morphedByMany('App\Media', 'genreable');
     }
 
     public function movies()
     {
         return $this->morphedByMany('App\Movie', 'genreable');
     }
-
 }

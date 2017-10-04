@@ -38,7 +38,7 @@
                <div class="row">
                  <div class="col-md-12">
                    <div class="dropup">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{-- <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Bulk Action
                       <span class="caret"></span>
                     </button>
@@ -48,7 +48,7 @@
                       <li><a href="#">Something else here</a></li>
                       <li role="separator" class="divider"></li>
                       <li><a href="#">Separated link</a></li>
-                    </ul>
+                    </ul> --}}
                   </div>
                  </div>
                </div>
@@ -63,7 +63,7 @@
 <div class="modal fade" id="new-genre" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      {{ Form::open(array('route' => 'genre.store')) }}    
+      {{ Form::open(array('route' => 'genre.store')) }}
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="exampleModalLabel">Masukkan nama genre baru..</h4>

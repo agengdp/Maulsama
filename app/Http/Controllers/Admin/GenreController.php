@@ -17,8 +17,8 @@ class GenreController extends Controller
         $genres = Genre::orderBy('name')->get();
 
         return view('admin/genre', [
+            'heading' => 'Genres',
             'genres' => $genres,
-            'adm_title' => 'Semua Genre'
         ]);
     }
 
@@ -44,8 +44,8 @@ class GenreController extends Controller
 
 
         return view('admin/genre', [
-            'adm_title' => 'Semua Genre',
-            'genres'     => $genres
+            'heading'     => 'Genres',
+            'genres'      => $genres
         ]);
     }
 
@@ -59,9 +59,14 @@ class GenreController extends Controller
     {
         $genre = Genre::find($id);
 
+        $movies = $genre->media->where('type', 'movie')->all();
+        $series = $genre->media->where('type', 'series')->all();
+
         return view('admin/genre/show', [
-            'adm_title' => 'Genre of : ' . $genre->name,
-            'genre' => $genre
+            'heading'   => 'Genre of : ' . $genre->name,
+            'genre'     => $genre,
+            'movies'    => $movies,
+            'series'    => $series
         ]);
     }
 
@@ -76,7 +81,7 @@ class GenreController extends Controller
         $genre = Genre::find($id);
 
         return view('admin/genre/edit', [
-          'adm_title' => 'Edit Genre : '. $genre->name,
+          'heading'   => 'Edit Genre : '. $genre->name,
           'genre'     => $genre
         ]);
     }
@@ -108,8 +113,7 @@ class GenreController extends Controller
     {
         $genre = Genre::find($id);
         $genre_name = $genre->name;
-        $genre->series()->detach();
-        $genre->movies()->detach();
+        $genre->media()->detach();
 
         $genre->delete();
 

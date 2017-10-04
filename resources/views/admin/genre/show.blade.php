@@ -18,7 +18,7 @@
                   <a class="btn btn-default btn-xs" href="{{ route('genre.edit', $genre->id) }}"> Edit </a>
                 </li>
                 <li>
-                  <a class="btn btn-danger btn-xs" href="{{route('genre.destroy', $genre->id)}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Yakin ingin menghapus seri ini ?"> Delete </a>
+                  <a class="btn btn-danger btn-xs" href="{{route('genre.destroy', $genre->id)}}" data-method="delete" data-token="{{csrf_token()}}" data-confirm="Yakin ingin menghapus genre ini ?"> Delete </a>
                 </li>
               </ul>
             </div>
@@ -33,17 +33,17 @@
                     </th>
                     <th>Series</th>
                     <th>Genres</th>
-                  </tr> 
+                  </tr>
                 </thead>
                 <tbody>
-                  @foreach($genre->series as $series)
+                  @foreach($series as $seri)
                     <tr>
                       <th scrope="row">#</th>
                       <td>
-                        <a href="{{ route('series.show', $series->id)}}">{{$series->title}}</a>
+                        <a href="{{ route('series.show', $seri->id)}}">{{$seri->title}}</a>
                       </td>
                       <td>
-                        @foreach($series->genre as $gens)
+                        @foreach($seri->genre as $gens)
                           <span class="label label-default">{{$gens->name}}</span>
                         @endforeach
                       </td>
@@ -61,10 +61,10 @@
                     </th>
                     <th>Movie</th>
                     <th>Genres</th>
-                  </tr> 
+                  </tr>
                 </thead>
                 <tbody>
-                  @foreach($genre->movies as $movie)
+                  @foreach($movies as $movie)
                     <tr>
                       <th scrope="row">#</th>
                       <td>
@@ -78,7 +78,7 @@
                     </tr>
                   @endforeach
                 </tbody>
-              </table>              
+              </table>
             </div>
         </div>
     </div>
