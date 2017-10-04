@@ -19,18 +19,12 @@ class SeriesController extends \App\Http\Controllers\Controller
     public function index(Request $request)
     {
         $search = $request->input('s');
-        $media = Media::search($search)->paginate(20);
-
-        $data = [
-            'media'     => [
-                'series'    => $media
-            ],
-        ];
+        $series = Media::search($search)->where('type', 'series')->paginate(20);
 
         return view('admin/series', [
             'heading' => 'Series',
-            'data'  => $data,
-            's' => $search
+            'series'  => $series,
+            's'       => $search
         ]);
     }
 
@@ -44,9 +38,8 @@ class SeriesController extends \App\Http\Controllers\Controller
         $genre = Genre::all();
 
         return view('admin/series/create', [
-        'adm_title' => 'Create new series',
-        'genre_data' => $genre,
-        'heading'   => 'Create New Series'
+        'genre_data'  => $genre,
+        'heading'     => 'Create New Series'
       ]);
     }
 
@@ -59,13 +52,13 @@ class SeriesController extends \App\Http\Controllers\Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-          'cover' => 'required',
-          'title' => 'required|unique:media|max:255',
-          'year' => 'required',
-          'creator' => 'required',
-          'producer' => 'required',
-          'genre' => 'required',
-          'sinopsis' => 'required',
+          'cover'     => 'required',
+          'title'     => 'required|unique:media|max:255',
+          'year'      => 'required',
+          'creator'   => 'required',
+          'producer'  => 'required',
+          'genre'     => 'required',
+          'sinopsis'  => 'required',
         ]);
 
         $media = new Media;
