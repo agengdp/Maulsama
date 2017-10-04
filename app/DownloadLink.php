@@ -8,11 +8,15 @@ class DownloadLink extends Model
 {
     protected $table = 'download_links';
 
-    public function episode(){
-    	return $this->belongsTo('App\Episode');
+    protected $fillable = ['rel_id', 'type', 'video_type', 'video_quality', 'video_url'];
+
+    public function episode()
+    {
+        return $this->belongsTo('App\Episode');
     }
 
-    public function movie(){
-    	$this->belongsTo('App\Movie');
+    public function movie()
+    {
+        $this->belongsTo('App\Movie');
     }
 }
