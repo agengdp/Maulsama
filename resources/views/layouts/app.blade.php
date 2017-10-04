@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('storage/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('storage/assets/vendor/select2/css/select2.min.css') }}">
-    <link href="{{ asset('storage/assets/css/admin.css') }}" rel="stylesheet">
+    <link href="{{ asset('storage/assets/css/sadmin.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -39,7 +39,7 @@
 
                         <!-- Branding Image -->
                         <a class="navbar-brand" href="{{ url('/') }}">
-                            {{ config('app.name', 'Laravel') }}
+                            Maulsama
                         </a>
                     </div>
 

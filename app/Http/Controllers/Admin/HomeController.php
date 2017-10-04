@@ -30,7 +30,7 @@ class HomeController extends \App\Http\Controllers\Controller
             ],
         ];
 
-        return view('admin/home', [
+        return view('admin/dashboard', [
           'heading' => 'Dashboard',
           'data' => $data
         ]);
