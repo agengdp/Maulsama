@@ -22,7 +22,7 @@ class Episode extends Model
 
     public function series()
     {
-        return $this->belongsTo('App\Series');
+        return $this->belongsTo('App\Media');
     }
 
     public function download_links()
