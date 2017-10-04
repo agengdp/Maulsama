@@ -21,7 +21,8 @@ class Media extends Model
       ];
     }
 
-    public function scopeSearch($query, $s){
+    public function scopeSearch($query, $s)
+    {
         return $query->where('title', 'like', '%' .$s. '%')
             ->orWhere('creator', 'like', '%'. $s .'%');
     }
@@ -33,7 +34,7 @@ class Media extends Model
 
     public function episode()
     {
-        return $this->hasMany('App\Episode');
+        return $this->hasMany('App\Episode', 'series_id');
     }
 
     // hanya untuk movies
@@ -48,7 +49,6 @@ class Media extends Model
         parent::boot();
 
         static::deleting(function ($episode) {
-            
             Storage::delete('public/'.$episode->cover); // hapus cover sendiri
 
             if (count($episode->episode)) { // cek jika ada episode nya

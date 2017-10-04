@@ -28,9 +28,7 @@ Route::group(['middleware' => 'auth'], function () {
       'only'  => [
         'store', 'update', 'destroy'
       ]
-
     ]);
-
 
     Route::resource('/home/movies', 'MovieController', [
       'except' => [
