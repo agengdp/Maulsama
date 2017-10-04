@@ -89,14 +89,16 @@ $(document).ready(function () {
 
 
     $('#edit-episode').on('show.bs.modal', function (event){
-      var button      = $(event.relatedTarget);
-      var episode     = button.data('episode');
-      var actionLink  = button.data('action-link');
+      var button          = $(event.relatedTarget);
+      var episode         = button.data('episode');
+      var download_links  = button.data('download-links');
+      var actionLink      = button.data('action-link');
 
       var s_eps = JSON.stringify(episode);
       var telek = jQuery.parseJSON(s_eps);
 
-      var obj = JSON.parse(telek.links);
+      var dlink = JSON.stringify(download_links);
+      var obj = JSON.parse(dlink);
       var $repeater = $('.repeater-edit').repeater();
       $repeater.setList(obj);
 
@@ -105,7 +107,6 @@ $(document).ready(function () {
       modal.find('.modal-body input#judul').val(telek.judul_episode);
       modal.find('.modal-body textarea#spoiler').val(telek.spoiler);
       modal.find('.modal-footer input#episode_id').val(telek.id);
-      // modal.getElementById('uploadedimage').src = telek.cover;
       document.getElementById('uploadedimage').src = '/storage/' + telek.cover;
 
       $("#form-edit-episode").attr('action', actionLink);
@@ -124,7 +125,7 @@ $(document).ready(function () {
       modal.find('.modal-body input#judul').val(judul);
     });
 
- 
+
     // Upload image with preview
     document.getElementById('jimage').onchange = function () {
           var reader = new FileReader();

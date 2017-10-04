@@ -24,7 +24,7 @@
             </div>
 
             <div class="panel-body">
-              
+
               <div class="row">
                 <div class="col-md-3">
                   <div class="cover">
@@ -38,7 +38,6 @@
                    Creator : {{$series->creator}} | Producer : {{$series->producer}}
 
                   <hr/>
-
 
                   <p>
                     {{ $series->sinopsis }}
@@ -70,7 +69,7 @@
                             <td>
                               <ul class="action-menu">
                                 <li>
-                                  <a class="btn btn-primary btn-xs btn-edit-episode" href="#edit-episode" data-toggle="modal" data-target="#edit-episode" data-episode="{{ $episode }}" data-action-link="{{ route('episode.update', [$series->id, $episode->id])}}" data-image-url="<?= asset("storage/$episode->cover"); ?>">Edit</a>
+                                  <a class="btn btn-primary btn-xs btn-edit-episode" href="#edit-episode" data-toggle="modal" data-target="#edit-episode" data-episode="{{ $episode }}" data-download-links="{{ $episode->download_links }}" data-action-link="{{ route('episode.update', [$series->id, $episode->id])}}" data-image-url="<?= asset("storage/$episode->cover"); ?>">Edit</a>
                                 </li>
                                 <li>
                                   <a class="btn btn-danger btn-xs" onclick="perform_delete('{{ route('episode.destroy', [$series->id, $episode->id]) }}');" href="{{ route('episode.destroy', [$series->id, $episode->id]) }}" data-toggle="modal" data-target="#delete-episode" data-episode="{{ $episode->episode }}" data-judul="{{ $episode->judul_episode }}">Delete</a>
