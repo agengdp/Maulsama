@@ -15,8 +15,8 @@ class DownloadLink extends Model
         return $this->belongsTo('App\Episode');
     }
 
-    public function movie()
+    public function media()
     {
-        $this->belongsTo('App\Movie');
+        $this->belongsTo('App\Media');
     }
 }
