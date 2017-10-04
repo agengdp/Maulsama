@@ -40,7 +40,7 @@ class Media extends Model
     // hanya untuk movies
     public function download_links()
     {
-        return $this->hasMany('App\DownloadLink');
+        return $this->hasMany('App\DownloadLink', 'rel_id');
     }
 
     // hanya untuk episode
