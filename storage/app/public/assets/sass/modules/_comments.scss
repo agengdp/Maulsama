@@ -1,0 +1,9 @@
+.comments{
+
+  @include e('movie'){
+    background: #fefefe;
+    color: $warna-font-hitam;
+    padding: 30px 0;
+  }
+
+}
