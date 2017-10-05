@@ -3,17 +3,56 @@ $episode_root : 'episode';
 .episode{
 
 	padding: 10px;
-	position: relative;
+
 	@include e('link'){
+		position: relative;
+		overflow: hidden;
 		padding:0;
 		border: none;
 		background: none;
+		&:hover{
+			// text-decoration: none;
+		}
+
+
 	}
 
 	@include e('container'){
 
-		&:hover{
-			opacity:0.3;
+		z-index: 99;
+	}
+
+	@include e('info'){
+		padding: 14px 0;
+	}
+
+	@include e('play'){
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		background: rgba(30, 68, 66, 0.46);
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+		display: grid;
+		border-radius:3px;
+		color: #fff;
+
+		.#{$episode_root}:hover & {
+			opacity: 1;
+		}
+
+		@include m('text'){
+			font-size: 80px;
+
+			i{
+				margin: auto;
+			}
+
 		}
 	}
 
@@ -27,9 +66,15 @@ $episode_root : 'episode';
 		font-size: 13px;
 		color: #666;
 	}
+
 	@include e('caption'){
 		padding: 9px 0;
+		position: absolute;
+		top: 0;
+		left:0;
+		width: 100%;
 	}
+
 	@include e('judul'){
 		font-size:16px;
 		white-space:nowrap;
@@ -39,27 +84,13 @@ $episode_root : 'episode';
 	}
 
 	@include e('episode-ke'){
-		background: $warna-primer;
+		background: rgba(54, 142, 214, 0.72);
 		color:$warna-font-putih;
 		padding:5px;
 		position:absolute;
 		top:10px;
 		left:10px;
 		border-radius:2px;
-	}
-
-	@include e('play'){
-		transition: .5s ease;
-		opacity: 0;
-		position: absolute;
-		top:50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-
-		.#{$episode_root}:hover & {
-			opacity: 1;
-		}
 	}
 
 
@@ -78,7 +109,6 @@ $episode_root : 'episode';
 
 		@include e('image'){
 			border-radius:3px;
-
 		}
 
 		@include e('caption'){
@@ -86,15 +116,22 @@ $episode_root : 'episode';
 			bottom:0;
 			border-radius:3px;
 			width:100%;
-			background:linear-gradient(transparent, #000);
+			// background:linear-gradient(transparent, #111);
+			display: grid;
 		}
 		@include e('judul'){
-			border-radius:3px;
-			box-shadow:none;
-			white-space:normal;
+			// border-radius:3px;
+			// box-shadow:none;
+			// white-space:normal;
+
+			background: $warna-primer;
 			color:$warna-font-putih;
 			font-size:16px;
-			font-weight:200;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 5px;
+			text-align: center;
 		}
 
 	}

@@ -1,34 +1,36 @@
 body{
 	font-size: $base-font-size;
 	background: #191919;
+	font-weight: 400;
 }
 
 h1{
-	font-size: 24px;
+	font-size: 54px;
+	font-family: $merryweather;
 }
 
 h2{
-	font-size:20px;
+	font-size:27px;
+	font-family: $merryweather;
+	padding: 20px 0 0 0;
 }
+h3{
+	font-family: $merryweather;
+}
+h4{
+	font-family: $merryweather;
+}
+p{
+	font-size: 16px;
 
-.header{
-	@include m('front'){
-		color:$warna-font-putih;
-		margin-bottom:20px;
+	@include c('subhead'){
+		font-family: $merryweather;
+		font-size: 20px;
 	}
-	@include m('browse'){
-		font-size:19px;
-	}
-	@include m('episode'){
-		font-size:22px;
-		margin-bottom:20px;
-	}
-	@include m('play'){
-		background:none;
-		font-size:20px;
-	}
-	@include m('related'){
-		background: none;
-		padding: 10px;
-	}
+}
+hr{
+	margin-top: 21px;
+  margin-bottom: 21px;
+  border: 0;
+  border-top: 1px solid #ecf0f1;
 }

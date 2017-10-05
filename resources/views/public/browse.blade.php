@@ -9,7 +9,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h1>Tonton koleksi anime kesukaanmu !</h1>
-				<p>Yuk nikmatin nonton anime terbaru disini.</p>
+				<p class="subhead">Yuk nikmatin nonton anime terbaru disini.</p>
 			</div> {{-- ./col-md-12 --}}
 		</div> {{-- ./row --}}
 	</div>{{-- ./container --}}

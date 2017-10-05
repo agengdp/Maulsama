@@ -14,16 +14,16 @@ class FrontController extends Controller
      * Jumlah yang akan ditampilkan dalam browse
      * @var integer
      */
-    private $taken = 12;
+    private $taken = 8;
 
 
     public function index()
     {
-        $series    = Media::where('type', 'series')->latest()->take(6)->get();
-        $episodes    = Episode::latest()->take(12)->get();
+        $series       = Media::where('type', 'series')->latest()->take(6)->get();
+        $episodes     = Episode::latest()->take($this->taken)->get();
 
         return view('public/index', [
-            'series'    => $series,
+            'series'      => $series,
             'episodes'    => $episodes
         ]);
     }

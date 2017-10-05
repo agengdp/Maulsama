@@ -3,9 +3,30 @@
 	border:0;
 	color:$warna-font-putih;
 	margin-bottom:0;
+
+	@include m('front'){
+		color:$warna-font-putih;
+		margin-bottom:20px;
+	}
+	@include m('browse'){
+		font-size:19px;
+	}
+	@include m('episode'){
+		font-size:22px;
+		margin-bottom:20px;
+	}
+	@include m('play'){
+		background:none;
+		font-size:20px;
+	}
+	@include m('related'){
+		background: none;
+		padding: 10px;
+	}
 }
 
 .logo{
+	font-family: $merryweather;
 	@include e('toggle'){
 
 	}

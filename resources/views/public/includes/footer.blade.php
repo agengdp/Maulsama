@@ -8,7 +8,7 @@
 		<div class="col-md-2">
 				<div class="footer-widget">
 					<div class="footer-widget__title">
-						Info
+						<h4>Info</h4>
 					</div>
 					<!-- /.footer-widget__title -->
 					<div class="footer-widget__content">
@@ -24,7 +24,7 @@
 		<div class="col-md-2">
 			<div class="footer-widget">
 				<div class="footer-widget__title">
-					Panduan
+					<h4>Panduan</h4>
 				</div>
 				<!-- /.footer-widget__title -->
 				<div class="footer-widget__content">
@@ -41,7 +41,7 @@
 		<div class="col-md-4">
 			<div class="footer-widget">
 				<div class="footer-widget__title">
-					Connect with us
+					<h4>Connect with us</h4>
 				</div>
 				<!-- /.footer-widget__title -->
 				<div class="footer-widget__content footer-widget__content--connect">
