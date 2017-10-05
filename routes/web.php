@@ -75,15 +75,15 @@ Route::get('/images/ongoing/{image_name}', function ($image_name) {
 //
 // Ini untuk routing home nya
 //
-Route::get('/', 'FrontHomeController@index')->name('frontHome');
-Route::get('/browse', 'FrontBrowseController@index')->name('frontBrowse');
-Route::get('/browse/{genre}', 'FrontBrowseController@browse')->name('frontBrowseGenre');
+Route::get('/', 'FrontController@index')->name('frontHome');
+Route::get('/browse', 'FrontController@browse')->name('frontBrowse');
+Route::get('/browse/{genre}', 'FrontController@browseGenre')->name('frontBrowseGenre');
 
 // mendapatkan series
-Route::get('/series/{slug}', 'FrontSeriesController@index')->name('frontSeries');
+Route::get('/series/{slug}', 'FrontController@series')->name('frontSeries');
 
 // play episode
-Route::get('/play/{series_slug}/{eps_slug}', 'FrontSeriesController@play')->name('frontPlayEps');
+Route::get('/play/{series_slug}/{eps_slug}', 'FrontController@playEpisode')->name('frontPlayEps');
 
 // mendapatkan movie
 Route::get('/movie/{slug}', 'FrontMovieController@index')->name('frontMovie');
