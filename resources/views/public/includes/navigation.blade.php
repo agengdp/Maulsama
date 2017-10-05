@@ -7,7 +7,7 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	  </button>
-	  <a class="navbar-brand logo__name" href="/">Animestream</a>
+	  <a class="navbar-brand logo__name" href="/">Maulsama</a>
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->

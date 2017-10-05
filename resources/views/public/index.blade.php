@@ -1,12 +1,12 @@
 @extends('layouts.frontend')
-@section('title', 'Animestream')
+@section('title', 'Maulsama - Tempat Download Anime Terlengkap')
 
 @section('content')
 	<div class="hero">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h1>Animestream</h1>
+					<h1>Maulsama</h1>
 					<p>Tempat nonton anime terlengkap subtitle Indonesia!</p>
 				</div>
 				@foreach($series as $seri)

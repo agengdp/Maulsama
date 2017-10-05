@@ -1,5 +1,7 @@
 @extends('layouts.frontend')
-@section('title', 'Jelajahi Koleksi Anime Subtitle Indonesia')
+@section('title')
+	{{ $browse_title }}
+@endsection
 
 @section('content')
 <div class="hero hero--browse">
@@ -94,7 +96,7 @@
 								  		<span class="caption-text episode_judul episode--browse__judul">{{ $movie->title }}</span>
 								  	</div> {{-- /.caption --}}
 								</a>
-							</div> {{-- .col-xs-6 .col-md-4 .col-lg-3 .image-container --}}	
+							</div> {{-- .col-xs-6 .col-md-4 .col-lg-3 .image-container --}}
 						@empty
 							<div class="col-md-12">
 								<p>Tidak ada movie...</p>
