@@ -1,5 +1,70 @@
 footer{
 	@include gradient(#232526, #232526);
 	color:$warna-font-putih;
-	padding: 20px 0;
+	padding: 50px 0 20px;
+	line-height: 1.7em;
+
+	p{
+		margin:0;
+	}
+}
+.footer-widget{
+	display: block;
+
+	@include e('title'){
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	@include e('content'){
+
+		ul{
+			list-style: none;
+			padding: 0;
+			font-weight: 300;
+			font-size: 15px;
+			display: block;
+
+			li {
+				// display: inline-block;
+			}
+
+		}
+
+		@include m('connect'){
+
+			ul{
+					display: table;
+				li {
+					display: inline-table;
+					border: 1px solid #333;
+					padding: 5px 10px;
+					margin: 3px;
+					color: #fff;
+					border-radius: 3px;
+					font-weight: 400;
+
+					&:first-child{
+						margin-left:0;
+					}
+
+					@include c('fb'){
+						background: #3b5998;
+					}
+					@include c('twit'){
+						background: #1da1f2;
+					}
+					@include c('ig'){
+						background: #c13584;
+					}
+					@include c('gplus'){
+						background: #dd4b39;
+					}
+				}
+			}
+
+		}
+
+	}
+
 }
