@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('storage/assets/vendor/select2/css/select2.min.css') }}">
     <link href="{{ asset('storage/assets/css/sadmin.css') }}" rel="stylesheet">
 
+    @yield('beforehead')
+
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -93,6 +95,7 @@
                       <li><a href="{{ route('series.index') }}" class="{{ isActiveRoute('series.index', 'active') }}"><i class="glyphicon glyphicon-play-circle"></i> Series</a></li>
                       <li><a href="{{ route('movies.index') }}" class="{{ isActiveRoute('movies.index', 'active') }}"><i class="glyphicon glyphicon-film"></i> Movies</a></li>
                       <li><a href="{{ route('genre.index') }}" class="{{ isActiveRoute('genre.index', 'active') }}"><i class="glyphicon glyphicon-list"></i> Genre</a></li>
+                      <li><a href="{{ route('pages.index') }}" class="{{ isActiveRoute('pages.index', 'active') }}"><i class="glyphicon glyphicon-pencil"></i> Pages</a></li>
                     </ul>
                   </div>
                 </div>

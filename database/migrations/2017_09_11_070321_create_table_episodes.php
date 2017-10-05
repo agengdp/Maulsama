@@ -13,14 +13,14 @@ class CreateTableEpisodes extends Migration
      */
     public function up()
     {
-        Schema::create('episodes', function(Blueprint $table){
+        Schema::create('episodes', function (Blueprint $table) {
             $table->increments('id');
             $table->text('cover');
             $table->integer('series_id')->unsigned();
             $table->integer('episode')->unsigned();
             $table->text('judul_episode');
             $table->string('slug');
-            $table->text('spoiler');
+            $table->text('spoiler')->nullable();
             $table->timestamps();
         });
     }

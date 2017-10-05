@@ -83,6 +83,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/app\/Http\/Controllers\/Admin\/PagesController.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/Http\/Controllers\/Admin\/PagesController.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/app\/Http\/Controllers\/Admin\/SeriesController.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -214,6 +223,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/app\/Media.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/app\/Page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/Page.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -544,6 +562,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/database\/migrations\/2017_10_05_183751_create_table_pages.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/database\/migrations\/2017_10_05_183751_create_table_pages.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/database\/seeds\/DatabaseSeeder.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -743,6 +770,33 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/resources\/views\/admin\/movies\/edit.blade.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/resources\/views\/admin\/pages.blade.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resources\/views\/admin\/pages.blade.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/resources\/views\/admin\/pages\/create.blade.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resources\/views\/admin\/pages\/create.blade.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/resources\/views\/admin\/pages\/edit.blade.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resources\/views\/admin\/pages\/edit.blade.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -3176,6 +3230,629 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/jquery.tinymce.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/jquery.tinymce.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/min\/jquery.tinymce.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/langs\/readme.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/langs\/readme.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/langs\/readme.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/advlist\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/advlist\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/advlist\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/anchor\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/anchor\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/anchor\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/autolink\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/autolink\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/autolink\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/autoresize\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/autoresize\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/autoresize\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/autosave\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/autosave\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/autosave\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/bbcode\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/bbcode\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/bbcode\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/charmap\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/charmap\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/charmap\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/code\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/code\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/code\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/codesample\/css\/prism.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/codesample\/css\/prism.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/codesample\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/codesample\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/codesample\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/colorpicker\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/colorpicker\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/colorpicker\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/contextmenu\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/contextmenu\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/contextmenu\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/directionality\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/directionality\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/directionality\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/emoticons\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/emoticons\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/emoticons\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/fullpage\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/fullpage\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/fullpage\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/fullscreen\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/fullscreen\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/fullscreen\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/help\/img\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23101,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/help\/img\/logo.png",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/help\/img\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/help\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/help\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/help\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/hr\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/hr\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/hr\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/image\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/image\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/image\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/imagetools\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/imagetools\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/imagetools\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/importcss\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/importcss\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/importcss\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/insertdatetime\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/insertdatetime\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/insertdatetime\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/legacyoutput\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/legacyoutput\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/legacyoutput\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/link\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/link\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/link\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/lists\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/lists\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/lists\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/media\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/media\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/media\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/nonbreaking\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/nonbreaking\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/nonbreaking\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/noneditable\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/noneditable\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/noneditable\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/pagebreak\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/pagebreak\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/pagebreak\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/paste\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/paste\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/paste\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/preview\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/preview\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/preview\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/print\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/print\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/print\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/save\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/save\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/save\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/searchreplace\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/searchreplace\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/searchreplace\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/spellchecker\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/spellchecker\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/spellchecker\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/tabfocus\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/tabfocus\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/tabfocus\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/table\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/table\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/table\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/template\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/template\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/template\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/textcolor\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/textcolor\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/textcolor\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/textpattern\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/textpattern\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/textpattern\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/toc\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/toc\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/toc\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/visualblocks\/css\/visualblocks.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/visualblocks\/css\/visualblocks.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/visualblocks\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/visualblocks\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/visualblocks\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/visualchars\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/visualchars\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/visualchars\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/wordcount\/plugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/wordcount\/plugin.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/plugins\/wordcount\/min\/plugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/content.inline.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/content.inline.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/content.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/content.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/content.mobile.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/content.mobile.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/skin.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/skin.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/skin.mobile.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/skins\/lightgray\/skin.mobile.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/themes\/inlite\/theme.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/themes\/inlite\/theme.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/themes\/inlite\/min\/theme.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/themes\/mobile\/theme.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/themes\/mobile\/theme.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/themes\/mobile\/min\/theme.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/themes\/modern\/theme.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/themes\/modern\/theme.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/themes\/modern\/min\/theme.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/storage\/app\/public\/assets\/vendor\/tinymce\/tinymce.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/tinymce.min.js",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/vendor\/tinymce\/min\/tinymce.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/storage\/app\/public\/AsuwMlcQfmoyY4qE8UoQub7cf7qY9yg8RZ4svVYi.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3377,11 +4054,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/storage\/framework\/views\/277bbfeb2bc14397cceda4d5459a845d24eea5f7.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/framework\/views\/277bbfeb2bc14397cceda4d5459a845d24eea5f7.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/storage\/framework\/views\/2b14dffab371451d9b380e1033c18c1c0953b689.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/storage\/framework\/views\/2b14dffab371451d9b380e1033c18c1c0953b689.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/framework\/views\/2cfe2fe736b35a8e84562ea8edaee385dde072a0.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/framework\/views\/2cfe2fe736b35a8e84562ea8edaee385dde072a0.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -6688,6 +7383,2587 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/extras\/ConfigDoc\/HTMLXSLTProcessor.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/extras\/ConfigDoc\/HTMLXSLTProcessor.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/extras\/FSTools.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/extras\/FSTools.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/extras\/FSTools\/File.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/extras\/FSTools\/File.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/extras\/HTMLPurifierExtras.auto.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/extras\/HTMLPurifierExtras.auto.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/extras\/HTMLPurifierExtras.autoload.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/extras\/HTMLPurifierExtras.autoload.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/extras\/HTMLPurifierExtras.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/extras\/HTMLPurifierExtras.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.auto.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.auto.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.autoload.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.autoload.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.composer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.composer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.func.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.func.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.includes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.includes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.kses.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.kses.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.path.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.path.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.safe-includes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier.safe-includes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Arborize.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Arborize.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrCollections.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrCollections.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Clone.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Clone.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/AlphaValue.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/AlphaValue.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Background.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Background.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/BackgroundPosition.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/BackgroundPosition.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Border.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Border.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Color.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Color.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Composite.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Composite.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/DenyElementDecorator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/DenyElementDecorator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Filter.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Filter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Font.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Font.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/FontFamily.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/FontFamily.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Ident.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Ident.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/ImportantDecorator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/ImportantDecorator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Length.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Length.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/ListStyle.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/ListStyle.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Multiple.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Multiple.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Number.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Number.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Percentage.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/Percentage.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/TextDecoration.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/TextDecoration.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/URI.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/CSS\/URI.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Enum.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Enum.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Bool.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Bool.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Class.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Class.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Color.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Color.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/FrameTarget.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/FrameTarget.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/ID.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/ID.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Length.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Length.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/LinkTypes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/LinkTypes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/MultiLength.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/MultiLength.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Nmtokens.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Nmtokens.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Pixels.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/HTML\/Pixels.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Integer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Integer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Lang.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Lang.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Switch.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Switch.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Text.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/Text.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/Email.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/Email.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/Email\/SimpleCheck.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/Email\/SimpleCheck.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/Host.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/Host.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/IPv4.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/IPv4.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/IPv6.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrDef\/URI\/IPv6.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Background.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Background.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/BdoDir.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/BdoDir.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/BgColor.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/BgColor.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/BoolToCSS.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/BoolToCSS.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Border.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Border.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/EnumToCSS.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/EnumToCSS.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/ImgRequired.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/ImgRequired.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/ImgSpace.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/ImgSpace.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Input.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Input.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Lang.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Lang.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Length.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Length.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Name.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Name.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/NameSync.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/NameSync.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Nofollow.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Nofollow.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/SafeEmbed.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/SafeEmbed.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/SafeObject.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/SafeObject.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/SafeParam.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/SafeParam.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/ScriptRequired.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/ScriptRequired.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/TargetBlank.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/TargetBlank.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/TargetNoopener.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/TargetNoopener.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/TargetNoreferrer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/TargetNoreferrer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Textarea.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTransform\/Textarea.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTypes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrTypes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrValidator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/AttrValidator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Bootstrap.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Bootstrap.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Chameleon.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Chameleon.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Custom.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Custom.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Empty.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Empty.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/List.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/List.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Optional.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Optional.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Required.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Required.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/StrictBlockquote.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/StrictBlockquote.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Table.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ChildDef\/Table.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Config.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Config.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Builder\/ConfigSchema.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Builder\/ConfigSchema.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Builder\/Xml.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Builder\/Xml.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Exception.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Exception.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Interchange.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Interchange.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Interchange\/Directive.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Interchange\/Directive.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Interchange\/Id.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Interchange\/Id.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/InterchangeBuilder.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/InterchangeBuilder.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Validator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/Validator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/ValidatorAtom.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ConfigSchema\/ValidatorAtom.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ContentSets.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ContentSets.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Context.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Context.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/CSSDefinition.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/CSSDefinition.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Definition.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Definition.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Decorator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Decorator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Decorator\/Cleanup.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Decorator\/Cleanup.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Decorator\/Memory.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Decorator\/Memory.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Null.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Null.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Serializer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCache\/Serializer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCacheFactory.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DefinitionCacheFactory.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Doctype.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Doctype.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DoctypeRegistry.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/DoctypeRegistry.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ElementDef.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ElementDef.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Encoder.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Encoder.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/EntityLookup.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/EntityLookup.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/EntityParser.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/EntityParser.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ErrorCollector.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ErrorCollector.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ErrorStruct.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/ErrorStruct.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Exception.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Exception.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Filter.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Filter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Filter\/ExtractStyleBlocks.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Filter\/ExtractStyleBlocks.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Filter\/YouTube.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Filter\/YouTube.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Generator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Generator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLDefinition.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLDefinition.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Bdo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Bdo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/CommonAttributes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/CommonAttributes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Edit.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Edit.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Forms.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Forms.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Hypertext.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Hypertext.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Iframe.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Iframe.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Image.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Image.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Legacy.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Legacy.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/List.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/List.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Name.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Name.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Nofollow.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Nofollow.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/NonXMLCommonAttributes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/NonXMLCommonAttributes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Object.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Object.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Presentation.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Presentation.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Proprietary.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Proprietary.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Ruby.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Ruby.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/SafeEmbed.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/SafeEmbed.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/SafeObject.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/SafeObject.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/SafeScripting.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/SafeScripting.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Scripting.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Scripting.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/StyleAttribute.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/StyleAttribute.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tables.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tables.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Target.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Target.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/TargetBlank.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/TargetBlank.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/TargetNoopener.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/TargetNoopener.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/TargetNoreferrer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/TargetNoreferrer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Text.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Text.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/Name.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/Name.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/Proprietary.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/Proprietary.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/Strict.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/Strict.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/Transitional.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/Transitional.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/XHTML.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/XHTML.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/XHTMLAndHTML4.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/Tidy\/XHTMLAndHTML4.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/XMLCommonAttributes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModule\/XMLCommonAttributes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModuleManager.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/HTMLModuleManager.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/IDAccumulator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/IDAccumulator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/AutoParagraph.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/AutoParagraph.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/DisplayLinkURI.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/DisplayLinkURI.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/Linkify.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/Linkify.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/PurifierLinkify.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/PurifierLinkify.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/RemoveEmpty.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/RemoveEmpty.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/RemoveSpansWithoutAttributes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/RemoveSpansWithoutAttributes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/SafeObject.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Injector\/SafeObject.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language\/classes\/en-x-test.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language\/classes\/en-x-test.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language\/messages\/en-x-test.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language\/messages\/en-x-test.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language\/messages\/en-x-testmini.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language\/messages\/en-x-testmini.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language\/messages\/en.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Language\/messages\/en.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/LanguageFactory.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/LanguageFactory.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Length.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Length.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Lexer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Lexer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Lexer\/DirectLex.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Lexer\/DirectLex.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Lexer\/DOMLex.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Lexer\/DOMLex.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Lexer\/PH5P.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Lexer\/PH5P.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Node.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Node.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Node\/Comment.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Node\/Comment.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Node\/Element.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Node\/Element.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Node\/Text.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Node\/Text.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/PercentEncoder.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/PercentEncoder.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/ConfigForm.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/ConfigForm.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/ConfigForm.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/ConfigForm.js",
+		"outputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/min\/ConfigForm-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/ConfigForm.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/ConfigForm.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/CSSDefinition.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/CSSDefinition.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/HTMLDefinition.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Printer\/HTMLDefinition.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/PropertyList.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/PropertyList.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/PropertyListIterator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/PropertyListIterator.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Queue.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Queue.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/Composite.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/Composite.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/Core.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/Core.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/FixNesting.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/FixNesting.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/MakeWellFormed.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/MakeWellFormed.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/RemoveForeignElements.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/RemoveForeignElements.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/ValidateAttributes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Strategy\/ValidateAttributes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/StringHash.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/StringHash.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/StringHashParser.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/StringHashParser.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/TagTransform.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/TagTransform.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/TagTransform\/Font.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/TagTransform\/Font.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/TagTransform\/Simple.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/TagTransform\/Simple.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Comment.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Comment.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Empty.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Empty.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/End.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/End.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Start.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Start.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Tag.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Tag.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Text.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Token\/Text.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/TokenFactory.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/TokenFactory.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/UnitConverter.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/UnitConverter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URI.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URI.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIDefinition.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIDefinition.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/DisableExternal.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/DisableExternal.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/DisableExternalResources.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/DisableExternalResources.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/DisableResources.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/DisableResources.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/HostBlacklist.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/HostBlacklist.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/MakeAbsolute.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/MakeAbsolute.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/Munge.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/Munge.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/SafeIframe.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIFilter\/SafeIframe.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIParser.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIParser.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/data.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/data.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/file.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/file.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/ftp.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/ftp.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/http.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/http.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/https.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/https.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/mailto.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/mailto.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/news.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/news.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/nntp.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/nntp.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/tel.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URIScheme\/tel.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URISchemeRegistry.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/URISchemeRegistry.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/VarParser.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/VarParser.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/VarParser\/Flexible.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/VarParser\/Flexible.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/VarParser\/Native.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/VarParser\/Native.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/VarParserException.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/VarParserException.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Zipper.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/library\/HTMLPurifier\/Zipper.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/add-vimline.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/add-vimline.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/common.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/common.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/config-scanner.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/config-scanner.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/flush-definition-cache.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/flush-definition-cache.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/flush.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/flush.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-entity-file.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-entity-file.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-includes.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-includes.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-ph5p-patch.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-ph5p-patch.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-schema-cache.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-schema-cache.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-standalone.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/generate-standalone.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/merge-library.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/merge-library.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/old-extract-schema.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/old-extract-schema.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/old-remove-require-once.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/old-remove-require-once.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/old-remove-schema-def.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/old-remove-schema-def.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/PH5P.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/PH5P.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/remove-trailing-whitespace.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/remove-trailing-whitespace.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/rename-config.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/rename-config.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/maintenance\/update-config.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/maintenance\/update-config.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/package.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/package.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/config.default.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/config.default.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/htmlpurifier.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/htmlpurifier.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/init-config.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/init-config.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/migrate.bbcode.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/migrate.bbcode.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings\/form.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings\/form.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings\/migrate-sigs-form.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings\/migrate-sigs-form.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings\/migrate-sigs.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings\/migrate-sigs.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings\/save.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/plugins\/phorum\/settings\/save.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/release1-update.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/release1-update.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/release2-tag.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/release2-tag.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/test-settings.sample.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/test-settings.sample.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/test-settings.travis.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/test-settings.travis.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/ezyang\/htmlpurifier\/tests\/path2class.func.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/ezyang\/htmlpurifier\/tests\/path2class.func.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/vendor\/fzaninotto\/faker\/CHANGELOG.md": {
 		"criticStyle": 0,
@@ -24100,6 +27376,62 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/maximebf\/debugbar\/src\/DebugBar\/Storage\/StorageInterface.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/mews\/purifier\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/mews\/purifier\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/mews\/purifier\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/mews\/purifier\/config\/purifier.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/mews\/purifier\/config\/purifier.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/mews\/purifier\/src\/Facades\/Purifier.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/mews\/purifier\/src\/Facades\/Purifier.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/mews\/purifier\/src\/helpers.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/mews\/purifier\/src\/helpers.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/mews\/purifier\/src\/Purifier.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/mews\/purifier\/src\/Purifier.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/mews\/purifier\/src\/PurifierServiceProvider.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/mews\/purifier\/src\/PurifierServiceProvider.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

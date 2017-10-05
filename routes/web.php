@@ -16,14 +16,12 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'Admin\HomeController@index')->name('home');
-
     Route::resource('/home/series', 'Admin\SeriesController');
-
     Route::resource('/home/series.episode', 'EpisodeController', [
       'names' => [
-        'store'  => 'episode.store',
-        'update'  => 'episode.update',
-        'destroy'  => 'episode.destroy'
+        'store'     => 'episode.store',
+        'update'    => 'episode.update',
+        'destroy'   => 'episode.destroy'
       ],
       'only'  => [
         'store', 'update', 'destroy'
@@ -33,10 +31,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('/home/movies', 'MovieController', [
       'except' => [
         'show'
-      ]
+      ],
     ]);
 
     Route::resource('/home/genre', 'GenreController');
+
+    Route::resource('/home/pages', 'PagesController');
 });
 
 /**
