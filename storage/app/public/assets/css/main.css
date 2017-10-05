@@ -246,7 +246,10 @@ footer { background: -moz-linear-gradient(-45deg, #232526 0, #232526 100%); back
 .main-content--series { background: none; padding: 70px 0; color: #fff; }
 .main-content--play { background: #fff; padding: 30px 0; }
 .main-content--play h1 { color: #2C3E50; font-weight: 400; font-size: 39px; margin-top: 0; }
+.main-content--play__movie { background: transparent; color: #fff; font-weight: 300; }
+.main-content--play__movie h1 { color: #fff; }
 .main-content--error { color: #fff; height: 100vh; }
+.main-content__spoiler { margin: 10px 0; }
 
 .play__text { text-align: center; font-size: 50px; color: #2C82C9; }
 
@@ -276,6 +279,7 @@ footer { background: -moz-linear-gradient(-45deg, #232526 0, #232526 100%); back
 .related__image { border-radius: 3px; width: 100%; }
 .related__caption { position: absolute; bottom: 0; background-image: -webkit-linear-gradient(transparent, #222); background-image: -o-linear-gradient(transparent, #222); background-image: linear-gradient(transparent, #222); width: 100%; }
 .related__judul { color: #fff; }
+.related--movie { background: #222; }
 
 @media (max-width: 768px) { .logo__name { font-size: 20px; }
   .nav-genre__item { float: none; }

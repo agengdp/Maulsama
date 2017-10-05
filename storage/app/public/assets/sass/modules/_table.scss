@@ -1,0 +1,14 @@
+.table-episode{
+  background: #fdfdfd;
+  margin-top: 10px;
+
+  a{
+
+    &:hover{
+      text-decoration: none;
+      color: $warna-primer;
+    }
+
+  }
+
+}

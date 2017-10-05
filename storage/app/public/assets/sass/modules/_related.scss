@@ -31,4 +31,8 @@
     color: $warna-font-putih;
   }
 
+  @include m('movie'){
+    background: $warna-gelap;
+  }
+
 }

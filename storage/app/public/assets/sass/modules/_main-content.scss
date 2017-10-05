@@ -22,12 +22,30 @@
 			font-size: 39px;
 			margin-top: 0;
 		}
+
+		@include e('movie'){
+			background: transparent;
+			color: $warna-font-putih;
+			font-weight: 300;
+
+			h1{
+				color: $warna-font-putih;
+			}
+
+		}
+
 	}
 
 	@include m('error'){
 		color: $warna-font-putih;
 		height: 100vh;
 	}
+
+	@include e('spoiler'){
+		margin:10px 0;
+	}
+
+
 }
 
 .play__text{
