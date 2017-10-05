@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Movie;
+use App\Media;
 
 class NavMovieServiceProvider extends ServiceProvider
 {
@@ -14,11 +14,12 @@ class NavMovieServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $movies = Movie::latest()
-        //                 ->take(5)
-        //                 ->get();
+        $movies = Media::where('type', 'movie')
+                        ->latest()
+                        ->take(5)
+                        ->get();
 
-        // \View::share('navMovies', $movies);        
+        \View::share('navMovies', $movies);
     }
 
     /**

@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Series;
+use App\Media;
 
 class NavSeriesServiceProvider extends ServiceProvider
 {
@@ -14,11 +14,12 @@ class NavSeriesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $series = Series::latest()
-        //                 ->take(5)
-        //                 ->get();
+        $series = Media::where('type', 'series')
+                        ->latest()
+                        ->take(5)
+                        ->get();
 
-        // \View::share('navSeries', $series);
+        \View::share('navSeries', $series);
     }
 
     /**

@@ -14,8 +14,7 @@ class GenreServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
-        // \View::share('genres', Genre::all());
+        \View::share('genres', Genre::all());
     }
 
     /**
