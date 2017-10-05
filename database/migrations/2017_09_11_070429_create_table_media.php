@@ -23,6 +23,7 @@ class CreateTableMedia extends Migration
             $table->text('sinopsis');
             $table->string('year');
             $table->string('type'); // movie / series
+            $table->string('status'); // ongoing atau complete
             $table->timestamps();
         });
     }
