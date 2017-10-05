@@ -78,7 +78,10 @@ class FrontController extends Controller
      */
     public function series($slug)
     {
-        $series = Media::where('slug', $slug)->first();
+        $series = Media::where([
+          ['slug', '=', $slug],
+          ['type', '=', 'series'],
+        ])->first();
 
         // error 404 handle
         if (is_null($series)) {
@@ -130,7 +133,41 @@ class FrontController extends Controller
           'streams'       => $collection,
           'mp4_links'     => $videos->where('video_type', 'mp4'),
           'mkv_links'     => $videos->where('video_type', 'mkv'),
-
       ]);
+    }
+
+    /**
+     * Play Movie
+     * @param  string $slug Movie slug
+     * @return view
+     */
+    public function movie($slug)
+    {
+        $movie = Media::where([
+          ['slug', '=', $slug],
+          ['type', '=', 'movie'],
+        ])->first();
+        // error 404 handle
+        if (is_null($movie)) {
+            abort(404);
+        }
+
+        $videos = $movie->download_links;
+        $streams = [];
+        foreach ($videos->where('video_type', 'mp4') as $stream) {
+            $streams[]  = [
+            'quality'   => $stream->video_quality,
+            'url_id'    => substr($stream->video_url, strrpos($stream->video_url, '/') + 1), // Assign video id
+          ];
+        }
+
+        $collection = collect($streams);
+
+        return view('public.playMovie', [
+            'movie'         => $movie,
+            'streams'       => $collection,
+            'mp4_links'     => $videos->where('video_type', 'mp4'),
+            'mkv_links'     => $videos->where('video_type', 'mkv'),
+          ]);
     }
 }
