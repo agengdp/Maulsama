@@ -157,6 +157,8 @@ template { display: none; }
 .btn--cari { background: #2C82C9; border: 1px solid #42809a; color: #fff; font-size: 19px; padding: 7px 30px; }
 .btn--spoiler { background: #2C82C9; color: #fff; padding: 7px 30px; }
 .btn--download { color: #fff; background: #e85050; }
+.btn__tonton { background: #2C82C9; display: block; margin: -6px; border-radius: 0; color: #fff; }
+.btn__tonton:hover { color: #fff !important; background: #428bca; }
 
 .download { margin-top: 10px; }
 .download__header { font-size: 20px; display: block; font-weight: 200; }
@@ -169,7 +171,7 @@ template { display: none; }
 .episode__container:hover { opacity: 0.3; }
 .episode__image { width: 100%; border-radius: 3px; }
 .episode__series { display: block; font-size: 13px; color: #666; }
-.episode__caption { padding: 9px 0 !important; }
+.episode__caption { padding: 9px 0; }
 .episode__judul { font-size: 16px; white-space: nowrap; overflow: hidden; display: block; color: #fff; }
 .episode__episode-ke { background: #2C82C9; color: #fff; padding: 5px; position: absolute; top: 10px; left: 10px; border-radius: 2px; }
 .episode__play { transition: .5s ease; opacity: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
@@ -218,11 +220,11 @@ footer { background: -moz-linear-gradient(-45deg, #232526 0, #232526 100%); back
 .hero__image:hover { opacity: 0.3; }
 .hero__caption { position: absolute; bottom: 20px; background: -webkit-linear-gradient(transparent, #222); background: -o-linear-gradient(transparent, #222); background: linear-gradient(transparent, #222); width: 100%; height: 15%; }
 .hero__image-container:hover .hero__caption { opacity: 1; }
-.hero__caption-text { color: #fff; font-size: 16px; }
+.hero__caption-text { color: #fff; font-size: 16px; font-weight: 300; }
 .hero--browse { padding: 50px 0; }
-.hero--play { padding: 50px 0; background: transparent; }
+.hero--play { padding: 50px 0; background: black; }
 
-.in-panel { background: rgba(185, 185, 185, 0.4); padding: 20px; border-radius: 3px; color: #333; }
+.in-panel { background: rgba(185, 185, 185, 0.4); padding: 20px; border-radius: 3px; color: #2C3E50; }
 .in-panel--download { color: #fff; }
 
 .list__item--filter { box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); }
@@ -234,15 +236,16 @@ footer { background: -moz-linear-gradient(-45deg, #232526 0, #232526 100%); back
 .list--download:before { content: 'Pilih Quality : '; margin-right: 10px; }
 .list--download__item { display: inline-block; margin: 5px; }
 .list--download__link { background: #555; padding: 7px 25px; color: #fff; border-radius: 2px; }
-.list--episode-lain { list-style: none; margin: 0; padding: 0; max-height: 300px; overflow-x: hidden; }
+.list--episode-lain { list-style: none; margin: 0; padding: 0; }
 .list--episode-lain__item { box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); }
-.list--episode-lain__link { cursor: pointer; display: block; padding: 10px; color: #fff; font-weight: 500; }
+.list--episode-lain__link { cursor: pointer; display: block; padding: 10px; font-weight: 500; }
 .list--episode-lain__link:hover { text-decoration: none; background: #2C82C9; font-weight: 200; color: #fff; }
-.list--episode-lain__episode { background: #333; padding: 5px; border-radius: 2px; color: #fff; font-weight: 200; }
+.list--episode-lain__episode { padding: 5px; border-radius: 2px; font-weight: 300; border: 1px solid #ddd; }
 
 .main-content--browse { padding: 20px 0; color: #fff; }
 .main-content--series { background: none; padding: 70px 0; color: #fff; }
-.main-content--play { background: #333; padding: 30px 0; color: #fff; }
+.main-content--play { background: #fff; padding: 30px 0; }
+.main-content--play h1 { color: #2C3E50; font-weight: 400; font-size: 39px; margin-top: 0; }
 .main-content--error { color: #fff; height: 100vh; }
 
 .play__text { text-align: center; font-size: 50px; color: #2C82C9; }
@@ -262,11 +265,11 @@ footer { background: -moz-linear-gradient(-45deg, #232526 0, #232526 100%); back
 .quality__list--active { background: #2C82C9; }
 .quality__list--active:hover { background: #428bca; }
 
-.play-info { font-weight: 200; }
-.play-info--episode { display: block; }
+.play-info { font-weight: 300; }
+.play-info--episode { display: inline-block; }
 .play-info--episode-lainnya { display: block; margin-top: 20px; font-size: 17px; }
 .play-info--series { display: block; font-size: 18px; }
-.play-info__image { background: none; border: none; border-radius: 2px; padding: 0; box-shadow: 0px 0px 15px #111; }
+.play-info__image { background: none; border: none; border-radius: 3px; padding: 0; box-shadow: 0px 0px 1px #111; }
 
 .related__container { margin: 0; padding: 5px; }
 .related__link { padding: 0; border: 0; background: none; position: relative; }
@@ -309,6 +312,9 @@ footer { background: -moz-linear-gradient(-45deg, #232526 0, #232526 100%); back
 .spoiler__eps { display: block; font-size: 17px; }
 .spoiler__image { box-shadow: 0 0 5px 0px #333; }
 
+.table-episode { background: #fdfdfd; margin-top: 10px; }
+.table-episode a:hover { text-decoration: none; color: #2C82C9; }
+
 body { font-size: 15px; background: #191919; }
 
 h1 { font-size: 24px; }
@@ -317,7 +323,7 @@ h2 { font-size: 20px; }
 
 .header--front { color: #fff; margin-bottom: 20px; }
 .header--browse { font-size: 19px; }
-.header--episode { text-align: center; font-size: 22px; margin-bottom: 20px; }
+.header--episode { font-size: 22px; margin-bottom: 20px; }
 .header--play { background: none; font-size: 20px; }
 .header--related { background: none; padding: 10px; }
 

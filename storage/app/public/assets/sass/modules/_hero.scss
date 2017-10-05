@@ -50,6 +50,7 @@ $root : 'hero__image-container';
 	@include e('caption-text'){
 		color:$warna-font-putih;
 		font-size: 16px;
+		font-weight: 300;
 	}
 
 	@include m('browse'){
@@ -58,6 +59,6 @@ $root : 'hero__image-container';
 
 	@include m('play'){
 		padding: 50px 0;
-		background: transparent;
+		background: black;
 	}
 }

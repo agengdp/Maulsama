@@ -25,4 +25,19 @@
 		color:$warna-font-putih;
 		background: #e85050;
 	}
+
+	@include e('tonton'){
+		background: $warna-primer;
+		display: block;
+		margin:-6px;
+		border-radius: 0;
+		color: $warna-font-putih;
+
+		&:hover{
+			color: $warna-font-putih !important;
+			background: $warna-sekunder;
+		}
+
+
+	}
 }

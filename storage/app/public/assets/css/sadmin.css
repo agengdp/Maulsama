@@ -451,6 +451,43 @@ body {
 .adm-panel-title {
   margin: 0; }
 
+.list {
+  display: block;
+  margin-bottom: 3px; }
+  .list__published {
+    display: block; }
+    .list__published--number {
+      display: inline-block;
+      background: #ddd;
+      padding: 0 10px; }
+    .list__published--title {
+      display: inline-block;
+      margin-left: 7px; }
+  .list__last_uploaded {
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee; }
+    .list__last_uploaded--number {
+      background: #ccc;
+      display: inline-block;
+      padding: 0 20px; }
+    .list__last_uploaded--series {
+      display: inline-block;
+      margin: 0 5px;
+      background: #eee;
+      padding: 0 15px; }
+    .list__last_uploaded--title {
+      display: inline-block; }
+  .list__statistic {
+    margin: 2px 0;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center; }
+    .list__statistic--count {
+      font-weight: 400;
+      font-size: 22px;
+      border: 1px solid #ddd; }
+
 .action-menu {
   margin: 0;
   padding: 0; }

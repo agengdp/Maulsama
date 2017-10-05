@@ -58,10 +58,10 @@
 
 .play-info{
 
-	font-weight:200;
+	font-weight:300;
 
 	@include m('episode'){
-		display:block;
+		display:inline-block;
 	}
 	@include m('episode-lainnya'){
 		display:block;
@@ -75,8 +75,8 @@
 	@include e('image'){
 		background: none;
 		border: none;
-		border-radius: 2px;
+		border-radius: 3px;
 		padding: 0;
-		box-shadow: 0px 0px 15px #111;
+		box-shadow: 0px 0px 1px #111;
 	}
 }

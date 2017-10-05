@@ -12,9 +12,16 @@
 	}
 
 	@include m('play'){
-		background:#333;
+		background: #fff;
 		padding: 30px 0;
-		color:$warna-font-putih;
+
+		h1{
+			color: #2C3E50;
+			// font-family: "Merriweather",cursive;
+			font-weight: 400;
+			font-size: 39px;
+			margin-top: 0;
+		}
 	}
 
 	@include m('error'){

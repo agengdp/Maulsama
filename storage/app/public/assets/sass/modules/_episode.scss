@@ -28,7 +28,7 @@ $episode_root : 'episode';
 		color: #666;
 	}
 	@include e('caption'){
-		padding: 9px 0 !important;
+		padding: 9px 0;
 	}
 	@include e('judul'){
 		font-size:16px;
