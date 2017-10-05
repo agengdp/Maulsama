@@ -31,25 +31,25 @@
                                 {{ $movie->title }}
                             </span>
                         </div>
-                        @foreach ($mp4_links as $stream)
+                        @foreach ($streams as $stream)
                             @if($loop->first)
-                                <iframe id="play-frame" src="https://hotload.net/embed/{{ $stream->video_stream_id }}&thumb={{ base64_encode(asset("images/horz/$movie->cover")) }}" frameborder="0" scrolling="no" webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullScreen="true"></iframe>
+                                <iframe id="play-frame" src="https://hotload.net/embed/{{ $stream['url_id'] }}&thumb={{ base64_encode(asset("images/horz/$movie->cover")) }}" frameborder="0" scrolling="no" webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullScreen="true"></iframe>
                             @endif
                         @endforeach
                     </div> {{-- /.embed-responsive --}}
 
                     <div class="in-panel player__quality">
                         <ul class="quality">
-                            @foreach ($mp4_links as $stream)
+                            @foreach ($streams as $stream)
                                 @if ($loop->first)
 
-                                    <li class="quality__list quality__list--active" data-stream="{{ $stream->video_stream_id }}">{{ $stream->video_quality }}p</li>
+                                    <li class="quality__list quality__list--active" data-stream="{{ $stream['url_id'] }}">{{ $stream['quality'] }}</li>
 
                                 @continue {{-- dengan ini yang aktif tidak akan dobel --}}
 
                                 @endif
 
-                                <li class="quality__list" data-stream="{{ $stream->video_stream_id }}">{{ $stream->video_quality }}p</li>
+                                <li class="quality__list" data-stream="{{ $stream['url_id'] }}">{{ $stream['quality'] }}</li>
                             @endforeach
 
                             <li id="btn-download" class="btn btn--download pull-right"><i class="glyphicon glyphicon-download"></i> Download</li>
@@ -68,7 +68,7 @@
                                             <span class="download__links--format">MP4</span>
                                             <ul class="list list--download">
                                         @endif
-                                            <li class="list__item list--download__item"><a class="list__link list--download__link" href="{{ $video->video_url }}" target="_blank">{{ $video->video_quality }}p</a></li>
+                                            <li class="list__item list--download__item"><a class="list__link list--download__link" href="{{ $video->video_url }}" target="_blank">{{ $video->video_quality }}</a></li>
                                         @if($loop->last)
                                             </ul>
                                         @endif
@@ -80,7 +80,7 @@
                                             <span class="download__links--format">MKV</span>
                                             <ul class="list list--download">
                                         @endif
-                                            <li class="list__item list--download__item"><a class="list__link list--download__link" href="{{ $video->video_url }}" target="_blank">{{ $video->video_quality }}p</a></li>
+                                            <li class="list__item list--download__item"><a class="list__link list--download__link" href="{{ $video->video_url }}" target="_blank">{{ $video->video_quality }}</a></li>
                                         @if($loop->last)
                                             </ul>
                                         @endif
@@ -100,7 +100,7 @@
     </div>{{-- ./container --}}
 </div>
 
-<div class="main-content main-content--play">
+<div class="main-content main-content--play main-content--play__movie">
     <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-3 col-md-3">
