@@ -95,6 +95,16 @@
                   Series : <a href="{{ route('frontSeries', $episode->series->slug) }}">{{ $episode->series->title }}</a> | <span class="play-info play-info--episode">Episode : {{ $episode->episode }}</span>
               </span>
                 <h1 class="header header--play">{{ $episode->judul_episode }}</h1>
+                <div class="main-content__spoiler">
+                  @isset($episode->spoiler)
+                    {{ $episode->spoiler }}
+                  @endisset
+
+                  @empty($episode->spoiler)
+                    <p>Kamu telah menyaksikan Episode ke {{ $episode->episode }} yang berjudul {{ $episode->judul_episode }} dari seri {{ $series->title }}</p>
+                  @endempty
+                </div>
+                <!-- /.spoiler -->
                 <span class="play-info play-info--episode-lainnya">Episode Lainnya:</span>
                 <table class="table table-bordered table-hover table-episode">
                   <tbody>
