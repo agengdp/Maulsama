@@ -25,7 +25,7 @@
 			                        	<a href="{{ route('frontSeries', $navSeri->slug) }}" alt="{{ $navSeri->title }}" class="navbar-media__link">
 				                        	<div class="media-body navbar-media__body">
 				                            	<h4 class="media-heading navbar-media__heading">{{ $navSeri->title }}</h4>
-				                            	{{ str_limit($navSeri->sinopsis, 300) }}
+				                            	{{ str_limit(strip_tags($navSeri->sinopsis), 300) }}
 				                        	</div>
 				                        	<div class="media-right navbar-media__right">
 				                        		<img src="{{ asset('images/nav/'.$navSeri->cover) }}" alt="{{ $navSeri->title }}" class="media-object navbar-media__image">
@@ -50,7 +50,7 @@
 			                        	<a href="{{ route('frontMovie', $navMovie->slug) }}" class="navbar-media__link">
 				                          	<div class="media-body navbar-media__body">
 				                            	<h4 class="media-heading navbar-media__heading">{{ $navMovie->title }}</h4>
-				                            	{{ str_limit($navMovie->sinopsis, 200) }}
+				                            	{{ str_limit(strip_tags($navMovie->sinopsis), 200) }}
 				                          	</div>
 				                        	<div class="media-right navbar-media__right">
 				                        		<img src="{{ asset('images/nav/'.$navMovie->cover) }}" alt="{{ $navMovie->title }}" class="media-object navbar-media__image">

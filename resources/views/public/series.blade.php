@@ -49,7 +49,7 @@
 					</div>
 
 					<div class="sinopsis">
-						<p>{{$series->sinopsis}}</p>
+						<p>{!!$series->sinopsis!!}</p>
 					</div>
 				</div>
 				<!-- /.series__header -->

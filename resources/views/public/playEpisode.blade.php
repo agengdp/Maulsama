@@ -172,5 +172,5 @@
 
 @section('jscontainer')
 <script id="dsq-count-scr" src="//maulsama.disqus.com/count.js" async></script>
-<script type="text/javascript" src="http://localhost:5757/storage/assets/js/min/main-min.js"></script>
+<script type="text/javascript" src="{{ asset('storage/assets/js/min/main-min.js') }}"></script>
 @endsection
