@@ -180,7 +180,7 @@ template { display: none; }
 .episode__image { width: 100%; border-radius: 3px; }
 .episode__series { display: block; font-size: 13px; color: #666; }
 .episode__caption { padding: 9px 0; position: absolute; top: 0; left: 0; width: 100%; }
-.episode__judul { font-size: 16px; white-space: nowrap; overflow: hidden; display: block; color: #fff; }
+.episode__judul { font-size: 16px; display: block; color: #fff; }
 .episode__episode-ke { background: rgba(54, 142, 214, 0.72); color: #fff; padding: 5px; position: absolute; top: 10px; left: 10px; border-radius: 2px; }
 .episode--browse__link { position: relative; box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1); border-radius: 3px; }
 .episode--browse__link:hover { opacity: 0.8; }

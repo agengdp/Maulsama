@@ -94,17 +94,20 @@
                           <hr/>
 
                           <div class="row">
-                            <div class="col-md-2">
-                              Status :
+
+                            <div class="col-md-10">
+                              <div class="form-group">
+                                  {{ Form::label('status', 'Status : ', array('class' => 'col-sm-2 control-label')) }}
+                                  <div class="col-sm-10">
+                                    {{ Form::select('status', ['complete' => 'Complete', 'ongoing' => 'Ongoing'], null, array('class' => 'form-control', 'required' => '')) }}
+                                  </div>
+                              </div>
                             </div>
-                            <!-- /.col-md-2 -->
-                            <div class="col-md-8">
-                              {{ Form::select('status', ['ongoing' => 'Ongoing', 'complete' => 'Complete'], null, array('class' => 'form-control', 'required' => '')) }}
-                            </div>
-                            <!-- /.col-md-12 -->
+                            <!-- /.col-md-10 -->
                             <div class="col-md-2">
                               {{ Form::submit('Publish', array('class' => 'btn btn-primary pull-right btn-block') ) }}
                             </div>
+                            <!-- /.col-md-2 -->
                           </div>
                           <!-- /.row -->
 

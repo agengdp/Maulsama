@@ -77,8 +77,6 @@ $episode_root : 'episode';
 
 	@include e('judul'){
 		font-size:16px;
-		white-space:nowrap;
-		overflow:hidden;
 		display:block;
 		color: $warna-font-putih;
 	}
