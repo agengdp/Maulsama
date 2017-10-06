@@ -241,10 +241,8 @@ class MovieController extends Controller
      */
     public function destroy($id)
     {
-        $movie = Movie::find($id);
+        $movie = Media::find($id);
         $movie->genre()->detach();
-
-        Storage::delete('public/'. $movie->cover); // hapus cover
 
         $movie->delete();
 
