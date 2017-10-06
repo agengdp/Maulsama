@@ -20,7 +20,7 @@ class MovieController extends Controller
     {
         $search = $request->input('s');
 
-        $movies = Media::search($search)->where('type', 'movie')->paginate(20);
+        $movies = Media::search($search)->where('type', 'movie')->latest()->paginate(20);
 
         return view('admin/movies', [
             'heading'   => 'Movies',

@@ -41,8 +41,8 @@ class FrontController extends Controller
         $search = $request->input('s');
 
         $media = new Media();
-        $series = $media->where('type', 'series')->search($search)->paginate($this->taken);
-        $movies = $media->where('type', 'movie')->search($search)->paginate($this->taken);
+        $series = $media->where('type', 'series')->search($search)->latest()->paginate($this->taken);
+        $movies = $media->where('type', 'movie')->search($search)->latest()->paginate($this->taken);
 
         $title = 'Jelajahi Koleksi Anime Sub Indo Terlengkap';
 
@@ -65,8 +65,8 @@ class FrontController extends Controller
      */
     public function browseGenre($genre)
     {
-        $series = Genre::where('slug', $genre)->first()->media()->where('type', 'series')->paginate($this->taken);
-        $movies = Genre::where('slug', $genre)->first()->media()->where('type', 'movie')->paginate($this->taken);
+        $series = Genre::where('slug', $genre)->first()->media()->latest()->where('type', 'series')->paginate($this->taken);
+        $movies = Genre::where('slug', $genre)->first()->media()->latest()->where('type', 'movie')->paginate($this->taken);
 
         return view('public/browse', [
             'browse_title'  => 'Anime Genre : '. Genre::where('slug', $genre)->first()->name,
