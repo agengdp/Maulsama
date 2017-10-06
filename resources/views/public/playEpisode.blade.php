@@ -152,12 +152,8 @@
                     <td>{{ $episode->series->year }}</td>
                   </tr>
                   <tr>
-                    <td><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Genre</td>
-                    <td>{{ $episode->series->year }}</td>
-                  </tr>
-                  <tr>
-                    <td><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Episodes</td>
-                    <td>{{ $episode->series->year }}</td>
+                    <td><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Creator</td>
+                    <td>{{ $episode->series->creator }}</td>
                   </tr>
                 </table>
             </div>

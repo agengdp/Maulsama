@@ -15,7 +15,8 @@
 	}
 
 	@include e('header'){
-
+		// font-family: $roboto;
+		font-weight: 300;
 	}
 }
 .series-info{
@@ -26,7 +27,7 @@
 	@include e('item'){
 		display:inline-block;
 		font-size: 15px;
-		font-weight:100;
+		// font-weight:100;
 		border-right: 1px solid #ddd;
 		padding:5px 20px;
 
@@ -43,7 +44,7 @@
 
 .series-genre{
 	margin:20px 0;
-	font-weight:200;
+	font-weight:400;
 
 	@include e('genres'){
 		color:$warna-font-putih;
@@ -51,9 +52,9 @@
 }
 
 .sinopsis{
-	line-height: 1.7em;
-	font-size:15px;
-	font-weight:200;
+	// line-height: 1.7em;
+	// font-size:13px !important;
+	font-weight:300;
 }
 
 .list-episode{
@@ -94,7 +95,7 @@
 
 .spoiler{
 	font-size: 14px;
-	font-weight: 300;
+	// font-weight: 300;
 	padding:20px;
 	cursor:auto;
 	background:#ccc;
@@ -110,7 +111,9 @@
 		display:block;
 		font-size:17px;
 	}
+
 	@include e('image'){
-    box-shadow: 0 0 5px 0px #333;
+    box-shadow: 0 0 1px 0px #000;
+		border-radius: 2px;
 	}
 }
