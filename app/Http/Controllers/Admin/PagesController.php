@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Page;
+use Purifier;
 
 class PagesController extends Controller
 {
@@ -15,6 +17,7 @@ class PagesController extends Controller
     {
         return view('admin/pages', [
           'heading'   => 'Pages',
+          'pages'     => Page::all(),
         ]);
     }
 
@@ -38,7 +41,25 @@ class PagesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+          'title'         => 'required',
+          'content'       => 'required',
+          'description'   => 'required',
+          'keywords'      => 'required',
+        ]);
+
+        $page = new Page;
+        $page->title        = $request->title;
+        $page->content      = Purifier::clean($request->content);
+        $page->description  = $request->description;
+        $page->keywords     = $request->keywords;
+
+        $page->user()->associate(\Auth::user());
+
+        $page->save();
+
+        flash('Page '.$request->title. ' berhasil ditambahkan.')->success();
+        return redirect()->route('pages.index');
     }
 
     /**
@@ -60,7 +81,12 @@ class PagesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $page = Page::find($id);
+
+        return view('admin/pages/edit', [
+          'heading'     => 'Edit : '. $page->title,
+          'page'        => $page,
+        ]);
     }
 
     /**
@@ -72,7 +98,16 @@ class PagesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $page = Page::find($id);
+
+        $page->title = $request->title;
+        $page->description = $request->description;
+        $page->keywords = $request->keywords;
+        $page->content = Purifier::clean($request->content);
+
+        $page->save();
+        flash('Page berhasil di edit')->success();
+        return redirect()->route('pages.edit', $id);
     }
 
     /**
@@ -83,6 +118,9 @@ class PagesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $page = Page::find($id);
+        $page->delete();
+        flash('Page "'.$page->title.'" telah berhasil di hapus')->success();
+        return redirect()->route('pages.index');
     }
 }
