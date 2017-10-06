@@ -94,7 +94,6 @@
                           <hr/>
 
                           <div class="row">
-                            <hr>
                             <div class="col-md-2">
                               Status :
                             </div>
