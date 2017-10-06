@@ -46,6 +46,10 @@
 		margin:10px 0;
 	}
 
+	@include m('page'){
+		background: #fff;
+	}
+
 
 }
 

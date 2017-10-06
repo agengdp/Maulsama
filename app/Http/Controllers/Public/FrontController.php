@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Genre;
 use App\Media;
 use App\Episode;
+use App\Page;
 
 class FrontController extends Controller
 {
@@ -16,7 +17,10 @@ class FrontController extends Controller
      */
     private $taken = 8;
 
-
+    /**
+     * Halaman index / home
+     * @return view laravel
+     */
     public function index()
     {
         $series       = Media::where('type', 'series')->latest()->take(6)->get();
@@ -169,5 +173,23 @@ class FrontController extends Controller
             'mp4_links'     => $videos->where('video_type', 'mp4'),
             'mkv_links'     => $videos->where('video_type', 'mkv'),
           ]);
+    }
+
+    /**
+     * Menampilkan pages
+     * @param  string $page slug nya pages
+     * @return view laravel
+     */
+    public function page($page)
+    {
+        $page = Page::where('slug', $page)->first();
+
+        if (is_null($page)) {
+            abort(404);
+        }
+
+        return view('public.page', [
+          'page'  => $page
+        ]);
     }
 }

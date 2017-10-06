@@ -55,7 +55,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    Menu <span class="caret"></span>
+                                    <i class="glyphicon glyphicon-menu-hamburger"></i> Menu
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
@@ -89,15 +89,24 @@
               <div class="container">
 
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-8">
                     <ul>
                       <li><a href="{{ route('home') }}" class="{{ isActiveRoute('home', 'active') }}"><i class="glyphicon glyphicon-th-list"></i> Dashboard</a></li>
                       <li><a href="{{ route('series.index') }}" class="{{ isActiveRoute('series.index', 'active') }}"><i class="glyphicon glyphicon-play-circle"></i> Series</a></li>
                       <li><a href="{{ route('movies.index') }}" class="{{ isActiveRoute('movies.index', 'active') }}"><i class="glyphicon glyphicon-film"></i> Movies</a></li>
                       <li><a href="{{ route('genre.index') }}" class="{{ isActiveRoute('genre.index', 'active') }}"><i class="glyphicon glyphicon-list"></i> Genre</a></li>
-                      <li><a href="{{ route('pages.index') }}" class="{{ isActiveRoute('pages.index', 'active') }}"><i class="glyphicon glyphicon-pencil"></i> Pages</a></li>
                     </ul>
                   </div>
+
+                  <div class="col-md-4">
+                    <div class="pull-right">
+                      <ul>
+                        <li><a href="{{ route('pages.index') }}" class="{{ isActiveRoute('pages.index', 'active') }}"><i class="glyphicon glyphicon-pencil"></i> Pages</a></li>
+                        <li><a href=""><i class="glyphicon glyphicon-user"></i> Users</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
                 </div>
 
               </div>

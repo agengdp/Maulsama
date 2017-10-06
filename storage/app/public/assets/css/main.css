@@ -154,8 +154,6 @@ template { display: none; }
 
 .container { max-width: 1300px; }
 
-.maul-hr { margin-left: auto; margin-right: auto; width: 6em; background: #eee; height: .2em; margin-bottom: 30px; margin-top: 10px; }
-
 .btn__sechead { padding: 7px 70px 7px 7px; border-color: #fff; color: #fff; font-size: 20px; }
 .btn--cari { background: #2C82C9; border: 1px solid #42809a; color: #fff; font-size: 19px; padding: 4px 30px; }
 .btn--spoiler { background: #2C82C9; color: #fff; padding: 7px 30px; }
@@ -278,12 +276,17 @@ footer p { margin: 0; }
 .main-content--play__movie h1 { color: #fff; }
 .main-content--error { color: #fff; height: 100vh; }
 .main-content__spoiler { margin: 10px 0; }
+.main-content--page { background: #fff; }
 
 .play__text { text-align: center; font-size: 50px; color: #2C82C9; }
 
 .genre-chooser { margin-top: 30px; }
 
 .filter { background: rgba(185, 185, 185, 0.4); }
+
+.page-content { background: #fefefe; margin: 20px 0; padding: 30px; border-radius: 2px; font-size: 16px; }
+
+.page-title { margin: 0; text-align: center; font-size: 40px; margin-top: 20px; }
 
 .player__embed { background: #333; position: relative; }
 .player__quality { border-radius: 0; padding: 10px; }
@@ -361,5 +364,9 @@ p { font-size: 16px; }
 p.subhead { font-family: "Merriweather", serif; font-size: 20px; }
 
 hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ecf0f1; }
+
+hr.maul-hr { margin-left: auto; margin-right: auto; width: 6em; background: #eee; height: .2em; margin-bottom: 30px; margin-top: 10px; }
+
+hr.page-hr { width: 7em; background: #999; height: .2em; }
 
 .is_active:after { content: " "; display: block; width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 9px solid #428bca; position: absolute; top: 50%; margin-top: -20px; left: 100%; z-index: 2; }

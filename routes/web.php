@@ -87,3 +87,4 @@ Route::get('/play/{series_slug}/{eps_slug}', 'FrontController@playEpisode')->nam
 
 // mendapatkan movie
 Route::get('/movie/{slug}', 'FrontController@movie')->name('frontMovie');
+Route::get('/page/{page}', 'FrontController@page')->name('frontPage');
