@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Genre;
 use App\Media;
 use App\DownloadLink;
+use Purifier;
 
 class MovieController extends Controller
 {
@@ -94,8 +95,14 @@ class MovieController extends Controller
         $media->year          = $request->year;
         $media->creator       = $request->creator;
         $media->producer      = $request->producer;
-        $media->sinopsis      = $request->sinopsis;
+        $media->sinopsis      = Purifier::clean($request->sinopsis);
         $media->type          = 'movie';
+
+        // Karena movie, jadi statusnya complete
+        // Karena table nya sharing antara movie dan series.
+        //
+        // Status ini tidak boleh ada di edit, karena biar nggak berubah
+        $media->status        = 'complete';
 
         $media->save();
         $media->genre()->sync($genrex, false);
@@ -204,7 +211,7 @@ class MovieController extends Controller
         $media->year      = $request->year;
         $media->creator   = $request->creator;
         $media->producer  = $request->producer;
-        $media->sinopsis  = $request->sinopsis;
+        $media->sinopsis  = Purifier::clean($request->sinopsis);
 
         $media->save();
         $media->genre()->sync($genrex);

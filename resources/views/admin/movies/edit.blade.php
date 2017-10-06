@@ -2,7 +2,15 @@
 @section('title')
  Edit: {{$movie->title}}
 @endsection
-
+@section('beforehead')
+      <script src="{{ asset('storage/assets/vendor/tinymce/tinymce.min.js') }}"></script>
+      <script type="text/javascript">
+        tinymce.init({
+          selector: 'textarea#sinopsis',
+          plugins: 'code link lists table',
+        });
+      </script>
+@endsection
 @section('content')
 <div class="row">
   <div class="col-md-12">
@@ -20,7 +28,7 @@
 
       </div> {{-- end of panel heading --}}
       <div class="panel-body">
-        <form enctype="multipart/form-data" method="post" action="{{route('movies.update', $movie->id)}}">
+        {{ Form::open(array('files' => 'true', 'method' => 'PUT', 'route' => ['movies.update', $movie->id])) }}
           <div class="row">
             <div class="col-md-3">
               <div class="cover">
@@ -37,7 +45,7 @@
             <div class="col-md-9">
               <div class="row">
                 <div class="col-md-12">
-                  <input type="text" name="title" class="form-control" placeholder="Judul Movie" value="{{$movie->title}}">
+                  {{ Form::text('title', $movie->title, array('class' => 'form-control', 'placeholder' => 'Judul Movie', 'required' => '')) }}
                   {{ ($errors->has('title')) ? $errors->first('title') : '' }}
                 </div> {{-- end of col-md-12 --}}
               </div> {{-- end of row --}}
@@ -45,19 +53,19 @@
               <div class="row">
                 <div class="col-md-2">
                   Tahun rilis
-                  <input type="text" name="year" class="form-control" placeholder="2016" value="{{$movie->year}}">
+                  {{ Form::text('year', $movie->year, array('class' => 'form-control', 'placeholder' => '2010', 'required' => '')) }}
                   {{ ($errors->has('year')) ? $errors->first('year') : '' }}
                 </div> {{-- end of col-md-2 --}}
 
                 <div class="col-md-5">
                   Creator
-                  <input type="text" name="creator" class="form-control" placeholder="Creator" value="{{$movie->creator}}">
+                  {{ Form::text('creator', $movie->creator, array('class' => 'form-control', 'placeholder' => 'Creator', 'required' => '')) }}
                   {{ ($errors->has('creator')) ? $errors->first('creator') : '' }}
                 </div> {{-- end of col-md-5 --}}
 
                 <div class="col-md-5">
                   Producer
-                  <input type="text" name="producer" class="form-control" placeholder="Producer" value="{{$movie->producer}}">
+                  {{ Form::text('producer', $movie->producer, array('class' => 'form-control', 'placeholder' => 'Producer', 'required' => '')) }}
                   {{ ($errors->has('producer')) ? $errors->first('producer') : '' }}
                 </div> {{-- end of col-md-5 --}}
               </div> {{-- end of row --}}
@@ -65,7 +73,7 @@
               <div class="row">
                 <div class="col-md-12">
                   Genre
-                  <select id="genre" class="form-control" name="genre[]" multiple="multiple">
+                  <select id="genre" class="form-control" name="genre[]" multiple="multiple" required>
                     @foreach ($genres as $value)
                       <option value="{{ $value['name'] }}" @if($value['selected']) selected @endif>{{ $value['name'] }}</option>
                     @endforeach
@@ -77,7 +85,7 @@
               <div class="row">
                 <div class="col-md-12">
                   Sinopsis
-                  <textarea name="sinopsis" class="form-control" rows="8" cols="80" placeholder="Masukkan sinopsis dari movies disini">{{$movie->sinopsis}}</textarea>
+                  {{ Form::textarea('sinopsis', $movie->sinopsis, array('id' => 'sinopsis', 'class' => 'from-control', 'placeholder' => 'Masukkan sinopsis dari movie disini')) }}
                   {{ ($errors->has('sinopsis')) ? $errors->first('sinopsis') : '' }}
                 </div> {{-- end of col-md-12 --}}
               </div> {{-- end of row --}}
@@ -128,14 +136,12 @@
             </div> {{-- end of col-md-9 --}}
             <div class="col-md-3">
               <div class="panel panel-default panel-action">
-                {{ csrf_field() }}
-                <input type="hidden" name="_method" value="PUT">
-                <input type="submit" name="submit" class="btn btn-primary btn-block" value="Update">
+                {{ Form::submit('Update', array('class' => 'btn btn-primary btn-block')) }}
               </div>
             </div> {{-- end of col-md-2 --}}
           </div> {{-- end of row --}}
 
-        </form>
+        {{ Form::close() }}
       </div> {{-- end of panel-body --}}
 
     </div> {{-- end of panel --}}

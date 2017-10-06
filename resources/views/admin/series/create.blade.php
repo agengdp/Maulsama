@@ -1,6 +1,16 @@
 @extends('layouts.app')
 @section('title', 'Create New Series')
 
+@section('beforehead')
+      <script src="{{ asset('storage/assets/vendor/tinymce/tinymce.min.js') }}"></script>
+      <script type="text/javascript">
+        tinymce.init({
+          selector: 'textarea#sinopsis',
+          plugins: 'code link lists table',
+        });
+      </script>
+@endsection
+
 @section('content')
     <div class="row">
         <div class="col-md-12">
@@ -11,26 +21,25 @@
                 </div>
 
                 <div class="panel-body">
-                  <form enctype="multipart/form-data" action="{{ route('series.store') }}" method="post">
+                  {{ Form::open(array('files' => 'true', 'method' => 'POST', 'route' => 'series.store')) }}
                       <div class="row">
                         <div class="col-md-3">
                           <div class="cover">
                             <img id="uploadedimage" class="cover" />
                           </div>
 
-                                 <input type="hidden" name="MAX_UPLOAD_SIZE" value="2500000">
-                                 <input class="inputfile" type="file" name="cover" id="jimage" accept="image/*">
-                                 <label for="jimage">Choose a file</label>
-                             <p>
-                                 <span id="imageerror" style="font-weight: bold; color: red"></span>
-                             </p>
-
+                           <input type="hidden" name="MAX_UPLOAD_SIZE" value="2500000">
+                           <input class="inputfile" type="file" name="cover" id="jimage" accept="image/*">
+                           <label for="jimage">Choose a file</label>
+                           <p>
+                               <span id="imageerror" style="font-weight: bold; color: red"></span>
+                           </p>
                         </div>
                         <div class="col-md-9">
                           <div class="row">
                             <div class="col-md-12">
                               <div class="form-group form-group-lg">
-                                <input type="text" class="form-control" name="title" placeholder="Judul Anime">
+                                {{ Form::text('title', null, array('class' => 'form-control', 'placeholder' => 'Judul Anime', 'required' => '')) }}
                                 {{ ($errors->has('title')) ? $errors->first('title') : '' }}
                               </div>
                             </div>
@@ -41,17 +50,17 @@
                           <div class="row">
                             <div class="col-md-2">
                               Tahun rilis
-                              <input class="form-control" type="text" name="year" placeholder="1993">
+                              {{ Form::text('year', null, array('class' => 'form-control', 'placeholder' => '2009', 'required' => '')) }}
                               {{ ($errors->has('year')) ? $errors->first('year') : '' }}
                             </div>
                             <div class="col-md-5">
                               Creator
-                              <input class="form-control" type="text" name="creator" placeholder="Creator">
+                              {{ Form::text('creator', null, array('class' => 'form-control', 'placeholder' => 'Creator', 'required' => '')) }}
                               {{ ($errors->has('creator')) ? $errors->first('creator') : '' }}
                             </div>
                             <div class="col-md-5">
                               Producer
-                              <input class="form-control" type="text" name="producer" placeholder="Producer">
+                              {{ Form::text('producer', null, array('class' => 'form-control', 'placeholder' => 'Producer', 'required' => '')) }}
                               {{ ($errors->has('producer')) ? $errors->first('producer') : '' }}
                             </div>
                           </div>
@@ -61,8 +70,10 @@
                           <div class="row">
                             <div class="col-md-12">
                               Genre
-                              <select id="genre" class="form-control" name="genre[]" multiple="multiple">
-                                @foreach ($genre_data as $key => $value)
+                              {{-- Ini harus di ubah jadi Blade seharusnya --}}
+                              {{-- WOOOOOOOOOOUUUUIIIIIII --}}
+                              <select id="genre" class="form-control" name="genre[]" multiple="multiple" required>
+                                @foreach ($genre_data as $value)
                                   <option value="{{ $value->name }}">{{ $value->name }}</option>
                                 @endforeach
                               </select>
@@ -75,21 +86,34 @@
                           <div class="row">
                             <div class="col-md-12">
                               Sinopsis
-                              <textarea name="sinopsis" class="form-control" rows="8" cols="80" placeholder="Masukkan sinopsis dari series disini"></textarea>
+                              {{ Form::textarea('sinopsis', null, array('id' => 'sinopsis', 'class' => 'form-control', 'placeholder' => 'Masukkan sinopsis dari series disini')) }}
                               {{ ($errors->has('sinopsis')) ? $errors->first('sinopsis') : '' }}
                             </div>
                           </div>
 
-                          <br/>
+                          <hr/>
 
-                          <input type="hidden" name="_token" value="{{csrf_token()}}">
-                          <input class="btn btn-primary pull-right" type="submit" name="publish" value="Publish">
+                          <div class="row">
+                            <hr>
+                            <div class="col-md-2">
+                              Status :
+                            </div>
+                            <!-- /.col-md-2 -->
+                            <div class="col-md-8">
+                              {{ Form::select('status', ['ongoing' => 'Ongoing', 'complete' => 'Complete'], null, array('class' => 'form-control', 'required' => '')) }}
+                            </div>
+                            <!-- /.col-md-12 -->
+                            <div class="col-md-2">
+                              {{ Form::submit('Publish', array('class' => 'btn btn-primary pull-right btn-block') ) }}
+                            </div>
+                          </div>
+                          <!-- /.row -->
 
                         </div>
                       </div>
                     </div>
+                  {{ Form::close() }}
 
-                  </form>
             </div>
         </div>
     </div>

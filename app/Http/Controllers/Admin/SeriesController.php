@@ -8,6 +8,7 @@ use App\Episode;
 use App\Genre;
 use Response;
 use Image;
+use Purifier;
 
 class SeriesController extends \App\Http\Controllers\Controller
 {
@@ -94,8 +95,9 @@ class SeriesController extends \App\Http\Controllers\Controller
         $media->year      = $request->year;
         $media->creator   = $request->creator;
         $media->producer  = $request->producer;
-        $media->sinopsis  = $request->sinopsis;
+        $media->sinopsis  = Purifier::clean($request->sinopsis);
         $media->type      = 'series';
+        $media->status    = $request->status;
         $media->save();
         $media->genre()->sync($genrex, false);
 
@@ -119,8 +121,8 @@ class SeriesController extends \App\Http\Controllers\Controller
         return view('admin/series/show', [
           'heading'   => 'Show : '.$series->title,
           'adm_title' => 'Show : '. $series->title,
-          'series' => $series,
-          'episodes' => $episodes
+          'series'    => $series,
+          'episodes'  => $episodes
         ]);
     }
 
@@ -208,10 +210,11 @@ class SeriesController extends \App\Http\Controllers\Controller
             $updateSeries->cover = $image_file_name[1];
         }
 
-        $updateSeries->year = $request->year;
-        $updateSeries->creator = $request->creator;
+        $updateSeries->year     = $request->year;
+        $updateSeries->creator  = $request->creator;
         $updateSeries->producer = $request->producer;
-        $updateSeries->sinopsis = $request->sinopsis;
+        $updateSeries->sinopsis = Purifier::clean($request->sinopsis);
+        $updateSeries->status   = $request->status;
         $updateSeries->save();
         $updateSeries->genre()->sync($genrex); // tulisan false dibelakang dihilangkan karena untuk 'detach' genre
 

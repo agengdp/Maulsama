@@ -3,6 +3,16 @@
  Edit: {{$series->title}}
 @endsection
 
+@section('beforehead')
+      <script src="{{ asset('storage/assets/vendor/tinymce/tinymce.min.js') }}"></script>
+      <script type="text/javascript">
+        tinymce.init({
+          selector: 'textarea#sinopsis',
+          plugins: 'code link lists table',
+        });
+      </script>
+@endsection
+
 @section('content')
 
     <div class="row">
@@ -14,7 +24,7 @@
                 </div>
 
                 <div class="panel-body">
-                  <form enctype="multipart/form-data" action="{{ route('series.update', $series->id) }}" method="post">
+                  {{ Form::open(array('files' => 'true', 'method' => 'PUT', 'route' => ['series.update', $series->id])) }}
                       <div class="row">
                         <div class="col-md-3">
                           <div class="cover">
@@ -33,7 +43,7 @@
                           <div class="row">
                             <div class="col-md-12">
                               <div class="form-group form-group-lg">
-                                <input type="text" class="form-control" name="title" placeholder="Judul Anime" value="{{$series->title}}">
+                                {{ Form::text('title', $series->title, array('class' => 'form-control', 'placeholder' => 'Judul Anime', 'required' => '')) }}
                                 {{ ($errors->has('title')) ? $errors->first('title') : '' }}
                               </div>
                             </div>
@@ -44,17 +54,17 @@
                           <div class="row">
                             <div class="col-md-2">
                               Tahun rilis
-                              <input class="form-control" type="text" name="year" placeholder="1993" value="{{$series->year}}">
+                              {{ Form::text('year', $series->year, array('class' => 'form-control', 'placeholder' => '2009', 'required' => '')) }}
                               {{ ($errors->has('year')) ? $errors->first('year') : '' }}
                             </div>
                             <div class="col-md-5">
                               Creator
-                              <input class="form-control" type="text" name="creator" placeholder="Creator" value="{{$series->creator}}">
+                              {{ Form::text('creator', $series->creator, array('class' => 'form-control', 'placeholder' => 'Creator', 'required' => '')) }}
                               {{ ($errors->has('creator')) ? $errors->first('creator') : '' }}
                             </div>
                             <div class="col-md-5">
                               Producer
-                              <input class="form-control" type="text" name="producer" placeholder="Producer" value="{{$series->producer}}">
+                              {{ Form::text('producer', $series->producer, array('class' => 'form-control', 'placeholder' => 'Producer', 'required' => '')) }}
                               {{ ($errors->has('producer')) ? $errors->first('producer') : '' }}
                             </div>
                           </div>
@@ -64,7 +74,7 @@
                           <div class="row">
                             <div class="col-md-12">
                               Genre
-                              <select id="genre" class="form-control" name="genre[]" multiple="multiple">
+                              <select id="genre" class="form-control" name="genre[]" multiple="multiple" required>
                                 @foreach ($genres as $value)
                                   <option value="{{ $value['name'] }}" @if($value['selected']) selected @endif>{{ $value['name'] }}</option>
                                 @endforeach
@@ -76,19 +86,33 @@
                           <div class="row">
                             <div class="col-md-12">
                               Sinopsis
-                              <textarea name="sinopsis" class="form-control" rows="8" cols="80" placeholder="Masukkan sinopsis dari series disini">{{$series->sinopsis}}</textarea>
+                              {{ Form::textarea('sinopsis', $series->sinopsis, array('id' => 'sinopsis', 'class' => 'form-control', 'placeholder' => 'Masukkan sinopsis dari series disini')) }}
                               {{ ($errors->has('sinopsis')) ? $errors->first('sinopsis') : '' }}
                             </div>
                           </div>
 
-                          <br/>
+                          <hr/>
 
-                          <input type="hidden" name="_token" value="{{csrf_token()}}">
-                          <input type="hidden" name="_method" value="PUT">
-                          <input class="btn btn-primary pull-right" type="submit" name="publish" value="Update">
+                          <div class="row">
+                            <hr>
+                            <div class="col-md-2">
+                              Status :
+                            </div>
+                            <!-- /.col-md-2 -->
+                            <div class="col-md-8">
+                              {{ Form::select('status', ['ongoing' => 'Ongoing', 'complete' => 'Complete'], $series->status, array('class' => 'form-control', 'required' => '')) }}
+                            </div>
+                            <!-- /.col-md-12 -->
+                            <div class="col-md-2">
+                              {{ Form::submit('Update', array('class' => 'btn btn-primary pull-right btn-block') ) }}
+                            </div>
+                          </div>
+                          <!-- /.row -->
+
                         </div>
                       </div>
                     </form>
+                    {{ Form::close() }}
                   </div>
             </div>
         </div>

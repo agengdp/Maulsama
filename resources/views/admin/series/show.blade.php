@@ -40,7 +40,7 @@
                   <hr/>
 
                   <p>
-                    {{ $series->sinopsis }}
+                    {!! $series->sinopsis !!}
                   </p>
 
                   <hr/>

@@ -1,5 +1,16 @@
 @extends('layouts.app')
 @section('title', 'Create New Movie')
+
+@section('beforehead')
+      <script src="{{ asset('storage/assets/vendor/tinymce/tinymce.min.js') }}"></script>
+      <script type="text/javascript">
+        tinymce.init({
+          selector: 'textarea#sinopsis',
+          plugins: 'code link lists table',
+        });
+      </script>
+@endsection
+
 @section('content')
 <div class="row">
   <div class="col-md-12">
@@ -10,7 +21,7 @@
       </div> {{-- end of panel heading --}}
 
       <div class="panel-body">
-        <form enctype="multipart/form-data" method="post" action="{{route('movies.store')}}">
+        {{ Form::open(array('files' => 'true', 'method' => 'POST', 'route' => 'movies.store')) }}
           <div class="row">
             <div class="col-md-3">
               <div class="cover">
@@ -27,7 +38,7 @@
             <div class="col-md-9">
               <div class="row">
                 <div class="col-md-12">
-                  <input type="text" name="title" class="form-control" placeholder="Judul Movie">
+                  {{ Form::text('title', null, array('class' => 'form-control', 'placeholder' => 'Judul Movie', 'required' => '')) }}
                   {{ ($errors->has('title')) ? $errors->first('title') : '' }}
                 </div> {{-- end of col-md-12 --}}
               </div> {{-- end of row --}}
@@ -35,19 +46,19 @@
               <div class="row">
                 <div class="col-md-2">
                   Tahun rilis
-                  <input type="text" name="year" class="form-control" placeholder="2016">
+                  {{ Form::text('year', null, array('class' => 'form-control', 'placeholder' => '2010', 'required' => '')) }}
                   {{ ($errors->has('year')) ? $errors->first('year') : '' }}
                 </div> {{-- end of col-md-2 --}}
 
                 <div class="col-md-5">
                   Creator
-                  <input type="text" name="creator" class="form-control" placeholder="Creator">
+                  {{ Form::text('creator', null, array('class' => 'form-control', 'placeholder' => 'Creator', 'required' => '')) }}
                   {{ ($errors->has('creator')) ? $errors->first('creator') : '' }}
                 </div> {{-- end of col-md-5 --}}
 
                 <div class="col-md-5">
                   Producer
-                  <input type="text" name="producer" class="form-control" placeholder="Producer">
+                  {{ Form::text('producer', null, array('class' => 'form-control', 'placeholder' => 'Producer', 'required' => '')) }}
                   {{ ($errors->has('producer')) ? $errors->first('producer') : '' }}
                 </div> {{-- end of col-md-5 --}}
               </div> {{-- end of row --}}
@@ -55,7 +66,7 @@
               <div class="row">
                 <div class="col-md-12">
                   Genre
-                  <select id="genre" class="form-control" name="genre[]" multiple="multiple">
+                  <select id="genre" class="form-control" name="genre[]" multiple="multiple" required>
                     @foreach ($genre_data as $key => $value)
                       <option value="{{ $value->name }}">{{ $value->name }}</option>
                     @endforeach
@@ -67,7 +78,7 @@
               <div class="row">
                 <div class="col-md-12">
                   Sinopsis
-                  <textarea name="sinopsis" class="form-control" rows="8" cols="80" placeholder="Masukkan sinopsis dari movies disini"></textarea>
+                  {{ Form::textarea('sinopsis', null, array('id' => 'sinopsis', 'class' => 'from-control', 'placeholder' => 'Masukkan sinopsis dari movie disini')) }}
                   {{ ($errors->has('sinopsis')) ? $errors->first('sinopsis') : '' }}
                 </div> {{-- end of col-md-12 --}}
               </div> {{-- end of row --}}
@@ -95,7 +106,7 @@
                           <option value="720p">720p</option>
                           <option value="480p">480p</option>
                           <option value="360p">360p</option>
-                          <option value="144p">144</option>
+                          <option value="144p">144p</option>
                         </select>
                       </div> {{-- end of col-md-2 --}}
                       <div class="col-md-8" style="margin-bottom:5px">
@@ -118,13 +129,12 @@
             </div> {{-- end of col-md-9 --}}
             <div class="col-md-3">
               <div class="panel panel-default panel-action">
-                {{ csrf_field() }}
-                <input type="submit" name="submit" class="btn btn-primary btn-block" value="Publish">
+                {{ Form::submit('Publish', array('class' => 'btn btn-primary btn-block')) }}
               </div>
             </div> {{-- end of col-md-2 --}}
           </div> {{-- end of row --}}
 
-        </form>
+        {{ Form::close() }}
       </div> {{-- end of panel-body --}}
 
     </div> {{-- end of panel --}}
