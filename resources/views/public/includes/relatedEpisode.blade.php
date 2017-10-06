@@ -6,7 +6,7 @@
         <h3 class="header header--related">Anime Menarik Lainnya !</h3>
 
         {{-- @if(count($series->genre->random()->media) > 0) --}}
-          @foreach ($series->genre->random()->media as $seri)
+          @foreach ($series->genre->random()->media->where('type', 'series') as $seri)
             <div class="col-xs-6 col-md-2 col-lg-2 related__container">
               <a href="{{ route('frontSeries', $seri->slug) }}" class="thumbnail related__link">
                 <img src="{{ asset("images/vert/$seri->cover" ) }}" alt="{{ $seri->title }}" class="related__image">
