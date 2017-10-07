@@ -21,7 +21,7 @@
                         </div>
                         @foreach ($streams as $stream)
                             @if($loop->first)
-                                {{-- <iframe id="play-frame" src="https://hotload.net/embed/{{ $stream['url_id'] }}&thumb={{ base64_encode(asset("images/horz/$episode->cover")) }}" frameborder="0" scrolling="no" webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullScreen="true"></iframe> --}}
+                                <iframe id="play-frame" src="https://hotload.net/embed/{{ $stream['url_id'] }}&thumb={{ base64_encode(asset("images/horz/$episode->cover")) }}" frameborder="0" scrolling="no" webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullScreen="true"></iframe>
                             @endif
                         @endforeach
                     </div> {{-- /.embed-responsive --}}
