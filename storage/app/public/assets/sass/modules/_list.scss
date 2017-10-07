@@ -67,6 +67,10 @@
 			padding:7px 25px;
 			color:$warna-font-putih;
 			border-radius:2px;
+			&:hover{
+				background: $warna-primer;
+				color: #fff;
+			}
 		}
 	}
 

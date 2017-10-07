@@ -4,6 +4,7 @@
 	@include e('embed'){
 		background: #333;
 		position: relative;
+		display: grid;
 	}
 
 	@include e('quality'){
@@ -28,6 +29,15 @@
 			display:block;
 		}
 
+	}
+
+	@include e('empty'){
+		background: rgba(105, 105, 105, 0.37);
+		margin: auto;
+		margin-bottom: -33%;
+		font-family: $merryweather;
+		font-size: 20px;
+		padding: 15px 30px;
 	}
 
 }
