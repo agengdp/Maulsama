@@ -31,16 +31,21 @@
                                 {{ $movie->title }}
                             </span>
                         </div>
-                        @foreach ($streams as $stream)
+                        @forelse ($streams as $stream)
                             @if($loop->first)
                                 <iframe id="play-frame" src="https://hotload.net/embed/{{ $stream['url_id'] }}&thumb={{ base64_encode(asset("images/horz/$movie->cover")) }}" frameborder="0" scrolling="no" webkitAllowFullScreen="true" mozallowfullscreen="true" allowFullScreen="true"></iframe>
                             @endif
-                        @endforeach
+                        @empty
+                          <div class="player__empty">
+                            No streaming available
+                          </div>
+                          <!-- /.player__empty -->
+                        @endforelse
                     </div> {{-- /.embed-responsive --}}
 
                     <div class="in-panel player__quality">
                         <ul class="quality">
-                            @foreach ($streams as $stream)
+                            @forelse ($streams as $stream)
                                 @if ($loop->first)
 
                                     <li class="quality__list quality__list--active" data-stream="{{ $stream['url_id'] }}">{{ $stream['quality'] }}</li>
@@ -50,7 +55,9 @@
                                 @endif
 
                                 <li class="quality__list" data-stream="{{ $stream['url_id'] }}">{{ $stream['quality'] }}</li>
-                            @endforeach
+                            @empty
+                              <li class="quality__list quality__list--active quality__list--empty">No streaming available at the moment</li>
+                            @endforelse
 
                             <li id="btn-download" class="btn btn--download pull-right"><i class="glyphicon glyphicon-download"></i> Download</li>
                         </ul> {{-- /ul#video-quality --}}
