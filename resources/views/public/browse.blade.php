@@ -33,13 +33,6 @@
 
 			<div class="col-md-12 genre-chooser">
 				<h3 class="header--browse">Pilih Genre :</h3>
-				<div class="pull-right">
-					@if(isset($s))
-						{{ $series->appends(['s' => $s])->links() }}
-					@else
-						{{ $series->links() }}
-					@endif
-				</div>{{-- /.pull-right --}}
 			</div>{{-- /.col-md-12 --}}
 
 			<div class="col-md-3">
@@ -59,6 +52,13 @@
 
 			<div class="col-md-9">
 				<div class="row">
+					<div class="col-md-12 text-center">
+						@if(isset($s))
+							{{ $series->appends(['s' => $s])->links() }}
+						@else
+							{{ $series->links() }}
+						@endif
+					</div>{{-- /.col-md-12 --}}
 					@if(count($series) > 0)
 						<div class="col-md-12">
 							<h4>Series</h4>
