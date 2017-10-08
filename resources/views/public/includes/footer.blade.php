@@ -31,6 +31,7 @@
 					<ul>
 						<li>Cara Download</li>
 						<li>Laport Link Rusak / Error</li>
+						<li>{{ page('dmca') }}</li>
 					</ul>
 				</div>
 				<!-- /.footer-widget__content -->

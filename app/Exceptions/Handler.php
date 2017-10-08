@@ -60,6 +60,19 @@ class Handler extends ExceptionHandler
             return response()->json(['error' => 'Unauthenticated.'], 401);
         }
 
+        // DevMarketer
+        // $guard = array_get($exception->guards(), 0);
+        //
+        // switch ($guard) {
+        //   case 'value':
+        //     # code...
+        //     break;
+        //
+        //   default:
+        //     # code...
+        //     break;
+        // }
+
         return redirect()->guest(route('login'));
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -25,6 +26,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Auth::provider('eloquent.root', function ($app, array $config) {
+            return new \App\Http\Controllers\Auth\EloquentRootUserProvider($app['hash'], $config['model']);
+        });
     }
 }

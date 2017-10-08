@@ -14,10 +14,10 @@
 
 Auth::routes();
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/home', 'Admin\HomeController@index')->name('home');
-    Route::resource('/home/series', 'Admin\SeriesController');
-    Route::resource('/home/series.episode', 'EpisodeController', [
+Route::group(['prefix' => 'app'], function () {
+    Route::get('/', 'Admin\AppController@index')->name('app');
+    Route::resource('/series', 'Admin\SeriesController');
+    Route::resource('/series.episode', 'EpisodeController', [
       'names' => [
         'store'     => 'episode.store',
         'update'    => 'episode.update',
@@ -28,15 +28,15 @@ Route::group(['middleware' => 'auth'], function () {
       ]
     ]);
 
-    Route::resource('/home/movies', 'MovieController', [
+    Route::resource('/movies', 'MovieController', [
       'except' => [
         'show'
       ],
     ]);
 
-    Route::resource('/home/genre', 'GenreController');
+    Route::resource('/genre', 'GenreController');
 
-    Route::resource('/home/pages', 'PagesController');
+    Route::resource('/pages', 'PagesController');
 });
 
 /**
