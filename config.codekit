@@ -954,6 +954,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/resources\/views\/public\/page.blade.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resources\/views\/public\/page.blade.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/resources\/views\/public\/playEpisode.blade.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1298,6 +1307,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/storage\/app\/public\/0Fh1ccH7UDb1GvXKQnMqluXTwfvsbaU7gLivzIqS.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56356,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/0Fh1ccH7UDb1GvXKQnMqluXTwfvsbaU7gLivzIqS.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/0Fh1ccH7UDb1GvXKQnMqluXTwfvsbaU7gLivzIqS.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/143ziCsxlSxDqKNT27bTgxRVmu0a0tO94aC3QK2I.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 316005,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/143ziCsxlSxDqKNT27bTgxRVmu0a0tO94aC3QK2I.png",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/143ziCsxlSxDqKNT27bTgxRVmu0a0tO94aC3QK2I.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/2k4vegTnYpGCnJ1TgkigneOqRwXZAoFY0osnjiIP.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 377290,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/2k4vegTnYpGCnJ1TgkigneOqRwXZAoFY0osnjiIP.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/2k4vegTnYpGCnJ1TgkigneOqRwXZAoFY0osnjiIP.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/2yvypQzNzcQdDtQEzv4qLyjSvHI9db1HVQ0Qhepg.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 320689,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/2yvypQzNzcQdDtQEzv4qLyjSvHI9db1HVQ0Qhepg.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/2yvypQzNzcQdDtQEzv4qLyjSvHI9db1HVQ0Qhepg.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/2Zgwr1WykqusdVsRFv0SpQu5z25HpbnGqdCZHdI9.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 219161,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/2Zgwr1WykqusdVsRFv0SpQu5z25HpbnGqdCZHdI9.png",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/2Zgwr1WykqusdVsRFv0SpQu5z25HpbnGqdCZHdI9.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/storage\/app\/public\/4qn2Izavh8XNlRpcbOdmCLzPRdSwYk6MmMwaEsZh.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1316,6 +1380,83 @@
 		"initialSize": 133130,
 		"inputAbbreviatedPath": "\/storage\/app\/public\/5cs7D7OBWdRF9n4lSbAI5N5HLMfEohv1n4LqWYDU.jpeg",
 		"outputAbbreviatedPath": "\/storage\/app\/public\/5cs7D7OBWdRF9n4lSbAI5N5HLMfEohv1n4LqWYDU.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/5t2CcbRia28xllDCoLo0uxqPY0mZcT0u0w2ffGH2.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100539,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/5t2CcbRia28xllDCoLo0uxqPY0mZcT0u0w2ffGH2.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/5t2CcbRia28xllDCoLo0uxqPY0mZcT0u0w2ffGH2.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/73PyAf7uyyz5vpaE4BDLH4GsIlvNVvhcTwD2PiXA.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 300806,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/73PyAf7uyyz5vpaE4BDLH4GsIlvNVvhcTwD2PiXA.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/73PyAf7uyyz5vpaE4BDLH4GsIlvNVvhcTwD2PiXA.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/82nWvi7jGbSgd9HyQffpL0SMs9aWGY67FEKFinVI.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51685,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/82nWvi7jGbSgd9HyQffpL0SMs9aWGY67FEKFinVI.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/82nWvi7jGbSgd9HyQffpL0SMs9aWGY67FEKFinVI.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/89uaqo5UoDD59ewTXYU2I4HGzBWBre9SyBNwPKuu.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60603,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/89uaqo5UoDD59ewTXYU2I4HGzBWBre9SyBNwPKuu.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/89uaqo5UoDD59ewTXYU2I4HGzBWBre9SyBNwPKuu.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/8f3IRFjfMfUCn4j602RNBjVay6GV9jmOlgGYpRSQ.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 162795,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/8f3IRFjfMfUCn4j602RNBjVay6GV9jmOlgGYpRSQ.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/8f3IRFjfMfUCn4j602RNBjVay6GV9jmOlgGYpRSQ.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/8QQZGSwHi9n4rihh5XC9HBCuJgShp3YUoG9Q4Pqp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 540890,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/8QQZGSwHi9n4rihh5XC9HBCuJgShp3YUoG9Q4Pqp.png",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/8QQZGSwHi9n4rihh5XC9HBCuJgShp3YUoG9Q4Pqp.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/A3pyTcwrJ001aMSxOjntxA1SGJro09chhLwXL3mM.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 255388,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/A3pyTcwrJ001aMSxOjntxA1SGJro09chhLwXL3mM.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/A3pyTcwrJ001aMSxOjntxA1SGJro09chhLwXL3mM.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1855,6 +1996,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/sass\/modules\/_main-content.scss",
 		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/sass\/css\/_main-content.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/storage\/app\/public\/assets\/sass\/modules\/_page.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/assets\/sass\/modules\/_page.scss",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/assets\/sass\/css\/_page.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -3875,6 +4032,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/storage\/app\/public\/E1zR74NetPnaRIcUSH9NSnlciuOQ01W5IrwLbxca.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 46119,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/E1zR74NetPnaRIcUSH9NSnlciuOQ01W5IrwLbxca.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/E1zR74NetPnaRIcUSH9NSnlciuOQ01W5IrwLbxca.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/FT6wwQOGtzt7dQVmIQys5eYOTzSA1IhgsUY9kkmI.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 135508,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/FT6wwQOGtzt7dQVmIQys5eYOTzSA1IhgsUY9kkmI.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/FT6wwQOGtzt7dQVmIQys5eYOTzSA1IhgsUY9kkmI.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/storage\/app\/public\/GHQaOA3iGqlJpXx0BSe1QJxLem5XF2CEZqOtXpZt.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3886,6 +4065,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/storage\/app\/public\/haPys0pHzXlUgHt70oijTSjdrztfYT21Hwi6ST2Y.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 377290,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/haPys0pHzXlUgHt70oijTSjdrztfYT21Hwi6ST2Y.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/haPys0pHzXlUgHt70oijTSjdrztfYT21Hwi6ST2Y.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/storage\/app\/public\/hBA9wsi4Pe6wGf9cphQeNnmidKSUizy4m3WSIPe6.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3893,6 +4083,17 @@
 		"initialSize": 9989,
 		"inputAbbreviatedPath": "\/storage\/app\/public\/hBA9wsi4Pe6wGf9cphQeNnmidKSUizy4m3WSIPe6.jpeg",
 		"outputAbbreviatedPath": "\/storage\/app\/public\/hBA9wsi4Pe6wGf9cphQeNnmidKSUizy4m3WSIPe6.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/iIcHawF3C3CxATRb5nQCrjSEvwR6idN9gTizQqRi.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62201,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/iIcHawF3C3CxATRb5nQCrjSEvwR6idN9gTizQqRi.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/iIcHawF3C3CxATRb5nQCrjSEvwR6idN9gTizQqRi.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3952,6 +4153,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/storage\/app\/public\/pkOskjWUdbAv5IZior4VQkxX9vkrAM883VWtreAi.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 177826,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/pkOskjWUdbAv5IZior4VQkxX9vkrAM883VWtreAi.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/pkOskjWUdbAv5IZior4VQkxX9vkrAM883VWtreAi.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/storage\/app\/public\/QHOTZdgosSpLFZqsBczI7wxrWKxm7VcNkqwypor5.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3959,6 +4171,17 @@
 		"initialSize": 320689,
 		"inputAbbreviatedPath": "\/storage\/app\/public\/QHOTZdgosSpLFZqsBczI7wxrWKxm7VcNkqwypor5.jpeg",
 		"outputAbbreviatedPath": "\/storage\/app\/public\/QHOTZdgosSpLFZqsBczI7wxrWKxm7VcNkqwypor5.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/qIgLK4dEqCCZxlpYqVSF1Zk5MLnF4cCKO5QIquIR.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 135508,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/qIgLK4dEqCCZxlpYqVSF1Zk5MLnF4cCKO5QIquIR.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/qIgLK4dEqCCZxlpYqVSF1Zk5MLnF4cCKO5QIquIR.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4007,6 +4230,72 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/storage\/app\/public\/u44oc9ukrfPLlArOAB2QKSbO3Zyx8wHHrEIH5QE9.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 204510,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/u44oc9ukrfPLlArOAB2QKSbO3Zyx8wHHrEIH5QE9.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/u44oc9ukrfPLlArOAB2QKSbO3Zyx8wHHrEIH5QE9.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/UyCVPAmzjsXkDNwu70hIysm9QkIncEl99a4z9uDI.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 206046,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/UyCVPAmzjsXkDNwu70hIysm9QkIncEl99a4z9uDI.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/UyCVPAmzjsXkDNwu70hIysm9QkIncEl99a4z9uDI.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/VfqBZoXoaVeAkrh94vG2auSsDr8DLRbyZ14LRu8P.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 135508,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/VfqBZoXoaVeAkrh94vG2auSsDr8DLRbyZ14LRu8P.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/VfqBZoXoaVeAkrh94vG2auSsDr8DLRbyZ14LRu8P.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/VwqK4ocScr2ClfCBfI3eCLmfb7u86zjTMdMpKcRw.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41586,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/VwqK4ocScr2ClfCBfI3eCLmfb7u86zjTMdMpKcRw.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/VwqK4ocScr2ClfCBfI3eCLmfb7u86zjTMdMpKcRw.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/wLwoLhnQkZyYo2FFo2h7PRFT7kiZTT9YiapaFCCv.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101925,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/wLwoLhnQkZyYo2FFo2h7PRFT7kiZTT9YiapaFCCv.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/wLwoLhnQkZyYo2FFo2h7PRFT7kiZTT9YiapaFCCv.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/storage\/app\/public\/wvRJLIhJ5BlCZWRRUocwxhc2FHgcNlfFAhk2jSFw.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 90440,
+		"inputAbbreviatedPath": "\/storage\/app\/public\/wvRJLIhJ5BlCZWRRUocwxhc2FHgcNlfFAhk2jSFw.jpeg",
+		"outputAbbreviatedPath": "\/storage\/app\/public\/wvRJLIhJ5BlCZWRRUocwxhc2FHgcNlfFAhk2jSFw.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/storage\/app\/public\/YLt5oiQ09UTFLiN68EL8H3ghZo55c5RrcjLuShZ1.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4032,6 +4321,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/storage\/framework\/views\/156c47c389f4b7fddde308bd7da7062067774112.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/framework\/views\/197b09f5c2bf18df3da85bba1b914676dacf2458.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/framework\/views\/197b09f5c2bf18df3da85bba1b914676dacf2458.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -4180,6 +4478,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/storage\/framework\/views\/a2c57eb92980471be2c7e8133b688859676f9f89.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/framework\/views\/a2c57eb92980471be2c7e8133b688859676f9f89.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/storage\/framework\/views\/a2cfb300b1982ff69fc9e993887fdca7b0799f4e.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4203,6 +4510,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/storage\/framework\/views\/a8c794eba9526a1537b974da57785d9da101d942.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/storage\/framework\/views\/ba193e943eabd03349274dd90a2d85fc08ffaa43.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/storage\/framework\/views\/ba193e943eabd03349274dd90a2d85fc08ffaa43.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -43542,329 +43858,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/vendor\/rtconner\/laravel-tagging\/composer.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/composer.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/composer-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/config\/tagging.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/config\/tagging.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/docs\/events.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/docs\/events.md",
-		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/docs\/events.html",
-		"outputFormat": 0,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/docs\/how-to-override-util.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/docs\/how-to-override-util.md",
-		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/docs\/how-to-override-util.html",
-		"outputFormat": 0,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/docs\/suggesting.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/docs\/suggesting.md",
-		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/docs\/suggesting.html",
-		"outputFormat": 0,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/docs\/usage-examples.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/docs\/usage-examples.md",
-		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/docs\/usage-examples.html",
-		"outputFormat": 0,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/migrations\/2014_01_07_073615_create_tagged_table.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/migrations\/2014_01_07_073615_create_tagged_table.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/migrations\/2014_01_07_073615_create_tags_table.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/migrations\/2014_01_07_073615_create_tags_table.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/migrations\/2016_06_29_073615_create_tag_groups_table.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/migrations\/2016_06_29_073615_create_tag_groups_table.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/migrations\/2016_06_29_073615_update_tags_table.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/migrations\/2016_06_29_073615_update_tags_table.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/README.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/README.md",
-		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/README.html",
-		"outputFormat": 0,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Console\/Commands\/GenerateTagGroup.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Console\/Commands\/GenerateTagGroup.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Contracts\/TaggableContract.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Contracts\/TaggableContract.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Contracts\/TaggingUtility.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Contracts\/TaggingUtility.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Events\/TagAdded.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Events\/TagAdded.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Events\/TagRemoved.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Events\/TagRemoved.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Model\/Tag.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Model\/Tag.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Model\/Tagged.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Model\/Tagged.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Model\/TagGroup.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Model\/TagGroup.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Providers\/LumenTaggingServiceProvider.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Providers\/LumenTaggingServiceProvider.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Providers\/TaggingServiceProvider.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Providers\/TaggingServiceProvider.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Taggable.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Taggable.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/src\/Util.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/src\/Util.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/tests\/CommonUsageTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/tests\/CommonUsageTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/tests\/TaggedTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/tests\/TaggedTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/tests\/TagGroupTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/tests\/TagGroupTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/tests\/TagTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/tests\/TagTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/tests\/TestCase.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/tests\/TestCase.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/vendor\/rtconner\/laravel-tagging\/tests\/UtilTest.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/vendor\/rtconner\/laravel-tagging\/tests\/UtilTest.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/vendor\/sebastian\/code-unit-reverse-lookup\/ChangeLog.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
@@ -45024,6 +45017,299 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/vendor\/sebastian\/version\/src\/Version.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/CHANGELOG.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/CHANGELOG.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/CHANGELOG.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/composer.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/composer.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/composer-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/vendor\/spatie\/laravel-permission\/config\/permission.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/config\/permission.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/CONTRIBUTING.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/CONTRIBUTING.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/CONTRIBUTING.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/LICENSE.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/LICENSE.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/LICENSE.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Commands\/CreatePermission.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Commands\/CreatePermission.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Commands\/CreateRole.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Commands\/CreateRole.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Contracts\/Permission.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Contracts\/Permission.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Contracts\/Role.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Contracts\/Role.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/GuardDoesNotMatch.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/GuardDoesNotMatch.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/PermissionAlreadyExists.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/PermissionAlreadyExists.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/PermissionDoesNotExist.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/PermissionDoesNotExist.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/RoleAlreadyExists.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/RoleAlreadyExists.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/RoleDoesNotExist.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Exceptions\/RoleDoesNotExist.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/helpers.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/helpers.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Middlewares\/PermissionMiddleware.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Middlewares\/PermissionMiddleware.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Middlewares\/RoleMiddleware.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Middlewares\/RoleMiddleware.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Models\/Permission.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Models\/Permission.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Models\/Role.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Models\/Role.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/PermissionRegistrar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/PermissionRegistrar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/PermissionServiceProvider.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/PermissionServiceProvider.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasPermissions.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasPermissions.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasRoles.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasRoles.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/src\/Traits\/RefreshesPermissionCache.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/src\/Traits\/RefreshesPermissionCache.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/views\/sitemap.blade.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/views\/sitemap.blade.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/vendor\/spatie\/laravel-permission\/views\/url.blade.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/vendor\/spatie\/laravel-permission\/views\/url.blade.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
