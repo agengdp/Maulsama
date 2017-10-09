@@ -102,7 +102,9 @@
                     <div class="pull-right">
                       <ul>
                         <li><a href="{{ route('pages.index') }}" class="{{ isActiveRoute('pages.index', 'active') }}"><i class="glyphicon glyphicon-pencil"></i> Pages</a></li>
-                        <li><a href=""><i class="glyphicon glyphicon-user"></i> Users</a></li>
+                        @can('add_users')
+                          <li><a href="{{ route('users.index') }}"><i class="glyphicon glyphicon-user"></i> Users</a></li>
+                        @endcan
                       </ul>
                     </div>
                   </div>

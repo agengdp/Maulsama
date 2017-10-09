@@ -185,6 +185,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Cviebrock\EloquentSluggable\ServiceProvider::class,
         Mews\Purifier\PurifierServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
 
         /**
          * Custom by adp

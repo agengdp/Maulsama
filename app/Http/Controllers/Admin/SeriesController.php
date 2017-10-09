@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
+
 use Illuminate\Http\Request;
 use App\Media;
 use App\Episode;
@@ -10,7 +12,7 @@ use Response;
 use Image;
 use Purifier;
 
-class SeriesController extends \App\Http\Controllers\Controller
+class SeriesController extends Controller
 {
     /**
      * Display a listing of the resource.
