@@ -22,7 +22,7 @@ class SeriesController extends \App\Http\Controllers\Controller
         $search = $request->input('s');
         $series = Media::search($search)->where('type', 'series')->latest()->paginate(20);
 
-        return view('admin/series', [
+        return view('admin/series/series', [
             'heading' => 'Series',
             'series'  => $series,
             's'       => $search

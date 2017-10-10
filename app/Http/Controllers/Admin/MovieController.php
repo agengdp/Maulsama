@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -9,7 +9,7 @@ use App\Media;
 use App\DownloadLink;
 use Purifier;
 
-class MovieController extends Controller
+class MovieController extends \App\Http\Controllers\Controller
 {
     /**
      * Display a listing of the resource.
@@ -22,7 +22,7 @@ class MovieController extends Controller
 
         $movies = Media::search($search)->where('type', 'movie')->latest()->paginate(20);
 
-        return view('admin/movies', [
+        return view('admin/movie/movie', [
             'heading'   => 'Movies',
             'movies'    => $movies,
             's'         => $search
@@ -38,7 +38,7 @@ class MovieController extends Controller
     {
         $genre = Genre::all();
 
-        return view('admin/movies/create', [
+        return view('admin/movie/create', [
         'heading'     => 'Create new movies',
         'genre_data'  => $genre
       ]);
@@ -160,7 +160,7 @@ class MovieController extends Controller
             ];
         }
 
-        return view('admin/movies/edit', [
+        return view('admin/movie/edit', [
             'heading'     => 'Edit : ' . $movie->title,
             'movie'       => $movie,
             'genres'      => $genre,

@@ -11,13 +11,12 @@
 |
 */
 
-
 Auth::routes();
 
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/home', 'Admin\HomeController@index')->name('home');
-    Route::resource('/home/series', 'Admin\SeriesController');
-    Route::resource('/home/series.episode', 'EpisodeController', [
+Route::group(['prefix' => 'app', 'middleware' => ['auth', 'role:admin|root']], function () {
+    Route::get('/', 'Admin\HomeController@index')->name('app');
+    Route::resource('/series', 'Admin\SeriesController');
+    Route::resource('/series.episode', 'Admin\EpisodeController', [
       'names' => [
         'store'     => 'episode.store',
         'update'    => 'episode.update',
@@ -28,15 +27,24 @@ Route::group(['middleware' => 'auth'], function () {
       ]
     ]);
 
-    Route::resource('/home/movies', 'MovieController', [
+    Route::resource('/movies', 'Admin\MovieController', [
       'except' => [
         'show'
       ],
     ]);
 
-    Route::resource('/home/genre', 'GenreController');
+    Route::resource('/genre', 'Admin\GenreController');
 
-    Route::resource('/home/pages', 'PagesController');
+    Route::group(['middleware' => 'role:root'], function () {
+        Route::resource('/pages', 'Admin\PageController');
+        Route::resource('/users', 'Admin\UserController');
+    });
+});
+
+Route::group(['prefix' => 'me', 'middleware' => ['auth', 'role:user|admin|root']], function () {
+    Route::get('/', function () {
+        echo "Registered user";
+    })->name('me');
 });
 
 /**

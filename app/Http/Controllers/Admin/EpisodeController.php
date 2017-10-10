@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -8,7 +8,7 @@ use App\Media;
 use App\Episode;
 use App\DownloadLink;
 
-class EpisodeController extends Controller
+class EpisodeController extends \App\Http\Controllers\Controller
 {
 
     /**

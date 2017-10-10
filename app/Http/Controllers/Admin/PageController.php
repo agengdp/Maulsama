@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Page;
 use Purifier;
 
-class PagesController extends Controller
+class PageController extends \App\Http\Controllers\Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class PagesController extends Controller
      */
     public function index()
     {
-        return view('admin/pages', [
+        return view('admin/page/page', [
           'heading'   => 'Pages',
           'pages'     => Page::all(),
         ]);
@@ -28,7 +28,7 @@ class PagesController extends Controller
      */
     public function create()
     {
-        return view('admin/pages/create', [
+        return view('admin/page/create', [
           'heading'   => 'Create New Page',
         ]);
     }
@@ -83,7 +83,7 @@ class PagesController extends Controller
     {
         $page = Page::find($id);
 
-        return view('admin/pages/edit', [
+        return view('admin/page/edit', [
           'heading'     => 'Edit : '. $page->title,
           'page'        => $page,
         ]);

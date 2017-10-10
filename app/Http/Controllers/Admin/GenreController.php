@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Genre;
 
-class GenreController extends Controller
+class GenreController extends \App\Http\Controllers\Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class GenreController extends Controller
     {
         $genres = Genre::orderBy('name')->get();
 
-        return view('admin/genre', [
+        return view('admin/genre/genre', [
             'heading' => 'Genres',
             'genres' => $genres,
         ]);
@@ -43,7 +43,7 @@ class GenreController extends Controller
         $genres = $genre->orderBy('name')->get();
 
 
-        return view('admin/genre', [
+        return view('admin/genre/genre', [
             'heading'     => 'Genres',
             'genres'      => $genres
         ]);
