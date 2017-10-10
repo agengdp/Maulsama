@@ -50,35 +50,44 @@ Route::group(['prefix' => 'me', 'middleware' => ['auth', 'role:user|admin|root']
 /**
  * Damel front-End
  */
-
-// Image resizing untuk vertical
-Route::get('/images/vert/{image_name}', function ($image_name) {
-    $img = Image::make('storage/'.$image_name)->resize(250, 375);
-    return $img->response('jpg');
-});
-
-Route::get('/images/horz/{image_name}', function ($image_name) {
-    $img = Image::make('storage/'.$image_name)->resize(496, 279);
-    return $img->response('jpg');
-});
-
-Route::get('/images/eps/{image_name}', function ($image_name) {
-    $img = Image::make('storage/'.$image_name)->resize(160, 90);
-    return $img->response('jpg');
-});
-
-Route::get('/images/nav/{image_name}', function ($image_name) {
-    $img = Image::make('storage/'.$image_name)->resize(64, null, function ($constraint) {
-        $constraint->aspectRatio();
+Route::group(['prefix' => 'images'], function () {
+    // Image resizing untuk vertical
+    Route::get('/vert/{image_name}', function ($image_name) {
+        $img = Image::make('storage/'.$image_name)->resize(250, 375);
+        return $img->response('jpg');
     });
-    return $img->response('jpg');
-});
-Route::get('/images/ongoing/{image_name}', function ($image_name) {
-    $img = Image::make('storage/'.$image_name)->resize(120, null, function ($constraint) {
-        $constraint->aspectRatio();
+
+    Route::get('/horz/{image_name}', function ($image_name) {
+        $img = Image::make('storage/'.$image_name)->resize(496, 279);
+        return $img->response('jpg');
     });
-    return $img->response('jpg');
+
+    Route::get('/eps/{image_name}', function ($image_name) {
+        $img = Image::make('storage/'.$image_name)->resize(160, 90);
+        return $img->response('jpg');
+    });
+
+    Route::get('/nav/{image_name}', function ($image_name) {
+        $img = Image::make('storage/'.$image_name)->resize(64, null, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        return $img->response('jpg');
+    });
+    Route::get('/ongoing/{image_name}', function ($image_name) {
+        $img = Image::make('storage/'.$image_name)->resize(120, null, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        return $img->response('jpg');
+    });
+
+    Route::get('/logo/{name}_{width}.png', function ($name, $width) {
+        $img = Image::make('storage/assets/images/'.$name. '.png')->resize($width, null, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        return $img->response('png');
+    });
 });
+
 ///////////////////////////////////////////////////////////
 //
 // Ini untuk routing home nya

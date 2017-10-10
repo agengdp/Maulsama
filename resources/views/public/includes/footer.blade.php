@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-4">
-			<img src="https://www.ratakan.com/wp-content/uploads/2014/04/ratakan-logo-footer.png">
+			<img src="{{ asset('/images/logo/logo_300.png') }}">
 			<p>Made with <i class="glyphicon glyphicon-heart text-danger"></i> from Surabaya, Indonesia</p>
 			<p>Copyright © Maulsama. All Rights Reserved</p>
 		</div>

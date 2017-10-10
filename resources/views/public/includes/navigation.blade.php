@@ -7,7 +7,9 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	  </button>
-	  <a class="navbar-brand logo__name" href="/">Maulsama</a>
+	  <a class="navbar-brand logo__name" href="/">
+					<img src="{{ asset('/images/logo/logo-transparent_170.png') }}">
+		</a>
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->

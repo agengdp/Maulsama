@@ -213,7 +213,7 @@ footer p { margin: 0; }
 .header--related { background: none; padding: 10px; }
 
 .logo { font-family: "Merriweather", serif; }
-.logo__name { color: #fff !important; font-size: 25px; }
+.logo__name { color: #fff !important; font-size: 25px; padding: 6px 15px; }
 
 .navkiri__item { color: #fff !important; }
 .navkiri__link { color: #fff !important; }
