@@ -13,8 +13,8 @@
 					<!-- /.footer-widget__title -->
 					<div class="footer-widget__content">
 						<ul>
-							<li>About Us</li>
 							<li><a href="{{ route('frontPage', 'dmca') }}">DMCA</a></li>
+							<li><a href="{{ route('frontPage', 'privacy-policy') }}">Privacy & Policy</a></li>
 						</ul>
 					</div>
 					<!-- /.footer-widget__content -->
@@ -24,14 +24,14 @@
 		<div class="col-md-2">
 			<div class="footer-widget">
 				<div class="footer-widget__title">
-					<h4>Panduan</h4>
+					{{-- <h4>Panduan</h4> --}}
 				</div>
 				<!-- /.footer-widget__title -->
 				<div class="footer-widget__content">
-					<ul>
+					{{-- <ul>
 						<li>Cara Download</li>
 						<li>Laport Link Rusak / Error</li>
-					</ul>
+					</ul> --}}
 				</div>
 				<!-- /.footer-widget__content -->
 			</div>
