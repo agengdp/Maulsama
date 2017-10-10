@@ -14,7 +14,7 @@
 					<div class="footer-widget__content">
 						<ul>
 							<li>About Us</li>
-							<li>DMCA</li>
+							<li><a href="{{ route('frontPage', 'dmca') }}">DMCA</a></li>
 						</ul>
 					</div>
 					<!-- /.footer-widget__content -->
