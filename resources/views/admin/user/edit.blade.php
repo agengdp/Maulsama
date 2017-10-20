@@ -29,7 +29,7 @@
 
           <div class="form-group @if ($errors->has('bio')) has-error @endif">
             {{ Form::label('bio', 'Bio') }}
-            {{ Form::textarea('bio', $user->bio, ['class' => 'form-control', 'required' => 'required']) }}
+            {{ Form::textarea('bio', $user->bio, ['class' => 'form-control']) }}
             @if ($errors->has('bio')) <p class="help-block">{{ $errors->first('bio') }}</p> @endif
           </div>
 
