@@ -44,7 +44,7 @@
             {{ Form::select('role', $roles, isset($user) ? $user->roles->pluck('id')->toArray() : null,  ['class' => 'form-control']) }}
             @if ($errors->has('role')) <p class="help-block">{{ $errors->first('roles') }}</p> @endif
           </div>
-          {{ Form::submit('Create', ['class' => 'btn btn-primary']) }}
+          {{ Form::submit('Update', ['class' => 'btn btn-primary']) }}
           {{ Form::close() }}
 
 
