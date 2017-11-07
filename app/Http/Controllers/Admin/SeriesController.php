@@ -20,7 +20,7 @@ class SeriesController extends \App\Http\Controllers\Controller
     public function index(Request $request)
     {
         $search = $request->input('s');
-        $series = Media::search($search)->where('type', 'series')->latest()->paginate(20);
+        $series = Media::search($search)->where('type', 'series')->orderBy('status', 'desc')->latest()->paginate(20);
 
         return view('admin/series/series', [
             'heading' => 'Series',
