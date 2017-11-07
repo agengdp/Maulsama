@@ -111,7 +111,7 @@
                 <span class="play-info play-info--episode-lainnya">Episode Lainnya:</span>
                 <table class="table table-bordered table-hover table-episode">
                   <tbody>
-                    @foreach ($series->episode as $episode)
+                    @foreach ($series->episode->sortByDesc('episode') as $episode)
                       <tr>
                         <td class="text-center" width="36px">{{ $episode->episode }}</td>
                         <td><a href="{{ route('frontPlayEps', [$episode->series->slug, $episode->slug]) }}"><i class="glyphicon glyphicon-play-circle"></i> {{ $episode->judul_episode }}</a></td>
