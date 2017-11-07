@@ -27,6 +27,7 @@
                     <th>#</th>
                     <th width="60%">Title</th>
                     <th>Episode</th>
+                    <th>Status</th>
                     <th>Published</th>
                     <th>Action</th>
                   </tr>
@@ -37,6 +38,13 @@
                         <th scope="row"><input type="checkbox" name="" value="1"></th>
                         <td width="60%"><a href="{{route('series.show', $seri->id)}}">{{$seri->title}}</a></td>
                         <td>{{count($seri->episode)}} </td>
+                        <td>
+                          @if($seri->status == 'ongoing')
+                            <span class="label label-warning">{{$seri->status}}</span>
+                          @else
+                            {{$seri->status}}
+                          @endif
+                        </td>
                         <td>{{$seri->created_at}} </td>
                         <td>
                           <a class="btn btn-default btn-xs" href="{{ route('series.edit', $seri->id)}}">Edit</a>
