@@ -1,7 +1,4 @@
 @extends('layouts.frontend')
-@section('title')
-	{{ $browse_title }}
-@endsection
 
 @section('content')
 <div class="hero hero--browse">

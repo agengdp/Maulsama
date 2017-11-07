@@ -1,7 +1,5 @@
 @extends('layouts.frontend')
 
-@section('title', 'Halaman Tidak Ditemukan')
-
 @section('content')
   <div class="main-content main-content--error">
     <div class="container">

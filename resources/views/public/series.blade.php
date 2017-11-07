@@ -1,7 +1,4 @@
 @extends('layouts.frontend')
-@section('title')
-	{{$series->title}}
-@endsection
 
 @section('content')
 <style type="text/css">

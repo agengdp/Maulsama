@@ -1,5 +1,4 @@
 @extends('layouts.frontend')
-@section('title', 'Maulsama - Tempat Download Anime Terlengkap')
 
 @section('content')
 	<div class="hero">

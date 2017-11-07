@@ -186,7 +186,8 @@ return [
         Cviebrock\EloquentSluggable\ServiceProvider::class,
         Mews\Purifier\PurifierServiceProvider::class,
         Zizaco\Entrust\EntrustServiceProvider::class,
-
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
 
         /**
          * Custom by adp

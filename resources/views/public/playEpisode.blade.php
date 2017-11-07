@@ -1,10 +1,6 @@
 @extends('layouts.frontend')
-@section('title')
-  {{ $series->title }} Episode {{ $episode->episode }} | {{ $episode->judul_episode }}
-@endsection
 
 @section('content')
-
 <div class="hero hero--play">
     <div class="container">
         <div class="row">

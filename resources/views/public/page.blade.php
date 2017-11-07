@@ -1,5 +1,4 @@
 @extends('layouts.frontend')
-@section('title', $page->title)
 
 @section('content')
   <div class="main-content main-content--page">

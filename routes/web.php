@@ -85,7 +85,12 @@ Route::group(['prefix' => 'images'], function () {
             $constraint->aspectRatio();
         });
         return $img->response('png');
-    });
+    })->name('image.logo');
+
+    Route::get('/og/{name}', function ($name) {
+        $img = Image::make('storage/'.$name)->fit(1200, 630);
+        return $img->response('jpg');
+    })->name('image.og');
 });
 
 ///////////////////////////////////////////////////////////
