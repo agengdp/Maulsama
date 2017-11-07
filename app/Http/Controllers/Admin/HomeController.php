@@ -18,8 +18,8 @@ class HomeController extends \App\Http\Controllers\Controller
     {
         $query = new Media;
 
-        $series = $query->where('type', 'series')->take(10)->get();
-        $movies = $query->where('type', 'movie')->take(10)->get();
+        $series = $query->where('type', 'series')->get();
+        $movies = $query->where('type', 'movie')->get();
         $last   = $query->take(5)->latest()->get();
 
         $episodes = Episode::take(10)->latest()->get();
