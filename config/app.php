@@ -188,7 +188,7 @@ return [
         Zizaco\Entrust\EntrustServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
-        RenatoMarinho\LaravelPageSpeed\ServiceProvider::class
+        RenatoMarinho\LaravelPageSpeed\ServiceProvider::class,
 
         /**
          * Custom by adp
