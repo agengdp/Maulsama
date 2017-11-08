@@ -25,7 +25,7 @@ class FrontController extends Controller
     public function index()
     {
         $series       = Media::where('type', 'series')->latest()->take(6)->get();
-        $episodes     = Episode::latest()->take($this->taken)->get();
+        $episodes     = Episode::with('series')->latest()->take($this->taken)->get();
 
         SEO::setTitle('Maulsama - Tempat Download Anime Sub Indonesia Terlengkap');
         SEO::setDescription('Maulsama adalah tempat untuk nonton / streaming dan download anime terlengkap dan terupdate');
@@ -81,6 +81,16 @@ class FrontController extends Controller
      */
     public function browseGenre($genre)
     {
+        $media = Media::whereHas('genre', function ($q) use ($genre) {
+            $q->where('slug', $genre);
+        });
+
+        // dd($media->where('type', 'movie'));
+
+        // harusnya pake collection
+        // $series = $media->where('type', 'series')->paginate($this->taken);
+        // $movies = $media->where('type', 'movie')->paginate($this->taken);
+
         $series = Genre::where('slug', $genre)->first()->media()->latest()->where('type', 'series')->paginate($this->taken);
         $movies = Genre::where('slug', $genre)->first()->media()->latest()->where('type', 'movie')->paginate($this->taken);
 
@@ -101,7 +111,7 @@ class FrontController extends Controller
      */
     public function series($slug)
     {
-        $series = Media::where([
+        $series = Media::with(['genre', 'episode'])->where([
           ['slug', '=', $slug],
           ['type', '=', 'series'],
         ])->first();
@@ -131,16 +141,21 @@ class FrontController extends Controller
      */
     public function playEpisode($series_slug, $eps_slug)
     {
-        $series   = Media::where('slug', $series_slug)->first();
+        $series   = Media::with(['episode', 'genre'])->where([
+          'slug' => $series_slug,
+          'type' => 'series'
+        ])->first();
 
         // error 404 handle
         if (is_null($series)) {
             abort(404);
         }
 
-        $episode  = Episode::where('series_id', $series->id)
-                        ->where('slug', $eps_slug)
-                        ->first();
+        // $episode  = Episode::where('series_id', $series->id)
+        //                 ->where('slug', $eps_slug)
+        //                 ->first();
+
+        $episode = $series->episode->where('slug', $eps_slug)->first();
 
         // error 404 handle
         if (is_null($episode)) {

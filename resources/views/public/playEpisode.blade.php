@@ -95,7 +95,7 @@
         <div class="row">
             <div class="col-md-9">
               <span class="play-info play-info--series">
-                  Series : <a href="{{ route('frontSeries', $episode->series->slug) }}">{{ $episode->series->title }}</a> | <span class="play-info play-info--episode">Episode : {{ $episode->episode }}</span>
+                  Series : <a href="{{ route('frontSeries', $series->slug) }}">{{ $series->title }}</a> | <span class="play-info play-info--episode">Episode : {{ $episode->episode }}</span>
               </span>
                 <h1 class="header header--play">{{ $episode->judul_episode }}</h1>
                 <div class="main-content__spoiler">
@@ -114,12 +114,12 @@
                     @foreach ($series->episode->sortByDesc('episode') as $eps)
                       <tr @if($eps->episode == $episode->episode) class="tr--np" @endif>
                         <td class="text-center" width="36px">{{ $eps->episode }}</td>
-                        <td><a href="{{ route('frontPlayEps', [$eps->series->slug, $eps->slug]) }}"><i class="glyphicon glyphicon-play-circle"></i> {{ $eps->judul_episode }}</a></td>
+                        <td><a href="{{ route('frontPlayEps', [$series->slug, $eps->slug]) }}"><i class="glyphicon glyphicon-play-circle"></i> {{ $eps->judul_episode }}</a></td>
                         <td width="100px" class="text-center">
                           @if($eps->episode == $episode->episode)
-                            <a href="{{ route('frontPlayEps', [$eps->series->slug, $eps->slug]) }}" class="btn btn__np"><i class="glyphicon glyphicon-play-circle"></i> Now Playing</a>
+                            <a href="{{ route('frontPlayEps', [$series->slug, $eps->slug]) }}" class="btn btn__np"><i class="glyphicon glyphicon-play-circle"></i> Now Playing</a>
                           @else
-                            <a href="{{ route('frontPlayEps', [$eps->series->slug, $eps->slug]) }}" class="btn btn__tonton"><i class="glyphicon glyphicon-play-circle"></i> Tonton</a>
+                            <a href="{{ route('frontPlayEps', [$series->slug, $eps->slug]) }}" class="btn btn__tonton"><i class="glyphicon glyphicon-play-circle"></i> Tonton</a>
                           @endif
                         </td>
                       </tr>
@@ -152,17 +152,17 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <a href="{{ route('frontSeries', $episode->series->slug) }}" class="play-info__link">
-                    <img class="thumbnail play-info__image" src="{{ asset('images/vert/'.$episode->series->cover) }}" alt="{{ $episode->series->title }}">
+                <a href="{{ route('frontSeries', $series->slug) }}" class="play-info__link">
+                    <img class="thumbnail play-info__image" src="{{ asset('images/vert/'.$series->cover) }}" alt="{{ $series->title }}">
                 </a>
                 <table class="table table-hover table-underline">
                   <tr>
                     <td><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Published</td>
-                    <td>{{ $episode->series->year }}</td>
+                    <td>{{ $series->year }}</td>
                   </tr>
                   <tr>
                     <td><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Creator</td>
-                    <td>{{ $episode->series->creator }}</td>
+                    <td>{{ $series->creator }}</td>
                   </tr>
                 </table>
             </div>
