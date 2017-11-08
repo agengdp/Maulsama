@@ -37,7 +37,19 @@
 			color: $warna-font-putih !important;
 			background: $warna-sekunder;
 		}
-
-
 	}
+
+	@include e('np'){
+		background: #365977;
+		display: block;
+		margin:-6px;
+		border-radius: 0;
+		color: $warna-font-putih;
+
+		&:hover{
+			color: $warna-font-putih !important;
+			background: $warna-sekunder;
+		}
+	}
+
 }

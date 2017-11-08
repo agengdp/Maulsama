@@ -12,3 +12,10 @@
   }
 
 }
+
+
+tr.tr{
+  @include m('np'){
+    background: #e4e4e4;
+  }
+}
