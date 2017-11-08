@@ -133,4 +133,87 @@
 		}
 	}
 
+	@include e('ongoing'){
+		border-bottom:1px solid #ddd;
+		padding: 3px 10px;
+		margin:0;
+
+		.btn__tonton{
+			border-radius: 2px;
+		}
+
+		&:hover{
+			text-decoration: none;
+			background: #ddd;
+		}
+
+		h4{
+			font-size: 14px;
+		}
+
+		@include m('link'){
+			color: #333;
+			text-decoration: none;
+			display: block;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+	}
+
+}
+
+.nav-ongoing{
+	.active{
+		background: $warna-primer;
+
+		a{
+			color: #fff;
+		}
+		a:focus{
+			background: $warna-primer;
+		}
+	}
+
+	li{
+		a{
+			&:hover{
+				background: $warna-sekunder;
+				color: $warna-font-putih;
+			}
+		}
+	}
+
+}
+h4.ongoing-title{
+	color: #333;
+	padding: 5px 15px;
+}
+.ongoing-info{
+	padding: 20px;
+	background: #3c3c3c;
+	color: #fefefe;
+	margin-bottom: 2px;
+
+	@include e('genre'){
+		display: block;
+		padding: 5px 0;
+		border-bottom: 1px solid #3e3e3e;
+
+		a{
+
+			&:hover{
+				color: $warna-font-putih;
+			}
+		}
+	}
+
+	@include e('title'){
+		color: $warna-font-putih;
+
+		&:hover{
+			color: $warna-font-putih;
+		}
+	}
 }
