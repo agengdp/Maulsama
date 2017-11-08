@@ -73,6 +73,14 @@ Route::group(['prefix' => 'images'], function () {
         });
         return $img->response('jpg');
     });
+
+    Route::get('/nav/ongo/{image_name}', function ($image_name) {
+        $img = Image::make('storage/'.$image_name)->resize(90, null, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+        return $img->response('jpg');
+    });
+
     Route::get('/ongoing/{image_name}', function ($image_name) {
         $img = Image::make('storage/'.$image_name)->resize(120, null, function ($constraint) {
             $constraint->aspectRatio();
