@@ -111,11 +111,17 @@
                 <span class="play-info play-info--episode-lainnya">Episode Lainnya:</span>
                 <table class="table table-bordered table-hover table-episode">
                   <tbody>
-                    @foreach ($series->episode->sortByDesc('episode') as $episode)
-                      <tr>
-                        <td class="text-center" width="36px">{{ $episode->episode }}</td>
-                        <td><a href="{{ route('frontPlayEps', [$episode->series->slug, $episode->slug]) }}"><i class="glyphicon glyphicon-play-circle"></i> {{ $episode->judul_episode }}</a></td>
-                        <td class="text-center"><a href="{{ route('frontPlayEps', [$episode->series->slug, $episode->slug]) }}" class="btn btn__tonton"><i class="glyphicon glyphicon-play-circle"></i> Tonton</a></td>
+                    @foreach ($series->episode->sortByDesc('episode') as $eps)
+                      <tr @if($eps->episode == $episode->episode) class="tr--np" @endif>
+                        <td class="text-center" width="36px">{{ $eps->episode }}</td>
+                        <td><a href="{{ route('frontPlayEps', [$eps->series->slug, $eps->slug]) }}"><i class="glyphicon glyphicon-play-circle"></i> {{ $eps->judul_episode }}</a></td>
+                        <td width="100px" class="text-center">
+                          @if($eps->episode == $episode->episode)
+                            <a href="{{ route('frontPlayEps', [$eps->series->slug, $eps->slug]) }}" class="btn btn__np"><i class="glyphicon glyphicon-play-circle"></i> Now Playing</a>
+                          @else
+                            <a href="{{ route('frontPlayEps', [$eps->series->slug, $eps->slug]) }}" class="btn btn__tonton"><i class="glyphicon glyphicon-play-circle"></i> Tonton</a>
+                          @endif
+                        </td>
                       </tr>
                     @endforeach
                   </tbody>
