@@ -34,6 +34,11 @@
 
 <script type="text/javascript" src="{{asset('storage/assets/js/jquery-3.2.1.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('storage/assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+<script type="text/javascript">
+$(document).on('click', '.yamm .dropdown-menu', function(e) {
+ e.stopPropagation()
+})
+</script>
 @yield('jscontainer')
 </body>
 </html>
