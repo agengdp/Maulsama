@@ -23,19 +23,19 @@
 						<div class="yamm-content">
 							<ul class="media-list navbar-media">
 								@foreach($navSeries as $navSeri)
-			                        <li class="media navbar-media__item">
-			                        	<a href="{{ route('frontSeries', $navSeri->slug) }}" alt="{{ $navSeri->title }}" class="navbar-media__link">
-				                        	<div class="media-body navbar-media__body">
-				                            	<h4 class="media-heading navbar-media__heading">{{ $navSeri->title }}</h4>
-				                            	{{ str_limit(strip_tags($navSeri->sinopsis), 300) }}
-				                        	</div>
-				                        	<div class="media-right navbar-media__right">
-				                        		<img src="{{ asset('images/nav/'.$navSeri->cover) }}" alt="{{ $navSeri->title }}" class="media-object navbar-media__image">
-				                        	</div>
-				                        </a>
-			                        </li>
+                  <li class="media navbar-media__item">
+                  	<a href="{{ route('frontSeries', $navSeri->slug) }}" alt="{{ $navSeri->title }}" class="navbar-media__link">
+                    	<div class="media-body navbar-media__body">
+                        	<h4 class="media-heading navbar-media__heading">{{ $navSeri->title }}</h4>
+                        	{{ str_limit(strip_tags($navSeri->sinopsis), 300) }}
+                    	</div>
+                    	<div class="media-right navbar-media__right">
+                    		<img src="{{ asset('images/nav/'.$navSeri->cover) }}" alt="{{ $navSeri->title }}" class="media-object navbar-media__image">
+                    	</div>
+                    </a>
+                  </li>
 								@endforeach
-		                      </ul>
+              </ul>
 						</div>
 						<!-- /.yamm-content -->
 					</li>
@@ -48,19 +48,19 @@
 						<div class="yamm-content">
 							<ul class="media-list navbar-media">
 								@foreach($navMovies as $navMovie)
-			                        <li class="media navbar-media__item">
-			                        	<a href="{{ route('frontMovie', $navMovie->slug) }}" class="navbar-media__link">
-				                          	<div class="media-body navbar-media__body">
-				                            	<h4 class="media-heading navbar-media__heading">{{ $navMovie->title }}</h4>
-				                            	{{ str_limit(strip_tags($navMovie->sinopsis), 200) }}
-				                          	</div>
-				                        	<div class="media-right navbar-media__right">
-				                        		<img src="{{ asset('images/nav/'.$navMovie->cover) }}" alt="{{ $navMovie->title }}" class="media-object navbar-media__image">
-				                        	</div>
-				                        </a>
-			                        </li>
+                    <li class="media navbar-media__item">
+                    	<a href="{{ route('frontMovie', $navMovie->slug) }}" class="navbar-media__link">
+                        	<div class="media-body navbar-media__body">
+                          	<h4 class="media-heading navbar-media__heading">{{ $navMovie->title }}</h4>
+                          	{{ str_limit(strip_tags($navMovie->sinopsis), 200) }}
+                        	</div>
+                      	<div class="media-right navbar-media__right">
+                      		<img src="{{ asset('images/nav/'.$navMovie->cover) }}" alt="{{ $navMovie->title }}" class="media-object navbar-media__image">
+                      	</div>
+                      </a>
+                    </li>
 								@endforeach
-		                      </ul>
+              </ul>
 						</div>
 						<!-- /.yamm-content -->
 					</li>
@@ -92,26 +92,70 @@
 					</li>
 				</ul>
 			</li>
-			<li class="dropdown navkanan__item">
+			<li class="dropdown yamm-fw navkanan__item">
 		      <a href="#" class="dropdown-toggle navkanan__link navkanan__link--ongoing" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-fire"></i> ON-GOING</a>
 				<ul class="dropdown-menu nav-menu">
 					<li class="nav-menu__item">
 						<div class="yamm-content">
-							<ul class="media-list navbar-media">
-								@foreach($navOngoing as $ongoing)
-                    <li class="media navbar-media__item">
-                    	<a href="{{ route('frontPlayEps', [$ongoing->series->slug, $ongoing->slug]) }}" class="navbar-media__link">
-                        	<div class="media-body navbar-media__body">
-                          	<h4 class="media-heading navbar-media__heading">Episode {{ $ongoing->episode }} : {{ $ongoing->judul_episode }}</h4>
-                          	{{ $ongoing->series->title }}
-                        	</div>
-                      	<div class="media-right media-middle navbar-media__right">
-                      		<img src="{{ asset('images/ongoing/'.$ongoing->cover) }}" alt="{{ $ongoing->judul_episode }}" class="media-object navbar-media__image">
-                      	</div>
-                      </a>
-                    </li>
-								@endforeach
-              </ul>
+							{{-- <div id="ongoing-tab" class="row-fluid"> --}}
+							<div class="row">
+								<div class="col-md-3" style="padding-right:0">
+									<h4 class="ongoing-title">Ongoing Anime</h4>
+									<ul class="nav nav-ongoing nav-stacked" role="tablist">
+										@forelse($navOngoing as $ongo)
+											<li role="presentation" @if($loop->first) class="active" @endif><a href="#ongoing-{{$loop->index}}" aria-controls="ongoing-{{$loop->index}}" role="tab" data-toggle="tab">{{$ongo->title}}</a></li>
+										@empty
+											<li><a href="#ongoing-x" aria-controls="ongoing-x" role="tab" data-toggle="tab">Empty</a></li>
+										@endforelse
+									</ul>
+								</div>
+								<div class="col-md-9" style="padding-left:0">
+									<div class="tab-content" style="color:#333!important;background:#fcfcfc">
+										@forelse($navOngoing as $ongo)
+											<div role="tabpanel" class="tab-pane @if($loop->first) active @endif" id="ongoing-{{$loop->index}}">
+												<div class="ongoing-info">
+													<div class="media">
+														<div class="media-left">
+															<img class="media-object" src="{{ asset('images/nav/ongo/'. $ongo->cover) }}">
+														</div>
+														<div class="media-body">
+															<h4 class="media-heading">
+																<a class="ongoing-info__title" href="{{ route('frontSeries', $ongo->slug) }}">{{ $ongo->title }}</a>
+															</h4>
+															<span class="ongoing-info__genre">
+																Genre :
+																@foreach($ongo->genre as $genre)
+																	{{ $loop->first ? '' : ', ' }}
+																	<a class="series-genre__genres" href="{{ route('frontBrowseGenre', $genre->slug) }}">{{ $genre->name }}</a>
+																@endforeach
+															</span>
+															<p>{{ str_limit(strip_tags($ongo->sinopsis), 100) }}</p>
+														</div>
+													</div>
+												</div>
+												<ul class="media-list navbar-media">
+												@foreach($ongo->episode->sortByDesc('episode') as $eps)
+													<li class="media navbar-media__ongoing">
+														<a href="{{ route('frontPlayEps', [$ongo->slug, $eps->slug]) }}" class="navbar-media__ongoing--link">
+															<div class="media-body navbar-media__body">
+																<h4>Episode {{ $eps->episode }} : {{ $eps->judul_episode }}</h4>
+															</div>
+															<div class="media-right media-middle navbar-media__right">
+																<button type="button" name="button" class="btn btn__tonton"><i class="glyphicon glyphicon-play-circle"></i> Play</button>
+															</div>
+														</a>
+													</li>
+												@endforeach
+												</ul>
+											</div>
+										@empty
+											<div role="tabpanel" class="tab-pane" id="ongoing-x">
+												Empty
+											</div>
+										@endforelse
+									</div>
+								</div>
+							</div>
 						</div>
 						<!-- /.yamm-content -->
 					</li>
