@@ -1,0 +1,21 @@
+h1{
+	font-family: "Merriweather", serif;
+	font-size: 54px;
+}
+
+.is-blue-grad{
+	color: #fff;
+	background: -moz-linear-gradient(-45deg, #0f1932 0, #45acbf 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #0f1932), color-stop(100%, #45acbf));
+	background: -webkit-linear-gradient(-45deg, #0f1932 0, #45acbf 100%);
+	background: -o-linear-gradient(-45deg, #0f1932 0, #45acbf 100%);
+	background: -ms-linear-gradient(-45deg, #0f1932 0, #45acbf 100%);
+	background: linear-gradient(135deg, #0f1932 0, #45acbf 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$first-color',endColorstr='$second-color',GradientType=1);
+}
+
+.hero-front .subtitle{
+	color:#fff;
+	font-family:"Merriweather", serif;
+	font-size:20px;
+}

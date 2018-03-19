@@ -15,11 +15,7 @@ class NavOngoingServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $episodes = Episode::whereHas('series', function ($q) {
-        //     $q->where('status', 'ongoing');
-        // })->latest()->take(5)->get();
-        //
-        // \View::share('navOngoing', $episodes);
+
         $ongoing = Media::with('episode')->where('status', 'ongoing')->latest()->get();
         \View::share('navOngoing', $ongoing);
     }

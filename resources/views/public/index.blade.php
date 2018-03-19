@@ -1,26 +1,21 @@
 @extends('layouts.frontend')
 
 @section('content')
-	<div class="hero">
-		<div class="text-center">
-			<h1>Maulsama</h1>
-			<p class="subhead">Tempat nonton anime terlengkap subtitle Indonesia!</p>
-		</div>
-		<!-- /.text-center -->
-			<div class="row hero-carousel">
-				@foreach($series as $seri)
-					<div class="col-xs-6 col-md-4 col-lg-2 hero__image-container">
-						<a href="{{ route('frontSeries', $seri->slug) }}" class="thumbnail hero__link">
-						  <img src="{{ asset("images/vert/$seri->cover") }}" alt="{{$seri->title}}" class="hero__image">
-						  <div class="caption hero__caption">
-						  	<span class="caption-text hero__caption-text">{{ $seri->title }}</span>
-						  </div> {{-- /.caption --}}
-						</a>
-					</div>
-				@endforeach
+
+<div class="container-fluid">
+	<div class="hero hero-front has-text-centered is-medium">
+		<div class="hero-body">
+			<div class="container">
+				<h1>Maulsama</h1>
+				<p class="subtitle">Tempat nonton anime terlengkap subtitle Indonesia!</p>
 			</div>
-				<!-- /.hero-carousel -->
-	</div>{{-- /.hero --}}
+			<!-- /.container -->
+		</div>
+		<!-- /.hero-body -->
+	</div>
+</div>
+<!-- /.container -->
+
 
 	<div class="main-content">
 		<div class="container">
