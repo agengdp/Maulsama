@@ -3,8 +3,9 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Zizaco\Entrust\EntrustPermission;
-class Permission extends EntrustPermission;
+use Laratrust\Models\LaratrustPermission;
+
+class Permission extends LaratrustPermission
 {
     //
 }

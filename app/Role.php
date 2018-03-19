@@ -3,9 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Zizaco\Entrust\EntrustRole;
-
-class Role extends EntrustRole
+use Laratrust\Models\LaratrustRole;
+class Role extends LaratrustRole
 {
     //
 }

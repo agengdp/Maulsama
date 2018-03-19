@@ -18,7 +18,7 @@ class CreateTableEpisodes extends Migration
             $table->text('cover');
             $table->integer('series_id')->unsigned();
             $table->integer('episode')->unsigned();
-            $table->text('judul_episode');
+            $table->text('title');
             $table->string('slug');
             $table->text('spoiler')->nullable();
             $table->timestamps();
